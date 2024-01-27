@@ -1,6 +1,6 @@
-import { initNavbar } from './navbar/navbar';
-import { initSidebar } from './sidebar/sidebar';
-import { initBackToTop } from './backtotop/backtotop';
+import { initNavbar } from './navbar';
+import { initSidebar } from './sidebar';
+import { initBackToTop } from './backtotop';
 
 window.initNavbar = initNavbar;
 window.initSidebar = initSidebar;

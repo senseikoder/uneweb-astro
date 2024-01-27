@@ -21,5 +21,9 @@ export function initNavbar() {
       this.$store.app.isSiderbarOpen = true;
       console.log("clicked");
     },
+
+    closeSidebar() {
+      this.$store.app.isSiderbarOpen = false;
+    },
   };
 }

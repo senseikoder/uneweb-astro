@@ -26,7 +26,7 @@
       >
         <a href="#">
           <span class="material-icons">apps</span>
-          <span>Apps</span>
+          <span>Diplomados y Proyectos</span>
         </a>
         <ul x-show.transition="openedMenu === 'sidebar-menu-1'">
           <li><a href="#">Dashboard</a></li>
@@ -45,7 +45,7 @@
       >
         <a href="#">
           <span class="material-icons">duo</span>
-          <span>Messages</span>
+          <span>Cursos de Programación</span>
         </a>
         <ul x-show.transition="openedMenu === 'sidebar-menu-2'">
           <li><a href="#">Inbox</a></li>
@@ -64,13 +64,14 @@
       >
         <a href="#">
           <span class="material-icons">insert_photo</span>
-          <span>Media</span>
+          <span>Cursos de Diseño Web</span>
         </a>
         <ul x-show.transition="openedMenu === 'sidebar-menu-3'">
           <li><a href="#">Library</a></li>
           <li><a href="#">Upload</a></li>
         </ul>
       </li>
+
       <li
         @click="openSidebarMenu($event)"
         data-menu="sidebar-menu-4"
@@ -82,9 +83,46 @@
       >
         <a href="#">
           <span class="material-icons">policy</span>
-          <span>Settings</span>
+          <span>Cursos de Diseño Gráfico</span>
         </a>
         <ul x-show.transition="openedMenu === 'sidebar-menu-4'">
+          <li><a href="#">User settings</a></li>
+          <li><a href="#">App settings</a></li>
+        </ul>
+      </li>
+
+      <li
+        @click="openSidebarMenu($event)"
+        data-menu="sidebar-menu-5"
+        class="have-children"
+        :class="{
+              'active': openedMenu === 'sidebar-menu-5',
+              '': openedMenu != 'sidebar-menu-5'
+          }"
+      >
+        <a href="#">
+          <span class="material-icons">policy</span>
+          <span>Cursos de Mercadeo</span>
+        </a>
+        <ul x-show.transition="openedMenu === 'sidebar-menu-5'">
+          <li><a href="#">User settings</a></li>
+          <li><a href="#">App settings</a></li>
+        </ul>
+      </li>
+      <li
+        @click="openSidebarMenu($event)"
+        data-menu="sidebar-menu-6"
+        class="have-children"
+        :class="{
+              'active': openedMenu === 'sidebar-menu-6',
+              '': openedMenu != 'sidebar-menu-6'
+          }"
+      >
+        <a href="#">
+          <span class="material-icons">policy</span>
+          <span>Especializaciones</span>
+        </a>
+        <ul x-show.transition="openedMenu === 'sidebar-menu-6'">
           <li><a href="#">User settings</a></li>
           <li><a href="#">App settings</a></li>
         </ul>

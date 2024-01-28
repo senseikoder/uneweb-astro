@@ -1,3 +1,7 @@
+---
+import NavbarMenu from "./NavbarMenu.astro"
+---
+
 <nav
   x-data="initNavbar()"
   x-on:scroll.window="scroll()"
@@ -12,8 +16,8 @@
 >
   <div class="container">
     <div class="navbar-brand">
-      <a class="navbar-item" href="https://cssninja.io">
-        <img src="/img/logo/logo-uneweb.webp" alt="" width="112" height="28" />
+      <a class="navbar-item" href="/">
+        <img src="/img/logo/logo-uneweb.webp" alt="" width="167" height="50" />
       </a>
 
       <a
@@ -100,20 +104,7 @@
       </div>
 
       <div class="navbar-end">
-        <a href="#" class="navbar-item is-secondary"> Features</a>
-        <a href="#" class="navbar-item is-secondary"> Pricing</a>
-        <a
-          href="#"
-          class="navbar-item is-secondary modal-trigger"
-          data-modal="auth-modal"
-        >
-          Log in
-        </a>
-        <a class="navbar-item">
-          <span class="button signup-button secondary-btn raised">
-            Sign up
-          </span>
-        </a>
+        <NavbarMenu/>
       </div>
     </div>
   </div>

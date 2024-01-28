@@ -29,26 +29,24 @@ Hamburger menu icon
     width: 30px;
     height: 30px;
 
-    &.active > span.rotate {
+    // &.active > span.rotate {
       /*transform*/
-      -webkit-transform: rotate(90deg);
-      -moz-transform: translate(0px, 0px) rotate(90deg);
-      -ms-transform: translate(0px, 0px) rotate(90deg);
-      -o-transform: translate(0px, 0px) rotate(90deg);
-      transform: translate(0px, 0px) rotate(90deg);
-    }
+      // transform: translate(0px, 0px) rotate(90deg);
+    // }
 
     &.active > span > i.icon-line-center {
       visibility: hidden;
       width: 1px;
       height: 3px;
-      left: 70%;
+      right: 70%;
     }
 
     &.active > span > i.icon-line-bottom {
       margin: -2px 0 0 -10px;
-      left: 50%;
-      top: 12px;
+      right: 50%;
+      top: 13px;
+      width: 20px;
+      height: 3px;
 
       /*transform*/
       -webkit-transform: rotate(135deg);
@@ -60,8 +58,10 @@ Hamburger menu icon
 
     &.active > span > i.icon-line-top {
       margin: -2px 0 0 -10px;
-      left: 50%;
-      top: 12px;
+      right: 50%;
+      top: 13px;
+      width: 20px;
+      height: 3px;
 
       /*transform*/
       -webkit-transform: rotate(45deg);
@@ -70,15 +70,19 @@ Hamburger menu icon
       -o-transform: translate(0px, 0px) rotate(45deg);
       transform: translate(0px, 0px) rotate(45deg);
     }
+
+    .rotate i {
+      border-radius: 4px;
+    }
   }
 
   .icon-line-center {
     position: absolute;
-    width: 20px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     background: $title-grey;
     margin: -1px 0 0 -10px;
-    left: 50%;
+    right: 50%;
     top: 11px;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -88,12 +92,12 @@ Hamburger menu icon
 
   .icon-line-top {
     position: absolute;
-    width: 20px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     background: $title-grey;
     margin: -3px 0 0 -10px;
-    left: 50%;
-    top: 7px;
+    right: 50%;
+    top: 6px;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;
@@ -102,12 +106,12 @@ Hamburger menu icon
 
   .icon-line-bottom {
     position: absolute;
-    width: 20px;
-    height: 2px;
+    width: 4px;
+    height: 4px;
     background: $title-grey;
     margin: 2px 0 0 -10px;
-    left: 50%;
-    top: 14px;
+    right: 50%;
+    top: 15px;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
     -o-transition: all 0.2s ease;

@@ -1,3 +1,7 @@
+---
+import NavbarMenu from "./NavbarMenu.astro"
+---
+
 <nav
   x-data="initNavbar()"
   class="navbar is-fresh is-transparent no-shadow"
@@ -7,7 +11,7 @@
   <div class="container">
     <div class="navbar-brand">
       <a class="navbar-item" href="/">
-        <img src="/img/logo/logo-uneweb.webp" alt="" width="200" height="60" />
+        <img src="/img/logo/logo-uneweb.webp" alt="" width="167" height="50" />
       </a>
 
       <a
@@ -65,7 +69,10 @@
             }"
     >
       <div class="navbar-start">
-        <a @click="$store.app.isSiderbarOpen ? closeSidebar() : openSidebar()" class="navbar-item is-hidden-mobile">
+        <a
+          @click="$store.app.isSiderbarOpen ? closeSidebar() : openSidebar()"
+          class="navbar-item is-hidden-mobile"
+        >
           <div
             id="menu-icon-wrapper"
             class="menu-icon-wrapper"
@@ -94,20 +101,7 @@
       </div>
 
       <div class="navbar-end">
-        <a href="#" class="navbar-item is-secondary"> Features</a>
-        <a href="#" class="navbar-item is-secondary"> Pricing</a>
-        <a
-          href="#"
-          class="navbar-item is-secondary modal-trigger"
-          data-modal="auth-modal"
-        >
-          Log in
-        </a>
-        <a class="navbar-item">
-          <span class="button signup-button secondary-btn raised">
-            Sign up
-          </span>
-        </a>
+        <NavbarMenu />
       </div>
     </div>
   </div>

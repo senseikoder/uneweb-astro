@@ -10,9 +10,14 @@ export function insertBgImages() {
   if (typeof targets != "undefined" && targets != null) {
     for (var i = 0, len = targets.length; i < len; i++) {
       let bgUrl = targets[i].getAttribute("data-background");
+      let bgUrlMob = targets[i].getAttribute("data-background-mobile");
+      let bgPos = targets[i].getAttribute("data-position");
       targets[i].style.backgroundSize = "cover";
-      targets[i].style.backgroundRepeat = "no-repeat";
+      targets[i].style.backgroundPosition = bgPos;
       targets[i].style.backgroundImage = `url(${bgUrl})`;
+      if (window.innerWidth <= 768 && bgUrlMob) {
+        targets[i].style.backgroundImage = `url(${bgUrlMob})`;
+      }
     }
   }
 }

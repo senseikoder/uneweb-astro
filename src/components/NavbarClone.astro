@@ -6,7 +6,7 @@ import NavbarMenu from "./NavbarMenu.astro"
   x-data="initNavbar()"
   x-on:scroll.window="scroll()"
   id="navbar-clone"
-  class="navbar is-fresh is-transparent"
+  class="navbar is-fresh is-light"
   role="navigation"
   aria-label="main navigation"
   :class="{
@@ -76,7 +76,8 @@ import NavbarMenu from "./NavbarMenu.astro"
       }"
     >
       <div class="navbar-start">
-        <a @click="openSidebar()" class="navbar-item is-hidden-mobile">
+        <a @click="$store.app.isSiderbarOpen ? closeSidebar() : openSidebar()" 
+          class="navbar-item is-hidden-mobile">
           <div
             id="cloned-menu-icon-wrapper"
             class="menu-icon-wrapper"

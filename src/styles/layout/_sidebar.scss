@@ -24,7 +24,7 @@ Sidebar Styles
     transform-origin: 0 0;
 
     path {
-      stroke: $secondary;
+      stroke: $dark;
       stroke-width: 40px;
       stroke-linecap: round;
       stroke-linejoin: round;
@@ -45,6 +45,7 @@ Sidebar Styles
         stroke-dashoffset: 6993.11px;
         stroke-dasharray: 3496.56px, 3576.56px, 240px;
       }
+
     }
   }
 
@@ -130,8 +131,8 @@ Sidebar Styles
       cursor: pointer;
 
       &:hover {
-        stroke: $secondary;
-        color: $secondary;
+        stroke: $primary;
+        color: $primary;
         transform: rotate(180deg);
       }
     }
@@ -194,7 +195,7 @@ Sidebar Styles
           }
 
           > ul {
-            //display: none;
+            // display: none;
           }
 
           ul {

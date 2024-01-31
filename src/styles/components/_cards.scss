@@ -13,8 +13,8 @@ Cards and Card content styles
 
 .feature-card {
   width: 100%;
-  background-color: #fff;
-  border-radius: 3px;
+  background-color: $smoke-white;
+  border-radius: 5px;
   margin: 0 auto;
   padding: 2.5rem;
 
@@ -28,8 +28,8 @@ Cards and Card content styles
   .card-icon {
     img {
       display: block;
-      height: 80px;
-      width: 80px;
+      height: 64px;
+      width: 64px;
       margin: 30px auto;
     }
   }
@@ -39,7 +39,7 @@ Cards and Card content styles
     margin: 0 auto;
 
     p {
-      color: $muted-grey;
+      color: $medium-grey;
     }
   }
 
@@ -54,6 +54,10 @@ Cards and Card content styles
 
   &.is-bordered {
     border: 1px solid $fade-grey;
+  }
+
+  &.raised {
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.2);
   }
 }
 

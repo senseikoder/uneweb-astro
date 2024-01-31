@@ -1,17 +1,16 @@
 {
-  "name": "fresh",
-  "version": "5.2.0",
-  "description": "Fresh - Bulma + Alpine JS landing page",
+  "name": "uneweb",
+  "version": "2.0.0",
+  "description": "Uneweb - Bulma + Alpine + Astro",
   "type": "module",
   "private": true,
   "author": {
-    "name": "cssninjaStudio <hello@cssninja.io> (https://cssninja.io)"
+    "name": "eFrank (https://efrank.xyz)"
   },
   "engines": {
     "node": ">=18",
     "pnpm": ">=8"
   },
-  "license": "SEE LICENSE IN LICENSE.md",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
@@ -29,11 +28,7 @@
     "astro": "3.1.0",
     "bulma": "0.9.4",
     "bulma-css-vars": "0.8.0",
-    "fuse.js": "6.6.2",
-    "js-datepicker": "5.18.2",
-    "lozad": "1.16.0",
-    "moment": "2.29.4",
-    "notyf": "3.10.0",
+    "flickity": "^2.3.0",
     "plyr": "3.7.8",
     "sass": "1.67.0",
     "simplebar": "6.2.5"

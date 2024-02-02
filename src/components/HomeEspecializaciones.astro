@@ -1,46 +1,28 @@
-<section class="section px-0">
-   <div class="container is-fluid">
+---
+const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+---
+
+<section class="section">
+   <div class="container is-fullhd">
       <div class="title-wrapper has-text-centered">
-         <h2 class="title">Nuestros Diplomados</h2>
+         <h2 class="title">También puedes especializarte</h2>
       </div>
+
       <div class="content-wrapper">
          <!-- Start Carousel -->
          <div class="especial-carousel">
-            <div class="item-carousel">
-               <figure class="image">
-                  <img src="/img/especializaciones/1.jpg" alt="" />
-               </figure>
-            </div>
 
-            <div class="item-carousel">
-               <figure class="image">
-                  <img src="/img/especializaciones/1.jpg" alt="" />
-               </figure>
-            </div>
+               {
+                  items.map((item) => (
+                     <div class="item-carousel">
+                        <figure class="image">
+                           <img src={`/img/especializaciones/${item}.webp`} alt="/" />
+                        </figure>
+                     </div>
+                  ))
+               }
+   
 
-            <div class="item-carousel">
-               <figure class="image">
-                  <img src="/img/especializaciones/1.jpg" alt="" />
-               </figure>
-            </div>
-
-            <div class="item-carousel">
-               <figure class="image">
-                  <img src="/img/especializaciones/1.jpg" alt="" />
-               </figure>
-            </div>
-
-            <div class="item-carousel">
-               <figure class="image">
-                  <img src="/img/especializaciones/1.jpg" alt="" />
-               </figure>
-            </div>
-
-            <div class="item-carousel">
-               <figure class="image">
-                  <img src="/img/especializaciones/1.jpg" alt="" />
-               </figure>
-            </div>
          </div>
          <!-- End Carousel Services -->
       </div>
@@ -50,49 +32,27 @@
 <script>
    import Flickity from "flickity";
 
-   document.addEventListener('astro:page-load', () => {
-		let flkty = new Flickity(".especial-carousel", {
-			draggable: true,
-			contain: true,
-			freeScroll: true,
-			wrapAround: true,
-		});
-	});
+   document.addEventListener("astro:page-load", () => {
+      let flkty = new Flickity(".especial-carousel", {
+         draggable: true,
+         contain: true,
+         freeScroll: true,
+         wrapAround: true,
+         pageDots: false
+      });
+   });
 </script>
 
-<style is:global>
-      .especial-carousel:hover .flickity-button {
-      opacity: 1;
-   }
-
-   .flickity-button {
-      opacity: 0;
-      transition: all .3s;
-   }
-</style>
-
 <style>
-
-   
    .image img {
       border-radius: 6px;
    }
 
-   
    .item-carousel {
       width: 100%;
       margin-right: 20px;
       margin-bottom: 20px;
    }
-   
-   .feature-card {
-      height: auto;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-   }
-
-
 
    @media screen and (min-width: 768px) and (max-width: 1344px) {
       .item-carousel {

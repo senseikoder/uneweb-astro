@@ -1,0 +1,109 @@
+---
+const cursos = [
+   {
+      nombre: "Tutorial Programación",
+      img: "/img/tutoriales/1.jpg",
+   },
+   {
+      nombre: "Tutorial Diseño Digital",
+      img: "/img/tutoriales/2.jpg",
+   },
+   {
+      nombre: "Tutorial de Mercadeo",
+      img: "/img/tutoriales/3.jpg",
+   },
+   {
+      nombre: "Tutorial de Java",
+      img: "/img/tutoriales/4.jpg",
+   },
+   {
+      nombre: "Tutorial de Webmaster",
+      img: "/img/tutoriales/5.jpg",
+   },
+];
+---
+
+<section class="section is-medium">
+   <div class="container">
+      <div class="has-text-centered">
+         <h2 class="title">Tutoriales</h2>
+         <h3 class="subtitle">En Venta</h3>
+      </div>
+
+      <div class="content-wrapper">
+         <div class="tutos-carousel">
+            {
+               cursos.map((item) => (
+                  <div class="item-carousel">
+                     <div class="card">
+                        <div class="card-image">
+                           <figure class="image is-5by3">
+                              <img src={item.img} alt="" />
+                           </figure>
+                        </div>
+                        <div class="card-content">
+                           <div class="content">
+                              <h3 class="title is-5">{item.nombre}</h3>
+
+                              <p class="is-size-7 has-text-grey">
+                                 <span class="icon-text">
+                                    <span class="icon">
+                                       <i
+                                          class="iconify"
+                                          data-icon="fa6-solid:file-lines"
+                                       />
+                                    </span>
+                                    <span>Formato Digital</span>
+                                 </span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="card-footer has-background-light">
+                           <a href="#" class="card-footer-item">
+                              Ver más
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               ))
+            }
+         </div>
+      </div>
+   </div>
+</section>
+
+<script>
+   import Flickity from "flickity";
+
+   document.addEventListener("astro:page-load", () => {
+      let flkty = new Flickity(".tutos-carousel", {
+         draggable: true,
+         contain: true,
+         freeScroll: true,
+         wrapAround: true,
+      });
+   });
+</script>
+
+<style>
+   .image img {
+      border-radius: 6px;
+   }
+
+   .item-carousel {
+      width: 100%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1151px) {
+      .item-carousel {
+         width: 33%;
+      }
+   }
+   @media screen and (min-width: 1152px) {
+      .item-carousel {
+         width: 25%;
+      }
+   }
+</style>

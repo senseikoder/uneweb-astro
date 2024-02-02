@@ -3,8 +3,9 @@ Fresh Footer
 ========================================================================== */
 
 footer.footer-dark {
-  background: $blue-grey;
-  color: $white;
+  background: #c0cde0;
+  color: $blue-grey;
+  font-size: .9rem;
 
   .columns {
     margin-top: 35px;
@@ -20,7 +21,7 @@ footer.footer-dark {
     .footer-header {
       h3 {
         font-weight: 500;
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         text-transform: uppercase;
         letter-spacing: 1px;
         margin-bottom: 20px;
@@ -29,32 +30,35 @@ footer.footer-dark {
 
     .link-list {
       line-height: 40px;
-      font-size: 1.1rem;
+      font-size: .95rem;
 
       a {
-        color: $light-blue-grey;
+        color: $blue-grey;
         font-weight: 400;
         transition: all 0.5s;
 
         &:hover {
-          color: $smoke-white;
+          color: $secondary;
         }
       }
     }
 
-    .level-item {
+
       .icon {
-        color: $secondary;
-        transition: all 0.5s;
+        color: $primary;
+        transition: all 0.25s;
+        width: auto;
+        height: auto;
+        margin-right: .25rem;
 
         .iconify {
-          font-size: 1.25rem;
+          font-size: 2rem;
         }
 
         &:hover {
-          color: $smoke-white;
+          color: $secondary;
         }
       }
-    }
+    
   }
 }

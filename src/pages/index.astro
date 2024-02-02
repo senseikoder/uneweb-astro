@@ -4,6 +4,8 @@ import Navbar from "../components/Navbar.astro";
 import NavbarClone from "../components/NavbarClone.astro";
 import HomeDiplomados from "../components/HomeDiplomados.astro";
 import HomeEspecializaciones from "../components/HomeEspecializaciones.astro";
+import HomeCursos from "../components/HomeCursos.astro";
+import HomeTutoriales from "../components/HomeTutoriales.astro";
 const title = "Cursos onliney presencial :: Diplomados y Maestrías";
 import "flickity/dist/flickity.min.css";
 ---
@@ -11,7 +13,8 @@ import "flickity/dist/flickity.min.css";
 <Layout title={title}>
 
 	<!-- Banner Home -->
-	<section class="hero is-medium" data-background="/img/banners/bg-hero-home.webp"
+	<section class="hero is-medium" 
+		data-background="/img/banners/bg-hero-home.webp"
 		data-position="center 30%">
 
 		<Navbar />
@@ -64,188 +67,37 @@ import "flickity/dist/flickity.min.css";
 	<HomeEspecializaciones />
 
 
+	<!-- Bloque Cursos -->
+	<HomeCursos/>
 
-	<section class="section is-medium section-feature-grey">
-		<div class="container">
-			<div class="title-wrapper has-text-centered">
-				<h2 class="title is-2">Awesome Features</h2>
-				<h3 class="subtitle is-5 is-muted">To make you super happy</h3>
-				<div class="divider is-centered"></div>
-			</div>
 
-			<div class="columns is-vcentered side-feature mt-60">
-				<div class="column is-4 is-offset-2">
-					<h3 class="title is-3 mb-10 is-title-reveal">
-						Connect with people
-					</h3>
-					<p class="subtitle is-5 is-muted">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum
-						audissem Antiochum, Brute, ut solebam, cum M. Quae
-						diligentissime contra Aristonem dicuntur a Chryippo.
-					</p>
-				</div>
+	<section class="section section-light-grey">
+		<div class="container mt-40 mb-40">	
+			<div class="columns is-vcentered is-centered side-feature">
 				<div class="column is-5">
-					<img src="/img/illustrations/features/feature-1.png" alt="" />
-				</div>
-			</div>
-
-			<div class="columns is-vcentered side-feature mt-60">
-				<div class="column is-5 is-offset-1">
-					<img src="/img/illustrations/features/feature-2.png" alt="" />
-				</div>
-				<div class="column is-4 is-offset-1">
 					<h3 class="title is-3 mb-10 is-title-reveal">
-						Collaborate easily
+						Sigue los pasos del éxito de tu carrera ahora
 					</h3>
-					<p class="subtitle is-5 is-muted">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum
-						audissem Antiochum, Brute, ut solebam, cum M. Quae
-						diligentissime contra Aristonem dicuntur a Chryippo.
-					</p>
+					<div class="buttons">
+						<a href="/como-inscribirse" class="button primary-btn raised is-large">Inscríbete Ya</a>
+						<a href="/formas-de-pago" class="button accent-btn raised is-large">Formas de Pago</a>
+					</div>
+				</div>
+				<div class="column is-4">
+					<figure class="image is-2by2">
+						<img src="/img/pics/tech.webp" alt="" width="300" height="300" />
+					</figure>
 				</div>
 			</div>
+
+			
 		</div>
 	</section>
 
-	<section class="section section-feature-grey is-medium">
-		<div class="container">
-			<div class="columns is-vcentered app-side">
-				<div class="column is-4 is-offset-1">
-					<h3 class="title is-3 is-spaced is-title-reveal">
-						An intuitive app
-					</h3>
-					<p class="subtitle is-5 is-muted">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum
-						audissem Antiochum, Brute, ut solebam, cum M. Quae
-						diligentissime contra Aristonem dicuntur a Chryippo.
-					</p>
-				</div>
-				<div class="column is-7">
-					<div class="has-text-centered">
-						<img
-							class="side-image"
-							src="/img/illustrations/workers.svg"
-						/>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
-	<section
-		class="section is-medium has-background-image"
-		data-background="https://source.unsplash.com/g30P1zcOzXo/1600x900"
-		data-color="#4FC1EA"
-		data-color-opacity=".1"
-	>
-		<div class="overlay"></div>
-		<div class="container">
-			<div class="title-wrapper has-text-centered">
-				<h2 class="title is-2 light-text is-spaced">Our clients love us</h2>
-				<h3 class="subtitle is-5 light-text">
-					Look at what they say about us
-				</h3>
-			</div>
+	<!-- Bloque Tutoriales -->
 
-			<div class="testimonials content-wrapper">
-				<div class="columns is-vcentered">
-					<div class="column is-4">
-						<figure class="testimonial">
-							<blockquote>
-								Lorem ipsum dolor sit amet, elit deleniti dissentias quo
-								eu, hinc minim appetere te usu, ea case duis scribentur
-								has. Duo te consequat elaboraret, has quando suavitate
-								at.
-							</blockquote>
-							<div class="author">
-								<img src="/img/illustrations/faces/1.png" alt="" />
-								<div>
-									<h5>Irma Walters</h5>
-									<span>Accountant</span>
-								</div>
-							</div>
-						</figure>
-					</div>
-					<div class="column is-4">
-						<figure class="testimonial">
-							<blockquote>
-								Lorem ipsum dolor sit amet, elit deleniti dissentias quo
-								eu, hinc minim appetere te usu, ea case duis scribentur
-								has. Duo te consequat elaboraret, has quando suavitate
-								at.
-							</blockquote>
-							<div class="author">
-								<img src="/img/illustrations/faces/2.png" alt="" />
-								<div>
-									<h5>John Bradley</h5>
-									<span>Financial Analyst</span>
-								</div>
-							</div>
-						</figure>
-					</div>
-					<div class="column is-4">
-						<figure class="testimonial">
-							<blockquote>
-								Lorem ipsum dolor sit amet, elit deleniti dissentias quo
-								eu, hinc minim appetere te usu, ea case duis scribentur
-								has. Duo te consequat elaboraret, has quando suavitate
-								at.
-							</blockquote>
-							<div class="author">
-								<img src="/img/illustrations/faces/3.png" alt="" />
-								<div>
-									<h5>Gary Blackman</h5>
-									<span>HR Manager</span>
-								</div>
-							</div>
-						</figure>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
+	<HomeTutoriales/>
 
-	<!-- <div id="auth-modal" class="modal">
-    <div class="modal-background modal-dismiss"></div>
-    <div class="modal-content">
-      <div class="flex-card auth-card">
-        <div class="tabs-wrapper">
-          <div class="tabs">
-            <ul>
-              <li class="is-active" data-tab="login-tab"><a>Login</a></li>
-              <li data-tab="register-tab"><a>Register</a></li>
-            </ul>
-          </div>
-          <div id="login-tab" class="tab-content is-active">
-            <div class="field">
-              <label>Username</label>
-              <div class="control">
-                <input
-                  type="text"
-                  class="input is-medium"
-                  placeholder="Enter username"
-                />
-              </div>
-            </div>
-            <div class="field">
-              <label>Password</label>
-              <div class="control">
-                <input
-                  type="password"
-                  class="input is-medium"
-                  placeholder="Enter password"
-                />
-              </div>
-            </div>
 
-            <a class="button is-fullwidth secondary-btn is-rounded raised"
-              >Log in</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="modal-close is-large modal-dismiss" aria-label="close"
-    ></button>
-  </div> -->
 </Layout>

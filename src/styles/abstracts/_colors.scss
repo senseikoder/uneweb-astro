@@ -2,16 +2,17 @@
 Color variables
 ========================================================================== */
 
-$fullhd-enabled: false;
+$fullhd-enabled: true;
 $body-size: 14px;
 
 $white: #fff;
+$white-trans: #ffffffa3;
 $smoke-white: #fcfcfc;
 $grey-white: #f2f2f2;
 
-$primary: #4FC1EA;
-$secondary: #F39200;
-$accent: #00efb7;
+$primary: #369FDB;
+$secondary: #d57623;
+$accent: #06cd70;
 
 $fade-grey: #ededed;
 $light-grey: #EFF4F7;
@@ -37,3 +38,5 @@ $font-heading: 'Nunito Variable', sans-serif !important;
 
 //Shadow
 $light-shadow: -1px 3px 15px 0 rgba(0, 0, 0, 0.06);
+
+$card-radius: .5rem;

@@ -12,7 +12,6 @@ export function insertBgImages() {
       let bgUrl = targets[i].getAttribute("data-background");
       let bgUrlMob = targets[i].getAttribute("data-background-mobile");
       let bgPos = targets[i].getAttribute("data-position");
-      targets[i].style.backgroundSize = "cover";
       targets[i].style.backgroundPosition = bgPos;
       targets[i].style.backgroundImage = `url(${bgUrl})`;
       if (window.innerWidth <= 768 && bgUrlMob) {

@@ -168,3 +168,28 @@ body {
   /* Firefox 18- */
   color: $placeholder;
 }
+
+
+.flickity-button {
+  opacity: .15;
+  background: $white-trans !important;
+  transition: all 0.3s;
+}
+
+.flickity-enabled:hover .flickity-button {
+  opacity: 1;
+}
+
+.flickity-prev-next-button {
+  width: 30px !important;
+  height: 30px !important;
+}
+
+/* position outside */
+.flickity-prev-next-button.previous {
+  left: -40px !important;
+}
+
+.flickity-prev-next-button.next {
+  right: -40px !important;
+}

@@ -30,10 +30,10 @@ Alpine.start()
 import { insertBgImages } from "./libs/utils/utils";
 import "./libs/components";
 
-document.onreadystatechange = function () {
-  if (document.readyState == "complete") {
+document.addEventListener('astro:page-load', () => {
 
-    //Switch backgrounds
-    const changeBackgrounds = insertBgImages();
-  }
-};
+  //Switch backgrounds
+  insertBgImages()
+  // insertOverlays()
+  // initModals()
+});

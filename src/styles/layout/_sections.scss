@@ -64,6 +64,11 @@ h6 {
     width: 100%;
     z-index: 0;
   }
+
+    .item-list {
+      list-style-type: disc;
+      margin-left: 2rem;
+    }
 }
 
 //Titles
@@ -156,4 +161,6 @@ h6 {
     color: $muted-grey;
   }
 }
+
+
 

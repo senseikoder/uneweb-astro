@@ -1,0 +1,33 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+const title = "Diplomado de Programación :: Uneweb";
+import "plyr/dist/plyr.css";
+---
+
+<Layout title={title}>
+   <!-- Banner Home -->
+   <section class="section is-medium">
+      <div class="container">
+         <div class="columns is-centered">
+            <div class="column is-6">
+
+               <div class="block has-text-centered">
+                  <a href="/" class="button primary-btn btn-outlined is-large">Volver al sitio</a>
+               </div>
+               
+               <figure class="image">
+                  <img src="/img/404.webp" alt="">
+               </figure>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   
+</Layout>
+
+<script>
+   import Plyr from "plyr";
+
+   const player = new Plyr("#player");
+</script>

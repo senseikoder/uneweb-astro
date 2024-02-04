@@ -12,7 +12,7 @@ Sidebar Styles
   pointer-events: none;
   transition: 0.1s;
 
-  > * {
+  >* {
     pointer-events: none !important;
   }
 
@@ -111,6 +111,7 @@ Sidebar Styles
 
     img {
       height: 32px;
+      filter: brightness(200%);
     }
 
     a {
@@ -131,8 +132,8 @@ Sidebar Styles
       cursor: pointer;
 
       &:hover {
-        stroke: $primary;
-        color: $primary;
+        stroke: $secondary;
+        color: $secondary;
         transform: rotate(180deg);
       }
     }
@@ -175,26 +176,27 @@ Sidebar Styles
           cursor: pointer;
 
           &.active {
-            > a {
+            >a {
               span {
                 color: $secondary;
 
-                &:after {
-                  color: $secondary;
-                  -moz-transform: rotate(90deg);
-                  -o-transform: rotate(90deg);
-                  -webkit-transform: rotate(90deg);
-                  transform: rotate(90deg);
+                &.icon {
+
+                  &:after {
+                    color: $secondary;
+                    transform: rotate(135deg);
+                    content: "+";
+                  }
                 }
               }
             }
           }
 
-          > a {
+          >a {
             pointer-events: none;
           }
 
-          > ul {
+          >ul {
             // display: none;
           }
 
@@ -218,16 +220,16 @@ Sidebar Styles
           }
 
           span {
-            &.material-icons {
+            &.icon {
               &:after {
                 position: absolute;
                 top: 15px;
                 right: 30px;
-                content: "\e5cc";
+                content: "+";
                 color: $white;
                 transition: all 0.5s;
                 font-weight: 200 !important;
-                font-size: 1.6rem;
+                font-size: 1.4rem;
               }
             }
           }

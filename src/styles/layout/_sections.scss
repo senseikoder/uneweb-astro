@@ -65,10 +65,25 @@ h6 {
     z-index: 0;
   }
 
-    .item-list {
-      list-style-type: disc;
-      margin-left: 2rem;
+  .link-list {
+    line-height: 2rem;
+    margin-left: 2rem;
+
+    a {
+      color: $blue-grey;
+      font-weight: 400;
+      transition: all 0.3s;
+
+      &:hover {
+        color: $secondary;
+      }
     }
+  }
+
+  .item-list {
+    list-style-type: disc;
+    margin-left: 2rem;
+  }
 }
 
 //Titles
@@ -102,7 +117,7 @@ h6 {
 
 //Wrapper
 .content-wrapper {
-  padding: 60px 0;
+  padding: 2rem 0;
 }
 
 //Side feqtures
@@ -161,6 +176,3 @@ h6 {
     color: $muted-grey;
   }
 }
-
-
-

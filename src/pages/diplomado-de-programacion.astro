@@ -1,7 +1,51 @@
 ---
 import Layout from "../layouts/Diplomados.astro";
+import CTA from "../components/CTA.astro";
+import AsideInterno from "../components/AsideInterno.astro";
 const title = "Diplomado de Programación :: Uneweb";
-import 'plyr/dist/plyr.css'
+import "plyr/dist/plyr.css";
+const contenido = [
+   {
+      curso: "Lógica de Programación",
+      link: "/logica-de-programacion",
+   },
+   {
+      curso: "HTML 5 Nivel 1",
+      link: "/html",
+   },
+   {
+      curso: "HTML 5 Nivel 2",
+      link: "/html-5",
+   },
+   {
+      curso: "PHP Niveles I - II - III - IV",
+      link: "/curso-de-php",
+   },
+   {
+      curso: "MySQL",
+      link: "/mysql",
+   },
+   {
+      curso: "PostgreSQL",
+      link: "/curso-de-postgre-sql",
+   },
+   {
+      curso: "JavaScript",
+      link: "/curso-de-javascript",
+   },
+   {
+      curso: "JavaScript",
+      link: "/curso-de-jquery",
+   },
+   {
+      curso: "JavaScript",
+      link: "/curso-de-python",
+   },
+   {
+      curso: "Proyecto Especializado en programación",
+      link: "#",
+   },
+];
 ---
 
 <Layout title={title}>
@@ -106,90 +150,34 @@ import 'plyr/dist/plyr.css'
                         </div>
                      </div>
 
-                     
+                     <h3 class="title is-4">Contenido del Diplomado</h3>
+
+                     <ul class="link-list">
+                        {
+                           contenido.map((item) => (
+                              <li>
+                                 <a href={item.link} class="icon-text">
+                                    <div class="icon">
+                                       <i class="iconify" data-icon="fa6-solid:circle-check" />
+                                    </div>
+                                    <span class="has-text-weight-medium is-size-5">{item.curso}</span>
+                                 </a>
+                              </li>
+                           ))
+                        }
+                     </ul>
                   </div>
                </div>
             </div>
-            <div class="column is-4 aside-interno">
-               <div class="card">
-                  <div class="card-image">
-                     <figure class="image is 5by3 modal-trigger">
-                        <img
-                           src="/img/pics/diplomado-programacion.webp"
-                           alt=""
-                        />
-                     </figure>
-                  </div>
-                  <div class="card-content">
-                     <div class="buttons">
-                        <a
-                           href="/formas-de-pago"
-                           class="button primary-btn is-fullwidth raised is-large"
-                           >Formas de Pago</a
-                        >
-                        <a
-                           href="/docs/Contenido-del-Diplomado-de-Programaci%C3%B3n-Web.pdf"
-                           class="button accent-btn is-fullwidth raised is-large"
-                           >Contenido del Diplomado</a
-                        >
-                     </div>
 
-                     <div class="content">
-                        <p class="is-size-5">Incluye:</p>
-
-                        <div class="item-list mb-5">
-                           <li>Acceso al aula virtual</li>
-                           <li>Material descargable</li>
-                           <li>Clases en vídeos y en vivo o presencial</li>
-                           <li>Profesor designado</li>
-                           <li>Asignaciones</li>
-                           <li>Certificado por el M.E</li>
-                        </div>
-
-                        <h3 class="subtitle">Solicita información</h3>
-
-                        <iframe
-                           loading="lazy"
-                           width="540"
-                           height="480"
-                           src="https://my.sendinblue.com/users/subscribe/js_id/2uqa0/id/1"
-                           allowfullscreen=""
-                           style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"
-                        ></iframe>
-                     </div>
-                  </div>
-               </div>
-            </div>
+            <AsideInterno 
+               urlDoc="/docs/Contenido-del-Diplomado-de-Programaci%C3%B3n-Web.pdf" 
+               urlPic="/img/pics/diplomado-programacion.webp" />
          </div>
       </div>
    </section>
 
-   <section class="section has-background-grey-lighter">
-      <div class="container mt-20 mb-20">
-         <div class="columns is-vcentered is-centered side-feature">
-            <div class="column is-5">
-               <h3 class="title is-3 mb-10 is-title-reveal">
-                  Sigue los pasos del éxito de tu carrera ahora
-               </h3>
-               <div class="buttons">
-                  <a
-                     href="/como-inscribirse"
-                     class="button primary-btn raised is-large">Inscríbete Ya</a
-                  >
-                  <a
-                     href="/formas-de-pago"
-                     class="button accent-btn raised is-large">Formas de Pago</a
-                  >
-               </div>
-            </div>
-            <div class="column is-4">
-               <figure class="image is-4by3">
-                  <img src="/img/pics/cta-home.png" alt="" />
-               </figure>
-            </div>
-         </div>
-      </div>
-   </section>
+   <CTA />
 </Layout>
 
 <script>
@@ -199,31 +187,7 @@ import 'plyr/dist/plyr.css'
 </script>
 
 <style>
-
    .main {
-      overflow: unset !important;
-   }
-
-   .aside-interno {
-      position: relative;
-      margin-top: -30rem;
-   }
-
-   .aside-interno .card {
-      position: sticky;
-   }
-
-
-   .aside-interno figure {
-      cursor: pointer;
-   }
-
-   .aside-interno img {
-      transition: all .3s;
-      filter: grayscale(50%);
-   }
-
-   .aside-interno img:hover {
-      filter: grayscale(0%);
+      overflow: visible !important;
    }
 </style>

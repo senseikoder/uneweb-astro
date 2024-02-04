@@ -1,0 +1,91 @@
+---
+const { urlPic, urlDoc } = Astro.props
+---
+
+<div class="column is-4 aside-interno">
+   <div class="card">
+      <div class="card-image">
+         <figure class="image is 5by3 modal-trigger">
+            <img src={urlPic} alt="" />
+         </figure>
+      </div>
+      <div class="card-content">
+         <div class="buttons">
+            <a
+               href="/formas-de-pago"
+               class="button primary-btn is-fullwidth raised is-large"
+               >Formas de Pago</a
+            >
+            <a
+               href={urlDoc}
+               class="button accent-btn is-fullwidth raised is-large"
+               >Contenido del Diplomado</a
+            >
+         </div>
+
+         <div class="content">
+            <h3 class="subtitle">Incluye:</h3>
+
+            <div class="item-list mb-5">
+               <li>Acceso al aula virtual</li>
+               <li>Material descargable</li>
+               <li>Clases en vídeos y en vivo o presencial</li>
+               <li>Profesor designado</li>
+               <li>Asignaciones</li>
+               <li>Certificado por el M.E</li>
+            </div>
+
+            <h3 class="subtitle">Solicita información</h3>
+
+            <iframe
+               loading="lazy"
+               width="540"
+               height="480"
+               src="https://my.sendinblue.com/users/subscribe/js_id/2uqa0/id/1"
+               allowfullscreen=""
+               style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"
+            ></iframe>
+         </div>
+      </div>
+   </div>
+</div>
+
+
+<style>
+
+   .aside-interno .card {
+      margin-top: -30rem;
+      transition: all 0.33s;
+   }
+
+   .is-sticky {
+      margin-top: 0 !important;
+   }
+
+   .aside-interno figure {
+      cursor: pointer;
+   }
+
+   .aside-interno img {
+      transition: all 0.3s;
+      filter: grayscale(50%);
+   }
+
+   .aside-interno img:hover {
+      filter: grayscale(0%);
+   }
+</style>
+
+<script>
+   window.addEventListener("scroll", function () {
+      let stickyCard = document.querySelector(".aside-interno .card");
+      let banner = document.querySelector(".banner");
+      let offsetTop = window.innerHeight - banner.clientHeight;
+
+      if (window.scrollY < offsetTop / 2) {
+         stickyCard.classList.remove("is-sticky");
+      } else {
+         stickyCard.classList.add("is-sticky");
+      }
+   });
+</script>

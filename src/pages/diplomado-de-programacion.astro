@@ -4,6 +4,7 @@ import CTA from "../components/CTA.astro";
 import AsideInterno from "../components/AsideInterno.astro";
 const title = "Diplomado de Programación :: Uneweb";
 import "plyr/dist/plyr.css";
+import ModalVideo from "../components/ModalVideo.astro";
 const contenido = [
    {
       curso: "Lógica de Programación",
@@ -158,9 +159,14 @@ const contenido = [
                               <li>
                                  <a href={item.link} class="icon-text">
                                     <div class="icon">
-                                       <i class="iconify" data-icon="fa6-solid:circle-check" />
+                                       <i
+                                          class="iconify"
+                                          data-icon="fa6-solid:circle-check"
+                                       />
                                     </div>
-                                    <span class="has-text-weight-medium is-size-5">{item.curso}</span>
+                                    <span class="has-text-weight-medium is-size-5">
+                                       {item.curso}
+                                    </span>
                                  </a>
                               </li>
                            ))
@@ -170,21 +176,19 @@ const contenido = [
                </div>
             </div>
 
-            <AsideInterno 
-               urlDoc="/docs/Contenido-del-Diplomado-de-Programaci%C3%B3n-Web.pdf" 
-               urlPic="/img/pics/diplomado-programacion.webp" />
+            <AsideInterno
+               urlDoc="/docs/Contenido-del-Diplomado-de-Programaci%C3%B3n-Web.pdf"
+               urlPic="/img/pics/diplomado-programacion.webp"
+            />
          </div>
       </div>
    </section>
 
    <CTA />
+
+   <ModalVideo videoID="SfLqiyl3kn8" />
+
 </Layout>
-
-<script>
-   import Plyr from "plyr";
-
-   const player = new Plyr("#player");
-</script>
 
 <style>
    .main {

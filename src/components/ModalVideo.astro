@@ -1,0 +1,27 @@
+---
+const { videoID } = Astro.props;
+---
+
+<div id="video-modal" class="modal animated fadeIn">
+   <div class="modal-background modal-dismiss"></div>
+   <div class="modal-content">
+      <div class="flex-card video-card">
+
+            <div
+               id="player"
+               data-plyr-provider="youtube"
+               data-plyr-embed-id={videoID}
+            >
+            </div>
+
+      </div>
+   </div>
+   <button class="modal-close is-large modal-dismiss" aria-label="close"
+   ></button>
+</div>
+
+<script>
+   import Plyr from "plyr";
+
+   const player = new Plyr("#player");
+</script>

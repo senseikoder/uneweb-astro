@@ -27,13 +27,12 @@ Alpine.store("app", {
 //Start Alpine JS
 Alpine.start()
 
-import { insertBgImages } from "./libs/utils/utils";
+import { insertBgImages, initModals } from "./libs/utils/utils";
 import "./libs/components";
 
 document.addEventListener('astro:page-load', () => {
 
-  //Switch backgrounds
   insertBgImages()
+  initModals()
   // insertOverlays()
-  // initModals()
 });

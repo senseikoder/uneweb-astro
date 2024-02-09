@@ -88,13 +88,14 @@ import "/node_modules/reveal.js/dist/reveal.css";
    import Reveal from "reveal.js";
 
    let deck = new Reveal({
+      height: 400,
       controls: false,
       progress: false,
-      autoSlide: 2000,
+      autoSlide: 5000,
       loop: true,
-      height: 400,
       disableLayout: true,
       transition: "fade",
+      embedded: true 
    });
    deck.initialize();
 </script>

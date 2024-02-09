@@ -1,0 +1,84 @@
+---
+const cursos = [
+   {
+      nombre: "Lógica de Programación",
+      tag: "Programación",
+      img: "/img/cursos/1.webp",
+   },
+   {
+      nombre: "PHP desde Cero",
+      tag: "Programación",
+      img: "/img/cursos/2.webp",
+   },
+   {
+      nombre: "PHotoshop",
+      tag: "Diseño",
+      img: "/img/cursos/3.webp",
+   },
+   {
+      nombre: "HTML + CSS",
+      tag: "Webmaster",
+      img: "/img/cursos/4.webp",
+   },
+];
+---
+
+<section class="section px-0 mb-60">
+   <div class="container">
+      <div class="has-text-centered">
+         <h2 class="title">Cursos relacionados</h2>
+      </div>
+
+      <div class="content-wrapper">
+         <div class="columns">
+            {
+               cursos.map((item) => (
+                  <div class="column">
+                     <div class="card">
+                        <div class="card-image">
+                           <figure class="image is-5by3">
+                              <img src={item.img} alt="" />
+                           </figure>
+                        </div>
+                        <div class="card-content">
+                           <div class="content">
+                              <h3 class="title is-5">{item.nombre}</h3>
+
+                              <p>
+                                 <span class="tag is-primary is-light">
+                                    {item.tag}
+                                 </span>
+                              </p>
+
+                              <p class="is-size-7 has-text-grey">
+                                 <span class="icon-text">
+                                    <span class="icon">
+                                       <i
+                                          class="iconify"
+                                          data-icon="fa6-solid:clock"
+                                       />
+                                    </span>
+                                    <span>15 Horas</span>
+                                 </span>
+                              </p>
+                           </div>
+                        </div>
+                        <div class="card-footer has-background-light">
+                           <a href="#" class="card-footer-item">
+                              Ver más
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               ))
+            }
+         </div>
+      </div>
+   </div>
+</section>
+
+<style>
+   .image img {
+      border-radius: 6px;
+   }
+</style>

@@ -42,7 +42,6 @@ const cursos = [
       img: '/img/cursos/2.webp'
    },
 ]
-const items = [1,2,3,4]
 ---
 
 <section class="section px-0 mb-60">
@@ -53,10 +52,10 @@ const items = [1,2,3,4]
       </div>
 
       <div class="content-wrapper">
-         <div class="columns is-multiline">
+         <div class="cursos-carousel">
             {
                cursos.map((item) => (
-                  <div class="column is-3">
+                  <div class="item-carousel">
                      <div class="card">
                         <div class="card-image">
                            <figure class="image is-5by3">
@@ -95,3 +94,40 @@ const items = [1,2,3,4]
       </div>
    </div>
 </section>
+
+<script>
+   import Flickity from "flickity";
+
+   document.addEventListener("astro:page-load", () => {
+      let flkty = new Flickity(".cursos-carousel", {
+         draggable: true,
+         contain: true,
+         freeScroll: true,
+         // wrapAround: true,
+         pageDots: false
+      });
+   });
+</script>
+
+<style>
+   .image img {
+      border-radius: 6px;
+   }
+
+   .item-carousel {
+      width: 100%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+   }
+
+   @media screen and (min-width: 768px) and (max-width: 1344px) {
+      .item-carousel {
+         width: 33%;
+      }
+   }
+   @media screen and (min-width: 1344px) {
+      .item-carousel {
+         width: 24%;
+      }
+   }
+</style>

@@ -1,0 +1,317 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CTA from "../components/CTA.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Cursos y Diplomado de Excel :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+
+const contenido = [
+   {
+      curso: "Photoshop Nivel I - II",
+      link: "/photoshop",
+   },
+   {
+      curso: "Illustrator Nivel I",
+      link: "#",
+   },
+   {
+      curso: "Diagramación Digital",
+      link: "#",
+   },
+   {
+      curso: "InDesign Nivel I",
+      link: "/curso-de-indesign",
+   },
+   {
+      curso: "Blender 3D  Niveles I - II - III",
+      link: "/curso-de-3d-en-caracas/",
+   },
+   {
+      curso: "After Effects CC Niveles I - II",
+      link: "/after-effects-nivel-1/",
+   },
+   {
+      curso: "Premiere Pro",
+      link: "/premiere/",
+   },
+   {
+      curso: "Animate",
+      link: "/curso-de-animate-cc/",
+   },
+   {
+      curso: "Proyecto especializado en diseño digital",
+      link: "#",
+   },
+];
+
+const urlDoc = "/docs/Contenido_general_del_diplomado_de_excel.pdf";
+const urlPic = "/img/pics/diplomado-excel.webp";
+---
+
+<Layout title={title}>
+   <!-- Banner Home -->
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-diplomados.webp"
+      data-position="center 30%"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Cursos y Diplomado de Excel
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  En estos cursos aprenderás 6 NIVELES de Excel profesional,
+                  Diplomado y cursos totalmente prácticos y completo para
+                  incrementar tus conocimientos, clases en vivo, asesorías con
+                  el profesor.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-8">
+               <div class="card">
+                  <div class="card-content">
+                     <div class="content">
+                        <h3 class="title is-4 mb-10 is-title-reveal">
+                           Clases online clases por zoom, videos tutoriales y
+                           prácticas Clases presenciales de lunes a viernes y
+                           Sabatino
+                        </h3>
+
+                        <p>
+                           Microsoft Excel es uno de los programas del paquete
+                           de Office más utilizados. La potencia de este
+                           software te permitirá realizar tareas automatizadas
+                           de alto nivel, por lo que vas a ahorrar tiempo y
+                           dinero dejando que MS Excel haga el trabajo por ti.
+                           Las empresas están dispuestas a pagar mucho más por
+                           expertos que demuestren que dominan las tablas
+                           dinámmicas y Macros en Excel.
+                        </p>
+
+                        <h4 class="title is-5">
+                           Certificado por el Ministerio de Educación. Código Nº
+                           PR -07-017-11AC
+                        </h4>
+
+                        <p class="has-text-weight-semibold">
+                           Certificado por el Ministerio de Educación. Código Nº
+                           PR -07-017-11AC. Legaliza y apostilla tu certificado.
+                        </p>
+                     </div>
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Duración:</h4>
+
+                           <ul class="item-list">
+                              <li>6 semanas presencial lunes a viernes.</li>
+                              <li>18 sábados presencial sabatino.</li>
+                              <li>3 a 6 meses online.</li>
+                           </ul>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Laboratorios</h4>
+
+                           <ul class="item-list">
+                              <li>Incluye 1 computador por persona.</li>
+                              <li>De 4 a 8 alumnos por salón.</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <hr />
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Certificación:</h4>
+
+                           <p>Registrado en el Ministerio de Educación</p>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Requisitos:</h4>
+
+                           <p>Manejo básico de office e internet.</p>
+                        </div>
+                     </div>
+
+                     <h3 class="title is-4">
+                        Contenido de cada nivel de Excel
+                     </h3>
+
+                     <div class="columns">
+                        <div class="column">
+                           <div class="content">
+                              <h4 class="subtitle is-5">
+                                 1.- Módulo Excel Básico:
+                              </h4>
+
+                              <p>
+                                 Interfaz de Excel – Cinta de opciones y
+                                 pestañas<br />
+                                 Las Hojas de Excel – Qué son y cómo manejarlas<br
+                                 />
+                                 Domina el manejo de Filas y Columnas<br />
+                                 Celdas, rangos y tablas<br />
+                                 Operadores matemáticos en Excel<br />
+                                 Funciones: SUMA, PRODUCTO, PROMEDIO, CONCATENAR,
+                                 etc.<br />
+                                 Funciones: Funciones de Fecha y Hora<br />
+                                 Formato condicional básico<br />
+                                 Listas desplegables<br />
+                                 Aplicar Filtros de Excel<br />
+                                 Referencias relativas y absolutas
+                              </p>
+
+                              <h4 class="subtitle is-5">
+                                 2.- Excel Intermedio I:
+                              </h4>
+                              <p>
+                                 Creación de gráficos<br />
+                                 Gráfico de columnas y barras<br />
+                                 Gráficos circulares<br />
+                                 Gráficos de dispersión<br />
+                                 Gráficos de líneas y de áreas<br />
+                                 Gráficos estadísticos – Histograma (Pareto), Caja
+                                 y bigotes<br />
+                                 Tablas Dinámicas<br />
+                                 Introducción a las Tablas Dinámicas<br />
+                                 Opciones de configuración de Tablas dinámicas<br
+                                 />
+                                 Tablas Dinámicas – Configuración del campo de valor<br
+                                 />
+                                 Formato Condicional en Tablas Dinámicas<br />
+                                 Manejo de Gráficos con Tablas Dinámicas<br />
+                                 Campos calculados en Tablas Dinámicas
+                              </p>
+
+                              <h4 class="subtitle is-5">
+                                 3.- Excel Intermedio II:
+                              </h4>
+                              <p>
+                                 Conocimientos técnicos<br />
+                                 Configuración de impresión de hojas en Excel<br
+                                 />
+                                 Tipos de errores en Excel (Y cómo corregirlos)<br
+                                 />
+                                 Combinación de Correspondencia en Excel<br />
+                                 Consolidación de Datos en Excel<br />
+                                 Funciones Lógicas<br />
+                                 Introducción al curso – Tipos de Funciones de Excel<br
+                                 />
+                                 Función SI con varias condiciones<br />
+                                 Función SI (Y-O) – Teoría y Aplicaciones<br />
+                                 Función SI.CONJUNTO para varias condiciones<br
+                                 />
+                                 Función SI.ERROR – Teoría y Aplicaciones
+                              </p>
+                           </div>
+                        </div>
+                        <div class="column">
+                           <div class="content">
+                              <h4 class="subtitle is-5">
+                                 4.- Excel Avanzado I
+                              </h4>
+                              <p>
+                                 Funciones de Búsqueda y Referencia<br />
+                                 Función BUSCARV – Teoría y Aplicaciones<br />
+                                 Función BUSCARV con listas desplegables dinámicas<br
+                                 />
+                                 Función BUSCARV con dos o más criterios de búsqueda<br
+                                 />
+                                 Función SI anidada con BUSCARV – Teoría y aplicaciones<br
+                                 />
+                                 Función BUSCARH – Teoría y Aplicaciones<br />
+                                 Combinación de Funciones<br />
+                                 Función SUMAR.SI.CONJUNTO – ¿Para qué sirve?<br
+                                 />
+                                 Función CONTAR.SI.CONJUNTO<br />
+                                 Funciones de FECHA – HOY, AHORA, AÑO, MES y DÍA<br
+                                 />
+                                 Solver en Excel: Aplicaciones y ejemplos<br />
+                                 Controles de formulario en Excel
+                              </p>
+
+                              <!-- --*-- -->
+
+                              <h4 class="subtitle is-5">
+                                 5.- Excel Avanzado II:
+                              </h4>
+                              <p>
+                                 Creación de un Inventario Básico<br />
+                                 Inventario de Entradas y Salidas – Parte 1 [Plantillas
+                                 disponibles]<br />
+                                 Inventario de Entradas y Salidas – Parte 2 [Código
+                                 VBA Descargable]<br />
+                                 Creación de un Dashboard<br />
+                                 Creación de Dashboards [Plantilla con los datos]<br
+                                 />
+                                 Filtros Avanzados<br />
+                                 Filtros Avanzados en Excel – Teoría y ejercicios<br
+                                 />
+                                 Funciones de Bases de Datos<br />
+                                 Funciones de Bases de Datos<br />
+                                 Función BDSUMA<br />
+                                 Función BDCONTAR<br />
+                                 Función BDPROMEDIO<br />
+                                 Función BDMIN<br />
+                                 Función BDMAX
+                              </p>
+
+                              <!-- -- -->
+
+                              <h4 class="subtitle is-5">
+                                 6.- Excel Introducción a las Macros Grabadas:
+                              </h4>
+
+                              <p>
+                                 Presentación de Macros. ¿Qué son?<br />
+                                 Grabar una Macro<br />
+                                 Reproducir una Macro<br />
+                                 Seguridad en las Macros<br />
+                                 Referencias<br />
+                                 Ejemplo de referencias absolutas<br />
+                                 Ejemplo de referencias relativas<br />
+                                 Introducción VBA<br />
+                                 Entorno VBA<br />
+                                 Insertar una función VBA<br />
+                                 Opciones del editor<br />
+                                 Funciones Excel<br />
+                                 Referencias a las celdas
+                              </p>
+                           </div>
+                        </div>
+                     </div>
+                     <p class="has-text-centered">
+                        <strong>
+                           Entrega del Proyecto para obtener el Diplomado de
+                           Excel
+                        </strong>
+                     </p>
+                     <br>
+                  </div>
+               </div>
+            </div>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} />
+         </div>
+      </div>
+   </section>
+
+   <CTA />
+
+   <ModalVideo videoID="WpE-27Jg8ic" />
+</Layout>
+
+<style>
+   .main {
+      overflow: visible !important;
+   }
+</style>

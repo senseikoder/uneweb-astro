@@ -1,188 +1,231 @@
 <div
-  x-data="initSidebar()"
-  class="sidebar"
-  :class="{
-  'is-active': $store.app.isSiderbarOpen,
-  '': !$store.app.isSiderbarOpen
-}"
+	x-data="initSidebar()"
+	class="sidebar"
+	:class="{
+				'is-active': $store.app.isSiderbarOpen,
+				'': !$store.app.isSiderbarOpen
+				}"
 >
-  <div class="sidebar-header">
-    <img src="/img/favicon.png" />
-    <a @click="closeSidebar()" class="sidebar-close" href="javascript:void(0);"
-      ><i class="iconify" data-icon="lucide:x"></i>
-    </a>
-  </div>
-  <div class="inner">
-    <ul class="sidebar-menu">
-      <li><span class="nav-section-title"></span></li>
-      <li
-        @click="openSidebarMenu($event)"
-        data-menu="sidebar-menu-1"
-        class="have-children"
-        :class="{
+	<div class="sidebar-header">
+		<img src="/img/favicon.png" />
+		<a
+			@click="closeSidebar()"
+			class="sidebar-close"
+			href="javascript:void(0);"
+			><i class="iconify" data-icon="lucide:x"></i>
+		</a>
+	</div>
+	<div class="inner">
+		<ul class="sidebar-menu">
+			<li><span class="nav-section-title"></span></li>
+			<li
+				@click="openSidebarMenu($event)"
+				data-menu="sidebar-menu-1"
+				class="have-children"
+				:class="{
               'active': openedMenu === 'sidebar-menu-1',
               '': openedMenu != 'sidebar-menu-1'
           }"
-      >
-        <a href="#">
-          <span class="icon">
-            <i class="iconify" data-icon="mdi:school"></i>
-          </span>
-          <span>Diplomados y Proyectos</span>
-        </a>
-        <ul x-show="openedMenu === 'sidebar-menu-1'" x-transition.duration.300ms>
-          <li><a href="#">Dashboard</a></li>
-          <li><a href="#">Account</a></li>
-          <li><a href="#">Documents</a></li>
-        </ul>
-      </li>
-      <li
-        @click="openSidebarMenu($event)"
-        data-menu="sidebar-menu-2"
-        class="have-children"
-        :class="{
+			>
+				<a href="#">
+					<span class="icon">
+						<i class="iconify" data-icon="mdi:school"></i>
+					</span>
+					<span>Diplomados y Proyectos</span>
+				</a>
+				<ul
+					x-show="openedMenu === 'sidebar-menu-1'"
+					x-transition.duration.300ms
+				>
+					<li>
+						<a href="/diplomado-de-programacion"
+							>Diplomado de Programación</a>
+					</li>
+					<li><a href="/diplomado-de-python">Diplomado de Python</a></li>
+					<li><a href="/diplomado-de-java">Diplomado de Java</a></li>
+					<li>
+						<a href="//diplomado-integracion-web"
+							>Diplomado de Webmaster</a>
+					</li>
+					<li>
+						<a href="/diplomado-diseno-digtal"
+							>Diplomado Diseño Digital</a>
+					</li>
+					<li><a href="/diplomado-mercadeo">Diplomado de Mercadeo</a></li>
+					<li><a href="/excel">Diplomado y Cursos Excel</a></li>
+					<li><a href="/maestria">Maestría PDW</a></li>
+				</ul>
+			</li>
+			<li
+				@click="openSidebarMenu($event)"
+				data-menu="sidebar-menu-2"
+				class="have-children"
+				:class="{
               'active': openedMenu === 'sidebar-menu-2',
               '': openedMenu != 'sidebar-menu-2'
           }"
-      >
-        <a href="#">
-          <span class="icon">
-            <i class="iconify" data-icon="mdi:xml"></i>
-          </span>
-          <span>Cursos de Programación</span>
-        </a>
-        <ul x-show="openedMenu === 'sidebar-menu-2'" x-transition.duration.300ms>
-          <li><a href="#">Inbox</a></li>
-          <li><a href="#">Compose</a></li>
-          <li><a href="#">Video</a></li>
-        </ul>
-      </li>
-      <li
-        @click="openSidebarMenu($event)"
-        data-menu="sidebar-menu-3"
-        class="have-children"
-        :class="{
+			>
+				<a href="#">
+					<span class="icon">
+						<i class="iconify" data-icon="mdi:xml"></i>
+					</span>
+					<span>Cursos de Programación</span>
+				</a>
+				<ul
+					x-show="openedMenu === 'sidebar-menu-2'"
+					x-transition.duration.300ms
+				>
+					<li>
+						<a href="/curso-logica-de-programacion"
+							>Lógica de Programación</a>
+					</li>
+					<li><a href="/html">HTML5 Nivel I</a></li>
+					<li><a href="/html-5">HTML5 Nivel II</a></li>
+					<li><a href="/curso-de-css3">CSS3</a></li>
+					<li><a href="/mysql">MySQL</a></li>
+					<li><a href="/curso-de-postgre-sql">PostgreSQL</a></li>
+					<li><a href="/curso-de-php">PHP</a></li>
+					<li><a href="/curso-de-javascript">JavaScript</a></li>
+					<li><a href="/curso-de-react">ReactJS</a></li>
+					<li><a href="/curso-de-jquery">jQuery</a></li>
+					<li><a href="/curso-de-java-online">Java</a></li>
+					<li><a href="/curso-de-bootstrap">Bootstrap</a></li>
+					<li><a href="/curso-de-python">Python</a></li>
+					<li><a href="/android-aplicaciones-moviles">Android</a></li>
+					<li><a href="/laravel">Laravel</a></li>
+					<li><a href="/curso-de-angular-js">Angular</a></li>
+					<li><a href="/curso-de-node-js">NodeJs</a></li>
+					<li>
+						<a href="/curso-de-inteligencia-artificial"
+							>Inteligencia Artificial</a>
+					</li>
+				</ul>
+			</li>
+			<li
+				@click="openSidebarMenu($event)"
+				data-menu="sidebar-menu-3"
+				class="have-children"
+				:class="{
               'active': openedMenu === 'sidebar-menu-3',
               '': openedMenu != 'sidebar-menu-3'
           }"
-      >
-        <a href="#">
-          <span class="icon">
-            <i class="iconify" data-icon="mdi:semantic-web"></i>
-          </span>
-          <span>Cursos de Diseño Web</span>
-        </a>
-        <ul x-show="openedMenu === 'sidebar-menu-3'" x-transition.duration.300ms>
-          <li><a href="#">Library</a></li>
-          <li><a href="#">Upload</a></li>
-        </ul>
-      </li>
+			>
+				<a href="#">
+					<span class="icon">
+						<i class="iconify" data-icon="mdi:semantic-web"></i>
+					</span>
+					<span>Cursos de Diseño Web</span>
+				</a>
+				<ul
+					x-show="openedMenu === 'sidebar-menu-3'"
+					x-transition.duration.300ms
+				>
+					<li><a href="/html">HTML5 Nivel I</a></li>
+					<li><a href="/html-5">HTML5 Nivel II</a></li>
+					<li><a href="/curso-de-css3">CSS3</a></li>
+					<li><a href="/curso-de-wordpress">WordPress</a></li>
+					<li><a href="/curso-de-bootstrap">Bootstrap</a></li>
+					<li><a href="/seo">SEO</a></li>
+					<li><a href="/taller">Taller Crea tu web</a></li>
+				</ul>
+			</li>
 
-      <li
-        @click="openSidebarMenu($event)"
-        data-menu="sidebar-menu-4"
-        class="have-children"
-        :class="{
+			<li
+				@click="openSidebarMenu($event)"
+				data-menu="sidebar-menu-4"
+				class="have-children"
+				:class="{
               'active': openedMenu === 'sidebar-menu-4',
               '': openedMenu != 'sidebar-menu-4'
 				}"
-      >
-        <a href="#">
-          <span class="icon">
-            <i class="iconify" data-icon="mdi:pencil-ruler"></i>
-          </span>
-          <span>Cursos de Diseño Gráfico</span>
-        </a>
-        <ul x-show="openedMenu === 'sidebar-menu-4'" x-transition.duration.300ms>
-          <li><a href="#">User settings</a></li>
-          <li><a href="#">App settings</a></li>
-        </ul>
-      </li>
+			>
+				<a href="#">
+					<span class="icon">
+						<i class="iconify" data-icon="mdi:pencil-ruler"></i>
+					</span>
+					<span>Cursos de Diseño Gráfico</span>
+				</a>
+				<ul
+					x-show="openedMenu === 'sidebar-menu-4'"
+					x-transition.duration.300ms
+				>
+					<li><a href="/photoshop">Photoshop Nivel I</a></li>
+					<li><a href="/photoshop-avanzado">Photoshop Nivel II</a></li>
+					<li><a href="/illustrator">Illustrator Nivel I</a></li>
+					<li><a href="/illustrator-nivel-avanzado">Illustrator Nivel II</a></li>
+					<li><a href="/after-effects-nivel-1">After effects Nivel I</a></li>
+					<li><a href="/after-effects-nivel-avanzado">After effects Nivel II</a></li>
+					<li><a href="/curso-de-indesign">Indesign Nivel I</a></li>
+					<li><a href="/curso-de-indesign-avanzado">Indesign Nivel II</a></li>
+					<li><a href="/curso-de-3d-en-caracas">3D Blender</a></li>
+					<li><a href="/curso-de-animate-cc">Animate</a></li>
+					<li><a href="/premiere">Premiere Pro</a></li>
+				</ul>
+			</li>
 
-      <li
-        @click="openSidebarMenu($event)"
-        data-menu="sidebar-menu-5"
-        class="have-children"
-        :class="{
+			<li
+				@click="openSidebarMenu($event)"
+				data-menu="sidebar-menu-5"
+				class="have-children"
+				:class="{
               'active': openedMenu === 'sidebar-menu-5',
               '': openedMenu != 'sidebar-menu-5'
           }"
-      >
-        <a href="#">
-          <span class="icon">
-            <i class="iconify" data-icon="mdi:bullhorn"></i>
-          </span>
-          <span>Cursos de Mercadeo</span>
-        </a>
-        <ul x-show="openedMenu === 'sidebar-menu-5'" x-transition.duration.300ms>
-          <li><a href="#">User settings</a></li>
-          <li><a href="#">App settings</a></li>
-        </ul>
-      </li>
-      <li
-        @click="openSidebarMenu($event)"
-        data-menu="sidebar-menu-6"
-        class="have-children"
-        :class="{
+			>
+				<a href="#">
+					<span class="icon">
+						<i class="iconify" data-icon="mdi:bullhorn"></i>
+					</span>
+					<span>Cursos de Mercadeo</span>
+				</a>
+				<ul
+					x-show="openedMenu === 'sidebar-menu-5'"
+					x-transition.duration.300ms
+				>
+					<li><a href="/community-manager">Community Manager</a></li>
+					<li><a href="/marketing-digital">Marketing Digital</a></li>
+					<li><a href="/comunicacion-masiva-email-y-sms">Comunicación Masiva</a></li>
+					<li><a href="/curso-de-ads">Ads Facebook y Google</a></li>
+					<li><a href="/curso-binance">Curso de Binance</a></li>
+					<li><a href="/seo">SEO</a></li>
+					<li><a href="/tallerdecanva">Taller Diseña tu Post</a></li>
+					<li><a href="/tallerdevideo">Taller Crea tu Video</a></li>
+				</ul>
+			</li>
+			<li
+				@click="openSidebarMenu($event)"
+				data-menu="sidebar-menu-6"
+				class="have-children"
+				:class="{
               'active': openedMenu === 'sidebar-menu-6',
               '': openedMenu != 'sidebar-menu-6'
           }"
-      >
-        <a href="#">
-          <span class="icon">
-            <i class="iconify" data-icon="mdi:certificate"></i>
-          </span>
-          <span>Especializaciones</span>
-        </a>
-        <ul x-show="openedMenu === 'sidebar-menu-6'" x-transition.duration.300ms>
-          <li><a href="#">User settings</a></li>
-          <li><a href="#">App settings</a></li>
-        </ul>
-      </li>
-    </ul>
-  </div>
+			>
+				<a href="#">
+					<span class="icon">
+						<i class="iconify" data-icon="mdi:certificate"></i>
+					</span>
+					<span>Especializaciones</span>
+				</a>
+				<ul
+					x-show="openedMenu === 'sidebar-menu-6'"
+					x-transition.duration.300ms
+				>
+					<li><a href="/especializacion-de-diseno">Especialización Diseño Digital</a></li>
+					<li><a href="/especializacion-3d">Especialización 3D Blender</a></li>
+					<li><a href="/especializacion-video-juegos">Unity 3D Video Juegos</a></li>
+					<li><a href="/especializacion-de-mercadeo">Especialización de Mercadeo</a></li>
+					<li><a href="/especializacion-js">Especialización JavaScript</a></li>
+					<li><a href="/especializacion-de-programacion">Especialización de Programación</a></li>
+					<li><a href="/especializacion-de-linux">Especialización Linux</a></li>
+					<li><a href="/especializacion-de-android">Especialización Android</a></li>
+					<li><a href="/especializacion-webmaster">Especialización Webmaster</a></li>
+					<li><a href="/especializacion-wordpress">Especialización WordPress</a></li>
+					<li><a href="/especializacion-bases-de-datos">Especialización Bases de Datos</a></li>
+					<li><a href="/especializacion-java-standard-edition-java-se">Especialización Java SE</a></li>
+					<li><a href="/especializacion-java-enterprise-edition-java-ee">Especialización Java EE</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
 </div>
-
-<div id="auth-modal" class="modal">
-    <div class="modal-background modal-dismiss"></div>
-    <div class="modal-content">
-      <div class="flex-card auth-card">
-        <div class="tabs-wrapper">
-          <div class="tabs">
-            <ul>
-              <li class="is-active" data-tab="login-tab"><a>Login</a></li>
-              <li data-tab="register-tab"><a>Register</a></li>
-            </ul>
-          </div>
-          <div id="login-tab" class="tab-content is-active">
-            <div class="field">
-              <label>Username</label>
-              <div class="control">
-                <input
-                  type="text"
-                  class="input is-medium"
-                  placeholder="Enter username"
-                />
-              </div>
-            </div>
-            <div class="field">
-              <label>Password</label>
-              <div class="control">
-                <input
-                  type="password"
-                  class="input is-medium"
-                  placeholder="Enter password"
-                />
-              </div>
-            </div>
-
-            <a class="button is-fullwidth secondary-btn is-rounded raised"
-              >Log in</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-    <button class="modal-close is-large modal-dismiss" aria-label="close"
-    ></button>
-  </div>

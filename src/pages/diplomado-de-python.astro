@@ -2,8 +2,8 @@
 import Layout from "../layouts/Diplomados.astro";
 import CursosRelated from "../components/CursosRelated.astro";
 import AsideInterno from "../components/AsideInterno.astro";
+const title = "Diplomado en Python  :: Uneweb";
 import ModalVideo from "../components/ModalVideo.astro";
-const title = "Diplomado de Programación :: Uneweb";
 const contenido = [
    {
       curso: "Lógica de Programación",
@@ -18,8 +18,8 @@ const contenido = [
       link: "/html-5",
    },
    {
-      curso: "PHP Niveles I - II - III - IV",
-      link: "/curso-de-php",
+      curso: "Javascript Niveles I y II",
+      link: "/curso-de-javascript",
    },
    {
       curso: "MySQL",
@@ -30,22 +30,17 @@ const contenido = [
       link: "/curso-de-postgre-sql",
    },
    {
-      curso: "JavaScript",
+      curso: "Python 5 Niveles",
       link: "/curso-de-javascript",
-   },
-   {
-      curso: "JQuery",
-      link: "/curso-de-jquery",
-   },
-   {
-      curso: "Python",
-      link: "/curso-de-python",
    },
    {
       curso: "Proyecto Especializado en programación",
       link: "#",
    },
 ];
+
+const urlDoc = "/docs/Contenido-del-Diplomado-de-Programaci%C3%B3n-Python.pdf";
+const urlPic = "/img/pics/diplomado-python.webp";
 ---
 
 <Layout title={title}>
@@ -59,13 +54,10 @@ const contenido = [
          <div class="columns is-vcentered">
             <div class="column is-6 landing-caption">
                <h1 class="title is-1 is-bold is-spaced light-text">
-                  Diplomado de Programación Full Stack
+                  Diplomado en Python
                </h1>
                <h2 class="subtitle is-5 light-text">
-                  Aprende a programar desde cero aplicaciones web con bases de
-                  datos. Trabaja como Programador Full Stack, consigue empleo
-                  fácilmente o trabaja freelance en empleate.com,
-                  computrabajo.com o LinkedIn.com
+                  Aprende a programar desde cero aplicaciones con bases de datos. Trabaja como Programador Python, consigue empleo fácilmente o trabaja freelance en empleate.com, computrabajo.com o LinkedIn.com
                </h2>
             </div>
          </div>
@@ -78,16 +70,18 @@ const contenido = [
             <div class="column is-8">
                <div class="card">
                   <div class="card-content">
-                     <h3 class="title is-4 mb-10 is-title-reveal">
-                        Clases online clases por zoom, videos tutoriales y
-                        prácticas Clases presenciales de lunes a viernes y
-                        Sabatino
-                     </h3>
+                     <div class="content">
+                        <h3 class="title is-4 mb-10 is-title-reveal">
+                           Clases online clases por zoom, videos tutoriales y
+                           prácticas Clases presenciales de lunes a viernes y
+                           Sabatino
+                        </h3>
 
-                     <h4 class="title is-5">
-                        El Diplomado contiene 12 cursos más el proyecto, es 100%
-                        práctico, el estudiante desarrollará:
-                     </h4>
+                        <h4 class="title is-5">
+                           El Diplomado contiene 12 cursos más el proyecto, es
+                           100% práctico, el estudiante desarrollará:
+                        </h4>
+                     </div>
 
                      <ul class="item-list mb-5">
                         <li>
@@ -175,18 +169,14 @@ const contenido = [
                </div>
             </div>
 
-            <AsideInterno
-               urlDoc="/docs/Contenido-del-Diplomado-de-Programaci%C3%B3n-Web.pdf"
-               urlPic="/img/pics/diplomado-programacion.webp"
-            />
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} />
          </div>
       </div>
    </section>
 
    <CursosRelated tag="programacion"></CursosRelated>
 
-   <ModalVideo videoID="SfLqiyl3kn8" />
-
+   <ModalVideo videoID="np4iAKT4OUU" />
 </Layout>
 
 <style>

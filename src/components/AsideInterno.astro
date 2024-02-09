@@ -1,5 +1,5 @@
 ---
-const { urlPic, urlDoc } = Astro.props
+const { urlPic, urlDoc } = Astro.props;
 ---
 
 <div class="column is-4 aside-interno">
@@ -10,30 +10,67 @@ const { urlPic, urlDoc } = Astro.props
          </figure>
       </div>
       <div class="card-content">
-         <div class="buttons">
+         <div class="buttons" x-data>
             <a
                href="/formas-de-pago"
                class="button primary-btn is-fullwidth raised is-large"
                >Formas de Pago</a
             >
-            <a
-               href={urlDoc}
-               class="button accent-btn is-fullwidth raised is-large"
-               >Contenido del Diplomado</a
-            >
+            {
+               urlDoc && (
+                  <a
+                     href={urlDoc}
+                     class="button accent-btn is-fullwidth raised is-large"
+                  >
+                     Contenido del Diplomado
+                  </a>
+               )
+            }
          </div>
 
          <div class="content">
             <h3 class="subtitle">Incluye:</h3>
 
-            <div class="item-list mb-5">
-               <li>Acceso al aula virtual</li>
-               <li>Material descargable</li>
-               <li>Clases en vídeos y en vivo o presencial</li>
-               <li>Profesor designado</li>
-               <li>Asignaciones</li>
-               <li>Certificado por el M.E</li>
-            </div>
+            <ul class="icon-list mb-5">
+               <li>
+                  <span class="icon">
+                     <i class="iconify" data-icon="fa6-regular:circle-play"></i>
+                  </span>
+                  <span>Acceso al aula virtual</span>
+                  
+               </li>
+               <li>
+                  <span class="icon">
+                     <i class="iconify" data-icon="fa6-regular:file-zipper"></i>
+                  </span>
+                  <span>Material descargable</span>                  
+               </li>
+               <li>
+                  <span class="icon">
+                     <i class="iconify" data-icon="fa6-solid:key"></i>
+                  </span>
+                  <span>Clases en vídeos y en vivo o presencial</span>
+               </li>
+               <li>
+                  <span class="icon">
+                     <i class="iconify" data-icon="fa6-solid:chalkboard-user"></i>
+                  </span>
+                  <span>Profesor designado</span>
+               </li>
+               <li>
+                  <span class="icon">
+                     <i class="iconify" data-icon="fa6-solid:list-check"></i>
+                  </span>
+                  <span>Asignaciones</span>
+               </li>
+
+               <li>
+                  <span class="icon">
+                     <i class="iconify" data-icon="fa6-solid:award"></i>
+                  </span>
+                  <span>Certificado por el M.E</span>
+               </li>
+            </ul>
 
             <h3 class="subtitle">Solicita información</h3>
 
@@ -50,11 +87,9 @@ const { urlPic, urlDoc } = Astro.props
    </div>
 </div>
 
-
 <style>
-
    .aside-interno .card {
-      margin-top: -30rem;
+      margin-top: -25rem;
       transition: all 0.33s;
    }
 
@@ -68,7 +103,7 @@ const { urlPic, urlDoc } = Astro.props
 
    .aside-interno img {
       transition: all 0.3s;
-      filter: grayscale(50%);
+      filter: grayscale(30%);
    }
 
    .aside-interno img:hover {

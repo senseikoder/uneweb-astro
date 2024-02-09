@@ -94,7 +94,7 @@ Sidebar Styles
   left: 0;
   transform: translateX(-281px);
   transition: all 0.3s;
-  z-index: 10000;
+  z-index: 1000;
   overflow-y: auto;
 
   &.is-active {
@@ -120,7 +120,7 @@ Sidebar Styles
     }
 
     .iconify {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
 
     svg,
@@ -156,18 +156,17 @@ Sidebar Styles
         a {
           display: flex;
           align-items: center;
-          padding: 20px 25px;
+          padding: 15px 20px;
           text-decoration: none;
           color: $white;
+          font-size: .9rem;
 
           &:hover {
-            padding: 20px 25px;
-            text-decoration: none;
             color: $white;
           }
 
           span {
-            margin-right: 20px;
+            margin-right: 15px;
             color: $white;
           }
         }
@@ -185,7 +184,7 @@ Sidebar Styles
                   &:after {
                     color: $secondary;
                     transform: rotate(135deg);
-                    content: "+";
+                    // content: "+";
                   }
                 }
               }
@@ -196,10 +195,6 @@ Sidebar Styles
             pointer-events: none;
           }
 
-          >ul {
-            // display: none;
-          }
-
           ul {
             padding: 0px;
 
@@ -207,13 +202,14 @@ Sidebar Styles
               a {
                 color: $white;
                 background-color: darken($dark-grey, 5%);
-                padding-left: 62px;
+                padding: 10px 15px;
+                padding-left: 60px;
                 border-bottom: 1px solid darken($dark-grey, 2%);
-                font-size: 0.9rem;
+                font-size: 0.85rem;
+                transition: all .25s;
 
                 &:hover {
-                  color: $primary;
-                  padding-left: 62px;
+                  color: $secondary;
                 }
               }
             }
@@ -223,12 +219,12 @@ Sidebar Styles
             &.icon {
               &:after {
                 position: absolute;
-                top: 15px;
-                right: 30px;
+                top: 10px;
+                right: 25px;
                 content: "+";
                 color: $white;
                 transition: all 0.5s;
-                font-weight: 200 !important;
+                // font-weight: 300 !important;
                 font-size: 1.4rem;
               }
             }

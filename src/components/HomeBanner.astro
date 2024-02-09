@@ -1,8 +1,9 @@
 ---
 import Navbar from "../components/Navbar.astro";
 import NavbarClone from "../components/NavbarClone.astro";
+import "/node_modules/reveal.js/dist/reveal.css";
+// import "/node_modules/reveal.js/dist/theme/white.css";
 ---
-
 
 <section class="hero">
    <Navbar />
@@ -12,24 +13,63 @@ import NavbarClone from "../components/NavbarClone.astro";
    <div class="hero-body p-2">
       <div class="container">
          <div class="columns is-vcentered">
-            <div class="column is-6 landing-caption">
-               <h1 class="title is-1 is-bold is-spaced">
-                  Programación FullStack
-               </h1>
-               <h2 class="title is-2 is-bold is-spaced">
-                  Aprende a programar desde 0
-               </h2>
-               <h2 class="subtitle is-5">
-                  Cursos y Diplomados Certificados por el Ministerio de
-                  Educación. Consigue empleo después de especializarte
-               </h2>
-               <div>
-                  <a class="button primary-btn btn-outlined is-large">
-                     Solicita Asesoría
-                  </a>
+            <div class="column is-7">
+               <div class="reveal">
+                  <div class="slides">
+                     <section>
+                        <h1 class="title is-2 is-bold is-spaced">
+                           Programación FullStack
+                        </h1>
+                        <h2 class="title is-3 is-bold is-spaced">
+                           Aprende a programar desde 0
+                        </h2>
+                        <h2 class="subtitle is-5">
+                           Cursos y Diplomados Certificados por el Ministerio de
+                           Educación. Consigue empleo después de especializarte
+                        </h2>
+                        <div>
+                           <a class="button primary-btn btn-outlined is-large">
+                              Solicita Asesoría
+                           </a>
+                        </div>
+                     </section>
+
+                     <section>
+                        <h1 class="title is-2 is-bold is-spaced">
+                           Diseño Gráfico Digital
+                        </h1>
+                        <h2 class="title is-3 is-bold is-spaced">
+                           Amplía tu curriculo
+                        </h2>
+                        <h2 class="subtitle is-5">
+                           Cursos y Diplomados Certificados por el Ministerio de
+                           Educación. Consigue empleo después de especializarte
+                        </h2>
+                        <div>
+                           <a class="button primary-btn btn-outlined is-large">
+                              Solicita Asesoría
+                           </a>
+                        </div>
+                     </section>
+
+                     <section>
+                        <h1 class="title is-2 is-bold is-spaced">
+                           Marketing Digital y Social Media,<br>SEO + Ads
+                        </h1>
+                        <h2 class="subtitle is-5">
+                           Cursos y Diplomados Certificados por el Ministerio de
+                           Educación. Consigue empleo después de especializarte
+                        </h2>
+                        <div>
+                           <a class="button primary-btn btn-outlined is-large">
+                              Solicita Asesoría
+                           </a>
+                        </div>
+                     </section>
+                  </div>
                </div>
             </div>
-            <div class="column is-6">
+            <div class="column is-5">
                <iframe
                   loading="lazy"
                   width="400"
@@ -43,3 +83,42 @@ import NavbarClone from "../components/NavbarClone.astro";
       </div>
    </div>
 </section>
+
+<script>
+   import Reveal from "reveal.js";
+
+   let deck = new Reveal({
+      controls: false,
+      progress: false,
+      autoSlide: 2000,
+      loop: true,
+      height: 400,
+      disableLayout: true,
+      transition: "fade",
+   });
+   deck.initialize();
+</script>
+
+<style is:global>
+   .reveal.center {
+      min-height: 250px !important;
+   }
+
+   .reveal .slides {
+      text-align: left;
+   }
+
+   .reveal h1,
+   .reveal h2,
+   .reveal h3,
+   .reveal h4,
+   .reveal h5,
+   .reveal h6 {
+      text-transform: none;
+      line-height: unset;
+   }
+
+   .reveal .playback {
+      display: none;
+   }
+</style>

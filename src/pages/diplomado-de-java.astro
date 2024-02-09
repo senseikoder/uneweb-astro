@@ -2,27 +2,20 @@
 import Layout from "../layouts/Diplomados.astro";
 import CursosRelated from "../components/CursosRelated.astro";
 import AsideInterno from "../components/AsideInterno.astro";
+const title = "Diplomado de Java :: Uneweb";
 import ModalVideo from "../components/ModalVideo.astro";
-const title = "Diplomado de Programación :: Uneweb";
 const contenido = [
    {
       curso: "Lógica de Programación",
       link: "/logica-de-programacion",
    },
    {
-      curso: "HTML 5 Nivel 1",
+      curso: "HTML5 + CSS3",
       link: "/html",
    },
+
    {
-      curso: "HTML 5 Nivel 2",
-      link: "/html-5",
-   },
-   {
-      curso: "PHP Niveles I - II - III - IV",
-      link: "/curso-de-php",
-   },
-   {
-      curso: "MySQL",
+      curso: "MySQL Nivel I",
       link: "/mysql",
    },
    {
@@ -30,22 +23,18 @@ const contenido = [
       link: "/curso-de-postgre-sql",
    },
    {
-      curso: "JavaScript",
-      link: "/curso-de-javascript",
+      curso: "Java Standard Edition I - II - III - IV",
+      link: "/curso-de-java-online",
    },
    {
-      curso: "JQuery",
-      link: "/curso-de-jquery",
+      curso: "Java Enterprise Edition I - II - III - IV",
+      link: "/curso-de-java-online",
    },
-   {
-      curso: "Python",
-      link: "/curso-de-python",
-   },
-   {
-      curso: "Proyecto Especializado en programación",
-      link: "#",
-   },
+
 ];
+
+const urlDoc = '/docs/Contenido-del-Diplomado-de-Java.pdf'
+const urlPic = '/img/pics/diplomado-java.webp'
 ---
 
 <Layout title={title}>
@@ -59,13 +48,10 @@ const contenido = [
          <div class="columns is-vcentered">
             <div class="column is-6 landing-caption">
                <h1 class="title is-1 is-bold is-spaced light-text">
-                  Diplomado de Programación Full Stack
+                  Diplomado de Java
                </h1>
                <h2 class="subtitle is-5 light-text">
-                  Aprende a programar desde cero aplicaciones web con bases de
-                  datos. Trabaja como Programador Full Stack, consigue empleo
-                  fácilmente o trabaja freelance en empleate.com,
-                  computrabajo.com o LinkedIn.com
+                  Desarrolla tus proyectos empresariales en Java, desde aplicaciones móviles, juegos y sistema de administración de datos.
                </h2>
             </div>
          </div>
@@ -78,22 +64,34 @@ const contenido = [
             <div class="column is-8">
                <div class="card">
                   <div class="card-content">
-                     <h3 class="title is-4 mb-10 is-title-reveal">
-                        Clases online clases por zoom, videos tutoriales y
-                        prácticas Clases presenciales de lunes a viernes y
-                        Sabatino
-                     </h3>
 
-                     <h4 class="title is-5">
-                        El Diplomado contiene 12 cursos más el proyecto, es 100%
-                        práctico, el estudiante desarrollará:
-                     </h4>
+                     <div class="content">
+
+                        <h3 class="title is-4 mb-10 is-title-reveal">
+                           Clases online clases por zoom, videos tutoriales y
+                           prácticas Clases presenciales de lunes a viernes y
+                           Sabatino
+                        </h3>
+   
+                        <p>
+                           Desarrolla aplicaciones y sistemas con bases de datos. Amplía tu portafolio laboral y cotiza mejor tu trabajo como Programador(a) en Java y bases de datos.
+                        </p>
+   
+                        <p>
+                           El objetivo del curso de Java es enseñar a programar a los estudiantes que tienen interés de incorporarse en el mercado de desarrollo de aplicaciones y sistemas con bases de datos. En este curso aprenderás desde cero a pensar, diseñar (utilizando diferentes algoritmos de pseudo-código) y finalmente a codificar sistemas.
+                        </p>
+   
+                        <h4 class="title is-5">
+                           El Diplomado contiene 12 cursos más el proyecto, es 100%
+                           práctico, el estudiante desarrollará:
+                        </h4>
+                     </div>
 
                      <ul class="item-list mb-5">
                         <li>
                            Sistemas de gestión de contenidos con bases de datos
                         </li>
-                        <li>Aplicaciones para las páginas Web</li>
+                        <li>Aplicaciones de escritorio</li>
                         <li>Administración de Base de datos</li>
                         <li>Crear recursos Web</li>
                      </ul>
@@ -171,13 +169,14 @@ const contenido = [
                            ))
                         }
                      </ul>
+                     
                   </div>
                </div>
             </div>
 
             <AsideInterno
-               urlDoc="/docs/Contenido-del-Diplomado-de-Programaci%C3%B3n-Web.pdf"
-               urlPic="/img/pics/diplomado-programacion.webp"
+               urlDoc={urlDoc}
+               urlPic={urlPic}
             />
          </div>
       </div>
@@ -185,8 +184,7 @@ const contenido = [
 
    <CursosRelated tag="programacion"></CursosRelated>
 
-   <ModalVideo videoID="SfLqiyl3kn8" />
-
+   <ModalVideo videoID="2jR_eWR-J9U" />
 </Layout>
 
 <style>

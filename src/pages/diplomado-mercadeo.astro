@@ -2,50 +2,61 @@
 import Layout from "../layouts/Diplomados.astro";
 import CursosRelated from "../components/CursosRelated.astro";
 import AsideInterno from "../components/AsideInterno.astro";
+const title = "Diplomado de Mercadeo Digital :: Uneweb";
 import ModalVideo from "../components/ModalVideo.astro";
-const title = "Diplomado de Programación :: Uneweb";
 const contenido = [
    {
-      curso: "Lógica de Programación",
-      link: "/logica-de-programacion",
+      curso: "Community Manager Nivel I",
+      link: "/community-manager",
    },
    {
-      curso: "HTML 5 Nivel 1",
+      curso: "Community Manager Nivel II",
+      link: "/community-manager",
+   },
+   {
+      curso: "Marketing Digital",
+      link: "/marketing-digital",
+   },
+   {
+      curso: "HTML5 nivel 1",
       link: "/html",
    },
    {
-      curso: "HTML 5 Nivel 2",
-      link: "/html-5",
+      curso: "Comunicación masiva, e-mail y SMS",
+      link: "comunicacion-masiva-email-y-sms",
    },
    {
-      curso: "PHP Niveles I - II - III - IV",
-      link: "/curso-de-php",
+      curso: "SEO",
+      link: "/seo",
    },
    {
-      curso: "MySQL",
-      link: "/mysql",
+      curso: "WordPress Nivel I",
+      link: "/curso-de-wordpress",
    },
    {
-      curso: "PostgreSQL",
-      link: "/curso-de-postgre-sql",
+      curso: "WordPress Nivel II",
+      link: "/curso-de-wordpress",
    },
    {
-      curso: "JavaScript",
-      link: "/curso-de-javascript",
+      curso: "Illustrator Nivel I",
+      link: "/illustrator",
    },
    {
-      curso: "JQuery",
-      link: "/curso-de-jquery",
+      curso: "Photoshop Nivel I",
+      link: "/photoshop",
    },
    {
-      curso: "Python",
-      link: "/curso-de-python",
+      curso: "Animate",
+      link: "/curso-de-animate-cc",
    },
    {
-      curso: "Proyecto Especializado en programación",
+      curso: "Proyecto Especializado en Marketing Digital",
       link: "#",
    },
 ];
+
+const urlDoc = "/docs/Contenido-del-Diplomado-de-Mercadeo.pdf";
+const urlPic = "/img/pics/diplomado-mercadeo.webp";
 ---
 
 <Layout title={title}>
@@ -57,15 +68,14 @@ const contenido = [
    >
       <div class="container">
          <div class="columns is-vcentered">
-            <div class="column is-6 landing-caption">
+            <div class="column is-7 landing-caption">
                <h1 class="title is-1 is-bold is-spaced light-text">
-                  Diplomado de Programación Full Stack
+                  Diplomado de Mercadeo Digital
                </h1>
                <h2 class="subtitle is-5 light-text">
-                  Aprende a programar desde cero aplicaciones web con bases de
-                  datos. Trabaja como Programador Full Stack, consigue empleo
-                  fácilmente o trabaja freelance en empleate.com,
-                  computrabajo.com o LinkedIn.com
+                  Especialízate en Community manager y Marketing digital
+                  aprendiendo aplicaciones social media, diseño digital y
+                  programación SEO para posicionar en la red de búsqueda.
                </h2>
             </div>
          </div>
@@ -78,24 +88,34 @@ const contenido = [
             <div class="column is-8">
                <div class="card">
                   <div class="card-content">
-                     <h3 class="title is-4 mb-10 is-title-reveal">
-                        Clases online clases por zoom, videos tutoriales y
-                        prácticas Clases presenciales de lunes a viernes y
-                        Sabatino
-                     </h3>
+                     <div class="content">
+                        <h3 class="title is-4 mb-10 is-title-reveal">
+                           Clases online clases por zoom, videos tutoriales y
+                           prácticas Clases presenciales de lunes a viernes y
+                           Sabatino
+                        </h3>
 
-                     <h4 class="title is-5">
-                        El Diplomado contiene 12 cursos más el proyecto, es 100%
-                        práctico, el estudiante desarrollará:
-                     </h4>
+                        <p>
+                           Especialízate en Marketing digital y Community
+                           manager para desarrollar estrategias de venta por
+                           internet, desarrolla un plan de marketing digital. En
+                           este Diplomado obtienes todas las herramientas para
+                           ser experto en Social Media.
+                        </p>
+
+                        <h4 class="title is-5">
+                           El Diplomado de Mercadeo: Contiene 12 Cursos más el
+                           proyecto para aplicar el Mercadeo en las Redes
+                           sociales, blog, Páginas web y todos los medios
+                           online, el estudiante puede desarrollar:
+                        </h4>
+                     </div>
 
                      <ul class="item-list mb-5">
-                        <li>
-                           Sistemas de gestión de contenidos con bases de datos
-                        </li>
-                        <li>Aplicaciones para las páginas Web</li>
-                        <li>Administración de Base de datos</li>
-                        <li>Crear recursos Web</li>
+                        <li>Técnicas y herramientas de Community manager</li>
+                        <li>Herramientas para publicidad masiva, redes sociales, correos, SMS</li>
+                        <li>Diseñe en sus redes sociales, blogs, páginas web</li>
+                        <li>Videos, animaciones para la promoción de productosy/o servicios</li>
                      </ul>
 
                      <div class="content is-size-5">
@@ -175,18 +195,14 @@ const contenido = [
                </div>
             </div>
 
-            <AsideInterno
-               urlDoc="/docs/Contenido-del-Diplomado-de-Programaci%C3%B3n-Web.pdf"
-               urlPic="/img/pics/diplomado-programacion.webp"
-            />
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} />
          </div>
       </div>
    </section>
 
-   <CursosRelated tag="programacion"></CursosRelated>
+   <CursosRelated tag="mercadeo"></CursosRelated>
 
-   <ModalVideo videoID="SfLqiyl3kn8" />
-
+   <ModalVideo videoID="WpE-27Jg8ic" />
 </Layout>
 
 <style>

@@ -1,6 +1,6 @@
 {
   "name": "uneweb",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Uneweb - Bulma + Alpine + Astro",
   "type": "module",
   "private": true,
@@ -30,12 +30,12 @@
     "bulma-css-vars": "0.8.0",
     "flickity": "^2.3.0",
     "plyr": "3.7.8",
+    "reveal.js": "^5.0.4",
     "sass": "1.67.0",
     "simplebar": "6.2.5"
   },
   "devDependencies": {
     "@fontsource-variable/nunito": "^5.0.9",
-    "@fontsource-variable/roboto-flex": "^5.0.8",
     "autoprefixer": "10.4.15",
     "npm-run-all": "4.1.5"
   }

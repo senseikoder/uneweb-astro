@@ -1,5 +1,6 @@
 ---
 const { videoID } = Astro.props;
+import "plyr/dist/plyr.css";
 ---
 
 <div id="video-modal" class="modal animated fadeIn">
@@ -23,5 +24,8 @@ const { videoID } = Astro.props;
 <script>
    import Plyr from "plyr";
 
-   const player = new Plyr("#player");
+   document.addEventListener('astro:page-load', () => {
+      const player = new Plyr("#player");
+   })
+
 </script>

@@ -3,7 +3,7 @@ Color variables
 ========================================================================== */
 
 $fullhd-enabled: true;
-$body-size: 15px;
+$body-size: 16px;
 
 $white: #fff;
 $white-trans: #ffffffa3;
@@ -33,8 +33,11 @@ $border-grey: #ccc;
 $section-grey: #fbfbfb;
 
 //fonts
-$font: 'Roboto Flex', sans-serif !important;
+$font: 'Nunito Variable', sans-serif !important;
 $font-heading: 'Nunito Variable', sans-serif !important;
+$text: #2a2a2a;
+$title-color: #373737;
+$subtitle-color: #373737;
 
 //Shadow
 $light-shadow: -1px 3px 15px 0 rgba(0, 0, 0, 0.06);

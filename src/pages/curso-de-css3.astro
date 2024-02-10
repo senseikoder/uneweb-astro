@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "CSS 3 :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-CSS-3.pdf";
+const urlPic = "/img/pics/curso-css3.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">CSS 3</h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende las propiedades del lenguaje CSS para dar formato y
+                  estilos a los sitios web.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El Curso CSS3 esta versión nos ofrece una gran variedad de
+                  opciones muy importantes para las necesidades del diseño web
+                  actual. Desde opciones de sombreado y redondeado, hasta
+                  funciones avanzadas de movimiento y transformación. Aplicando
+                  un buen diseño en las páginas web.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <ul class="item-list two-cols">
+                     <li>Introducción a CSS 3</li>
+                     <li>
+                        Atributo gradiente de colores en borde con CSS y Firefox
+                     </li>
+                     <li>Bordes redondeados en CSS 3</li>
+                     <li>Múltiples imágenes de fondo con CSS</li>
+                     <li>Colores RGBA en CSS 3</li>
+                     <li>Word-wrap en CSS 3</li>
+                     <li>Textos multi-columna con CSS 3</li>
+                     <li>Bordes con imágenes en CSS 3</li>
+                     <li>Sombras en CSS 3 con box-shadow</li>
+                     <li>Propiedad background-origin de CSS 3</li>
+                     <li>Atributos CSS3 overflow-x y overflow-y</li>
+                     <li>Degradados CSS3</li>
+                     <li>Introducción a las animaciones CSS</li>
+                     <li>Animación de un texto con CSS 3</li>
+                     <li>Fondo animado con CSS 3</li>
+                     <li>Dibujo animado con CSS 3</li>
+                     <li>Álbum con efectos en CSS 3</li>
+                     <li>Menú animado con CSS 3</li>
+                     <li>Botones con efectos CSS 3</li>
+                     <li>Transiciones CSS3</li>
+                  </ul>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="css3" />
+
+   <ModalVideo videoID="jqxbJRmlQ44" />
+</Layout>

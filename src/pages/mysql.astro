@@ -1,0 +1,80 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "MySQL :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-MySQL.pdf";
+const urlPic = "/img/pics/curso-mysql.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">MySQL</h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a gestionar bases de datos relacionales en el motor
+                  RDBMS más usado de la web.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Base de datos MySQL es un sistema de administración de bases
+                  de datos (Database Management System, DBMS) para bases de
+                  datos relacionales. Almacena datos desde páginas dinámicas. Y
+                  es útil para la organización de contenidos en las Páginas WEB
+                  y accesible para el cliente. Es fuente abierta se descarga y
+                  se instala fácilmente.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso de MySQL Nivel I</h3>
+                  
+                  <p class="two-cols ml-5">
+                     Introducción a MySQL<br />Creación de una base de datos.
+                     CREATE DATABASE<br />Creación de una tabla y mostrar sus
+                     campos<br />(CREATE TABLE – SHOW TABLES – describe – DROP
+                     TABLE)<br />Instrucción ALTER TABLE<br />Carga de registros
+                     a una tabla y su recuperación (INSERT INTO – SELECT)<br
+                     />Tipos de datos básicos de un campo de una tabla<br
+                     />Recuperación de algunos campos (SELECT)<br />Recuperación
+                     de registros específicos (SELECT – WHERE)<br />Operadores
+                     Relacionales <br />Borrado de registros de una tabla
+                     (DELETE)<br />Modificación de registros de una tabla
+                     (UPDATE)<br />Clave primaria<br />Campo entero con
+                     autoincremento<br />Clave Foránea<br />Comando TRUNCATE
+                     TABLE<br />Valores NULL<br />Valores numéricos sin signo
+                     (UNSIGNED)<br />Tipos de datos
+                  </p>
+
+                  <br>
+                  
+                  <h3 class="title is-4">Contenido del Curso de MySQL Nivel II</h3>
+
+                  <p class="ml-5">Motores de almacenamiento de MySQL y tipos de tablas<br>El motor de almacenamiento InnoDB<br>Procedimientos almacenados y funciones<br>Disparadores (triggers)<br>Vistas (Views)<br>La base de datos de información INFORMATION_SCHEMA<br>Matemáticas de precisión:<br>Tipos de valores numéricos<br>Cambios en el tipo de datos DECIMAL<br>Manejo de expresiones<br>Cómo se redondea<br>MySQL Connector/ODBC<br>MySQL Connector/NET<br>MySQL Connector/J<br>MySQL Connector/MXJ<br>Connector/PHP</p>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="mysql" />
+
+   <ModalVideo videoID="U_eLMxdR06c" />
+</Layout>

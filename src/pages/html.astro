@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "HTML5 y CSS3 Nivel I :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-HTML.pdf";
+const urlPic = "/img/pics/curso-html.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  HTML5 y CSS3 Nivel I
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende las habilidades para el desarrollo de sitios web, la
+                  sintaxis del lenguaje HTML5 y CSS3 es lo primero para
+                  estructurar una web
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El curso de HTML5 y CSS3 nivel 1, lenguaje de marcado
+                  diseñado, para estructurar textos y presentarlos en forma de
+                  hipertexto, que es el formato estándar de los sitios web. El
+                  lenguaje HTML5 se ha convertido en uno de los formatos más
+                  populares y fáciles de aprender que existen para la
+                  elaboración de sitios web.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+                  <ul class="item-list two-cols" slot="contenido">
+                     <li>Fundamentos de HTML</li>
+                     <li>Sintaxis de HTML hasta HTML5</li>
+                     <li>Estructura de una página en html5</li>
+                     <li>Creación de nuestra primera página</li>
+                     <li>Etiquetas básicas de texto</li>
+                     <li>Formato para el texto</li>
+                     <li>Enlaces y rutas</li>
+                     <li>Listas</li>
+                     <li>Etiqueta multimedia</li>
+                     <li>Etiqueta semánticas</li>
+                     <li>Imágenes</li>
+                     <li>Contenedores</li>
+                     <li>Tablas y bordes</li>
+                     <li>Formularios</li>
+                     <li>Elementos de los formularios</li>
+                     <li>Etiquetas meta</li>
+                     <li>Añadir hojas de estilo CSS3 al HTML5</li>
+                     <li>Ejercicios prácticos con HTML5 y CSS3</li>
+                     <li>Proyecto desarrollo del sitio web</li>
+                  </ul>
+               </div>
+
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="html1" />
+
+   <ModalVideo videoID="1A9wGdjb0nM" />
+</Layout>

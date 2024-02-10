@@ -3,6 +3,8 @@ Hero styles
 ========================================================================== */
 
 .hero {
+  background-size: cover;
+
   &.is-grey {
     background-color: $section-grey;
   }

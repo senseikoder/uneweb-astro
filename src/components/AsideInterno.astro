@@ -1,5 +1,5 @@
 ---
-const { urlPic, urlDoc } = Astro.props;
+const { urlPic, urlDoc, btnDoc } = Astro.props;
 ---
 
 <div class="column is-4 aside-interno">
@@ -22,7 +22,7 @@ const { urlPic, urlDoc } = Astro.props;
                      href={urlDoc}
                      class="button accent-btn is-fullwidth raised is-large"
                   >
-                     Contenido del Diplomado
+                     Contenido del {btnDoc}
                   </a>
                )
             }
@@ -37,23 +37,23 @@ const { urlPic, urlDoc } = Astro.props;
                      <i class="iconify" data-icon="fa6-regular:circle-play"></i>
                   </span>
                   <span>Acceso al aula virtual</span>
-                  
                </li>
                <li>
                   <span class="icon">
                      <i class="iconify" data-icon="fa6-regular:file-zipper"></i>
                   </span>
-                  <span>Material descargable</span>                  
+                  <span>Material descargable</span>
                </li>
                <li>
                   <span class="icon">
-                     <i class="iconify" data-icon="fa6-solid:key"></i>
+                     <i class="iconify" data-icon="fa6-solid:house-laptop"></i>
                   </span>
                   <span>Clases en vídeos y en vivo o presencial</span>
                </li>
                <li>
                   <span class="icon">
-                     <i class="iconify" data-icon="fa6-solid:chalkboard-user"></i>
+                     <i class="iconify" data-icon="fa6-solid:chalkboard-user"
+                     ></i>
                   </span>
                   <span>Profesor designado</span>
                </li>

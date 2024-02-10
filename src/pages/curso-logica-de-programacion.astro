@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso Lógica de Programación :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-HTML.pdf";
+const urlPic = "/img/pics/curso-logica.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Lógica de Programación
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende las habilidades requeridas para el desarrollo de
+                  aplicaciones en diferentes lenguajes de programación.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            
+            <CursosContent>
+               <p slot="descripcion">
+                  El Curso de Lógica de programación tiene como objetivo conocer
+                  los conceptos de lenguaje y algoritmo computacional. Podrá
+                  observar las diferencias de los niveles de lenguajes que
+                  utiliza un computador. Conocerá las principales
+                  características de un algoritmo. Código Libre. El curso está
+                  basado en prácticas.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+   
+                  <ul class="item-list two-cols">
+                     <li>Conceptos básicos sobre el computador</li>
+                     <li>Estructura Funcional Del Computador</li>
+                     <li>
+                        Conceptos básicos sobre construcción de programas
+                        <ul>
+                           <li>Algoritmo</li>
+                           <li>Pseudo-Codigo</li>
+                           <li>Lenguaje de Programación</li>
+                           <li>Programa</li>
+                           <li>Programación</li>
+                           <li>Aspectos que miden la calidad de los programas</li>
+                           <li>Capacidad de abstracción</li>
+                           <li>Fases en la resolución de problemas</li>
+                           <li>
+                              Ciclo de vida de desarrollo de software y sus fases
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        Conceptos Básicos
+                        <ul>
+                           <li>Dato</li>
+                           <li>Tipo de Dato</li>
+                           <li>Clasificaciones de los tipos de datos</li>
+                        </ul>
+                     </li>
+                     <li>Variables</li>
+                     <li>Constantes</li>
+                     <li>Operaciones de los tipos de datos elementales</li>
+                     <li>
+                        Acciones Elementales
+                        <ul>
+                           <li>Operador de Asignación</li>
+                           <li>Operación de Lectura Estándar</li>
+                           <li>Operación de Escritura Estándar</li>
+                        </ul>
+                     </li>
+                     <li>
+                        Estructuras de Control de Flujo de Datos
+                        <ul>
+                           <li>Condicional Simple</li>
+                           <li>Condicional compuesto</li>
+                           <li>Condicional Anidado</li>
+                           <li>Selección Múltiple</li>
+                        </ul>
+                     </li>
+                     <li>
+                        Estructuras de Control De flujos de Datos Iterativas
+                        <ul>
+                           <li>For</li>
+                           <li>While</li>
+                           <li>Do-While</li>
+                        </ul>
+                     </li>
+                     <li>
+                        Principio de Programación Modular (Procedimientos)
+                        <ul>
+                           <li>Acciones</li>
+                           <li>Funciones</li>
+                           <li>Pase de Parámetros por valor</li>
+                           <li>Pase de Parámetros por referencia</li>
+                        </ul>
+                     </li>
+                  </ul>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="logica" />
+
+   <ModalVideo videoID="UYMvpe0V984" />
+</Layout>

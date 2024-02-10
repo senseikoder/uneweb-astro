@@ -1,0 +1,271 @@
+[
+	{
+		"nombre": "After Effects Nivel 2",
+		"url": "./after-effects-nivel-avanzado",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "After Effects Nivel 1",
+		"url": "./after-effects-nivel-1",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "Android",
+		"url": "./android-aplicaciones-moviles",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Angular",
+		"url": "./curso-de-angular-js",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Animate",
+		"url": "./curso-de-animate-cc",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Community Manager",
+		"url": "./community-manager",
+		"cat": "mercadeo"
+	},
+	{
+		"nombre": "Comunicación Masiva",
+		"url": "./comunicacion-masiva-email-y-sms",
+		"cat": "mercadeo"
+	},
+	{
+		"nombre": "Comunicación Web 3.0",
+		"url": "./comunicacion-web-3-0",
+		"cat": "mercadeo"
+	},
+	{
+		"nombre": "Blender 3D",
+		"url": "./curso-de-3d-en-caracas",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "Bootstrap",
+		"url": "./curso-de-bootstrap",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "CSS3",
+		"url": "./curso-de-css3",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Indesign Nivel 1",
+		"url": "./curso-de-indesign",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "Indesign Nivel 2",
+		"url": "./curso-de-indesign-avanzado",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "Java",
+		"url": "./curso-de-java-online",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Javascript",
+		"url": "./curso-de-javascript",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "JQuery Mobile",
+		"url": "./curso-de-jquery-mobile",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Jquery",
+		"url": "./curso-de-jquery",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Marketing Digital",
+		"url": "./curso-de-marketing-digital",
+		"cat": "mercadeo"
+	},
+	{
+		"nombre": "Node JS",
+		"url": "./curso-de-node-js",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "PHP",
+		"url": "./curso-de-php",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "PostgreSQL",
+		"url": "./curso-de-postgre-sql",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Prestashop",
+		"url": "./curso-de-prestashop"
+	},
+	{
+		"nombre": "Python",
+		"url": "./curso-de-python",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Wordpress",
+		"url": "./curso-de-wordpress",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Lógica de programación",
+		"url": "./curso-logica-de-programacion",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "HTML 1",
+		"url": "./html",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "HTML 2",
+		"url": "./html-5",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Illustrator Nivel 1",
+		"url": "./illustrator",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "Illustrator Nivel 2",
+		"url": "./illustrator-nivel-avanzado",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "MySQL",
+		"url": "./mysql",
+		"cat": "programacion"
+	},
+	{
+		"nombre": "Photoshop Nivel 1",
+		"url": "./photoshop",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "Photoshop Nivel 2",
+		"url": "./photoshop-avanzado",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "Premiere Pro",
+		"url": "./premiere",
+		"cat": "diseño"
+	},
+	{
+		"nombre": "SEO",
+		"url": "./seo",
+		"cat": "mercadeo"
+	},
+	{
+		"nombre": "Taller Web",
+		"url": "./taller",
+		"cat": "taller"
+	},
+	{
+		"nombre": "Taller Video",
+		"url": "./tallervideo",
+		"cat": "taller"
+	},
+	{
+		"nombre": "Taller Canva",
+		"url": "./tallercanva",
+		"cat": "taller"
+	},
+	{
+		"nombre": "Diplomado de Programación",
+		"url": "./diplomado-de-programacion",
+		"cat": "diplomado"
+	},
+	{
+		"nombre": "Diplomado Diseño Digital",
+		"url": "./diplomado-diseno-digital",
+		"cat": "diplomado"
+	},
+	{
+		"nombre": "Diplomado Webmaster",
+		"url": "./diplomado-integracion-web",
+		"cat": "diplomado"
+	},
+	{
+		"nombre": "Diplomado Java",
+		"url": "./diplomado-java",
+		"cat": "diplomado"
+	},
+	{
+		"nombre": "Diplomado Mercadeo",
+		"url": "./diplomado-mercadeo",
+		"cat": "diplomado"
+	},
+	{
+		"nombre": "Especialización 3D Blender",
+		"url": "./especializacion-3d",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización Bases de Datos",
+		"url": "./especializacion-bases-de-datos",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización de Android",
+		"url": "./especializacion-de-android",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización de Diseño Digital",
+		"url": "./especializacion-de-diseno",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización de Linux",
+		"url": "./especializacion-de-linux",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización de Mercadeo",
+		"url": "./especializacion-de-mercadeo",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización de Programación",
+		"url": "./especializacion-de-programacion",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización Java SE",
+		"url": "./especializacion-java-standard-edition-java-se",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización Jave EE",
+		"url": "./especializacion-java-enterprise-edition-java-ee",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización de Javascript",
+		"url": "./especiaizacion-js",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización Webmaster",
+		"url": "./especializacion-webmaster",
+		"cat": "especializacion"
+	},
+	{
+		"nombre": "Especialización Wordpress",
+		"url": "./especializacion-wordpress",
+		"cat": "especializacion"
+	}
+]

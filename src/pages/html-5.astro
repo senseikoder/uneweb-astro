@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "HTML5 y CSS3 Nivel II :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-HTML-5.pdf";
+const urlPic = "/img/pics/curso-html.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  HTML5 y CSS3 Nivel II
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a utilizar las etiquetas semánticas del lenguaje HTML,
+                  a maquetar sitios web y propiedades avanzadas del lenguaje
+                  CSS3 y HTML5.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El curso de HTML 5 presenta una amplia gama de mejoras en
+                  controles para formularios, APIs, multimedia y también en la
+                  estructura y la semántica.
+                  <br />
+
+                  La aparición de estas revisiones implicará cambios importantes
+                  en el desarrollo de páginas web y algunos se aventuran incluso
+                  a prever la desaparición de algunas tecnologías de gran calado
+                  en la red.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+                  
+                  <ul class="item-list two-cols" slot="contenido">
+                     <li>Estructura del cuerpo</li>
+                     <li>Etiquetas que componen la web semántica</li>
+                     <li>Etiquetas para Multimedia</li>
+                     <li>Elementos para la web semántica</li>
+                     <li>Posicionamiento y Box Model</li>
+                     <li>Transformaciones y Transiciones</li>
+                     <li>Animaciones y Keyframes</li>
+                     <li>Flexbox</li>
+                     <li>Canvas en HTML5</li>
+                     <li>Principios de Web Responsive</li>
+                     <li>Nuevos elementos de formulario</li>
+                     <li>
+                        Selectores avanzados CSS3
+                        <ul>
+                           <li>Pseudoclases</li>
+                           <li>Pseudoselectores o pseudoelementos</li>
+                        </ul>
+                     </li>
+                     <li>Variables CSS3</li>
+                     <li>Proyecto sitio web responsive</li>
+                  </ul>
+               </div>
+
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="html2" />
+
+   <ModalVideo videoID="gFqJjDT3jpM" />
+</Layout>

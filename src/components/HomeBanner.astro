@@ -5,7 +5,9 @@ import "/node_modules/reveal.js/dist/reveal.css";
 // import "/node_modules/reveal.js/dist/theme/white.css";
 ---
 
-<section class="hero">
+<section class="hero" 
+   data-background="/img/banners/bg-home.png" 
+   data-position="top center">
    <Navbar />
 
    <NavbarClone />
@@ -87,21 +89,28 @@ import "/node_modules/reveal.js/dist/reveal.css";
 <script>
    import Reveal from "reveal.js";
 
-   let deck = new Reveal({
-      height: 400,
-      controls: false,
-      progress: false,
-      autoSlide: 5000,
-      loop: true,
-      disableLayout: true,
-      transition: "fade",
-      embedded: true,
-      autoSlideStoppable: false
-   });
-   deck.initialize();
+   document.addEventListener("astro:page-load", () => {
+      let deck = new Reveal({
+         height: 400,
+         controls: false,
+         progress: false,
+         autoSlide: 5000,
+         loop: true,
+         disableLayout: true,
+         transition: "fade",
+         embedded: true,
+         autoSlideStoppable: false
+      });
+      deck.initialize();
+   })
+
 </script>
 
 <style is:global>
+
+   .reveal-viewport {
+      background-color: transparent;
+   }
    .reveal.center {
       min-height: 250px !important;
    }

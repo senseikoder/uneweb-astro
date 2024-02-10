@@ -3,7 +3,7 @@ Section Styles
 ========================================================================== */
 
 body {
-  font-family: $font;
+	font-family: $font;
 }
 
 h1,
@@ -12,173 +12,190 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $font-heading;
+	font-family: $font-heading;
 }
 
 //Sections
 .section {
-  position: relative;
-  overflow-x: hidden !important;
+	position: relative;
+	overflow-x: hidden !important;
 
-  &:focus {
-    outline: none !important;
-  }
+	&:focus {
+		outline: none !important;
+	}
 
-  &.section-light-grey {
-    background-color: $light-grey;
-  }
+	&.section-light-grey {
+		background-color: $light-grey;
+	}
 
-  &.section-feature-grey {
-    background-color: $section-grey;
-  }
+	&.section-feature-grey {
+		background-color: $section-grey;
+	}
 
-  &.section-secondary {
-    background-color: $secondary;
-  }
+	&.section-secondary {
+		background-color: $secondary;
+	}
 
-  &.section-half {
-    height: 75vh !important;
-  }
+	&.section-half {
+		height: 75vh !important;
+	}
 
-  &.has-background-image {
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+	&.has-background-image {
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
 
-  .title,
-  .subtitle {
-    font-family: $font-heading;
-  }
+	.title,
+	.subtitle {
+		font-family: $font-heading;
+	}
 
-  .subtitle {
-    &.is-muted {
-      color: $muted-grey;
-    }
-  }
+	.subtitle {
+		&.is-muted {
+			color: $muted-grey;
+		}
+	}
 
-  .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 0;
-  }
+	.overlay {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+	}
 
-  .link-list {
-    line-height: 2rem;
-    margin-left: 2rem;
+	.link-list {
+		line-height: 2rem;
+		margin-left: 2rem;
 
-    a {
-      color: $blue-grey;
-      font-weight: 400;
-      transition: all 0.3s;
+		a {
+			color: $blue-grey;
+			font-weight: 400;
+			transition: all 0.3s;
 
-      &:hover {
-        color: $secondary;
-      }
-    }
-  }
+			&:hover {
+				color: $secondary;
+			}
+		}
+	}
 
-  .item-list {
-    list-style-type: disc;
-    margin-left: 2rem;
-  }
-  
-  .icon-list {
-    list-style: none;
-    margin-left: 1.5rem;
-    line-height: 2;
-  }
+	.item-list {
+		list-style-type: disc;
+		margin-left: 2rem;
+	}
+
+	.item-list ul {
+		margin-bottom: 1rem;
+	}
+
+	.item-list ul li {
+		list-style-type: circle;
+		margin-left: 2rem;
+	}
+
+	.icon-list {
+		list-style: none;
+		margin-left: 1.5rem;
+		line-height: 2;
+	}
+
+	&.main {
+		overflow: visible !important;
+	}
+
+	.two-cols {
+		columns: 2
+	}
 }
 
 //Titles
 .title-wrapper {
-  max-width: 500px;
-  margin: 0 auto;
+	max-width: 500px;
+	margin: 0 auto;
 
-  .title,
-  .subtitle {
-    font-family: $font-heading;
-  }
+	.title,
+	.subtitle {
+		font-family: $font-heading;
+	}
 
-  .subtitle {
-    &.is-muted {
-      color: $muted-grey;
-    }
-  }
+	.subtitle {
+		&.is-muted {
+			color: $muted-grey;
+		}
+	}
 }
 
 //Divider
 .divider {
-  height: 3px;
-  border-radius: 50px;
-  background: $secondary;
-  width: 60px;
+	height: 3px;
+	border-radius: 50px;
+	background: $secondary;
+	width: 60px;
 
-  &.is-centered {
-    margin: 0 auto;
-  }
+	&.is-centered {
+		margin: 0 auto;
+	}
 }
 
 //Wrapper
 .content-wrapper {
-  padding: 2rem 0;
+	padding: 2rem 0;
 }
 
 //Side feqtures
 .side-feature {
-  h3 {
-    padding-bottom: 16px;
-  }
+	h3 {
+		padding-bottom: 16px;
+	}
 }
 
 .side-image {
-  max-width: 480px;
-  margin: 0 auto;
+	max-width: 480px;
+	margin: 0 auto;
 }
 
 //Icon box
 .feature-icon {
-  padding: 16px 0;
-  cursor: pointer;
+	padding: 16px 0;
+	cursor: pointer;
 
-  &:hover {
-    .icon-wrap {
-      transform: translateY(-5px);
-      box-shadow: $light-shadow;
+	&:hover {
+		.icon-wrap {
+			transform: translateY(-5px);
+			box-shadow: $light-shadow;
 
-      .iconify {
-        color: $secondary;
-      }
-    }
-  }
+			.iconify {
+				color: $secondary;
+			}
+		}
+	}
 
-  .icon-wrap {
-    height: 60px;
-    width: 60px;
-    border-radius: 50%;
-    border: 1px solid darken($fade-grey, 4%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto 10px auto;
-    transition: all 0.3s;
+	.icon-wrap {
+		height: 60px;
+		width: 60px;
+		border-radius: 50%;
+		border: 1px solid darken($fade-grey, 4%);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 0 auto 10px auto;
+		transition: all 0.3s;
 
-    .iconify {
-      font-size: 2rem;
-      color: lighten($blue-grey, 18%);
-      transition: all 0.3s;
-    }
-  }
+		.iconify {
+			font-size: 2rem;
+			color: lighten($blue-grey, 18%);
+			transition: all 0.3s;
+		}
+	}
 
-  h4 {
-    font-family: $font;
-    font-weight: 600;
-    color: $blue-grey;
-  }
+	h4 {
+		font-family: $font;
+		font-weight: 600;
+		color: $blue-grey;
+	}
 
-  p {
-    color: $muted-grey;
-  }
+	p {
+		color: $muted-grey;
+	}
 }

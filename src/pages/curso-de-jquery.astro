@@ -1,0 +1,126 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de JQuery :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-jQuery.pdf";
+const urlPic = "/img/pics/curso-jquery.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de JQuery
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Simplifica la forma de programar con Javascript y aplicaciones
+                  web con Jquery online o presencial
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  jQuery es una biblioteca o framework de JavaScript, creada
+                  inicialmente por John Resig, que permite simplificar la manera
+                  de interactuar con los documentos HTML, manipular el arbol
+                  DOM, manejar eventos, desarrollar animaciones y agregar
+                  interacción con la tecnología AJAX a páginas web. Aprenderas
+                  la utilidad del famoso selector $, y como manejar eventos,
+                  también algunos ejemplos de como utilizar los plugins y
+                  extensiones de terceros.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <ul class="item-list two-cols">
+                     <li>Introducción</li>
+                     <li>Conceptos Básicos de jQuery</li>
+                     <li>Selección de Elementos</li>
+                     <li>Elección de Selectores</li>
+                     <li>Comprobar Selecciones</li>
+                     <li>Guardar Selecciones</li>
+                     <li>Refinamiento y Filtrado de Selecciones</li>
+                     <li>Selección de Elementos de un Formulario</li>
+                     <li>Trabajar con Selecciones</li>
+                     <li>Encadenamiento</li>
+                     <li>
+                        Obtenedores (Getters) &amp; Establecedores (Setters)
+                     </li>
+                     <li>CSS, Estilos, &amp; Dimensiones</li>
+                     <li>Utilizar Clases para Aplicar Estilos CSS</li>
+                     <li>Dimensiones</li>
+                     <li>Atributos</li>
+                     <li>Recorrer el DOM</li>
+                     <li>Manipulación de Elementos</li>
+                     <li>Obtener y Establecer Información en Elementos</li>
+                     <li>Mover, Copiar y Remover Elementos</li>
+                     <li>Clonar Elementos</li>
+                     <li>Remover elementos</li>
+                     <li>Crear Nuevos Elementos</li>
+                     <li>Manipulación de Atributos</li>
+                     <li>El núcleo de jQuery</li>
+                     <li>Métodos Utilitarios</li>
+                     <li>Comprobación de Tipos</li>
+                     <li>El Método Data</li>
+                     <li>Detección de Navegadores y Características</li>
+                     <li>Evitar Conflictos con Otras Bibliotecas JavaScript</li>
+                     <li>Eventos</li>
+                     <li>Vincular Eventos a Elementos</li>
+                     <li>Vincular Eventos para Ejecutar una vez</li>
+                     <li>Desvincular Eventos</li>
+                     <li>Espacios de Nombres para Eventos</li>
+                     <li>Vinculación de Múltiples Eventos</li>
+                     <li>El Objeto del Evento</li>
+                     <li>Ejecución automática de Controladores de Eventos</li>
+                     <li>
+                        Incrementar el Rendimiento con la Delegación de Eventos
+                     </li>
+                     <li>Desvincular Eventos Delegados</li>
+                     <li>Funciones Auxiliares de Eventos</li>
+                     <li>La función auxiliar toggle</li>
+                     <li>Efectos</li>
+                     <li>jQuery.fx.speeds</li>
+                     <li>Realizar una Acción Cuando un Efecto fue Ejecutado</li>
+                     <li>Efectos Personalizados con $.fn.animate</li>
+                     <li>Easing</li>
+                     <li>Control de los Efectos</li>
+                     <li>Introducción AJAX</li>
+                     <li>GET vs. POST</li>
+                     <li>Tipos de Datos</li>
+                     <li>Políticas de Mismo Origen y JSONP</li>
+                     <li>Ajax y Firebug</li>
+                     <li>Métodos Ajax de jQuery</li>
+                     <li>Utilizar el método $.ajax</li>
+                     <li>Utilizar el método $.fn.load</li>
+                     <li>Ajax y Formularios</li>
+                     <li>Trabajar con JSONP</li>
+                     <li>Eventos Ajax</li>
+                  </ul>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="css3" />
+
+   <ModalVideo videoID="-FgjFLMs28k" />
+</Layout>

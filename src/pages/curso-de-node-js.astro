@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de NodeJS :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-Node-JS.pdf";
+const urlPic = "/img/pics/curso-nodejs.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de NodeJS
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a utilizar Javascript en el lado del servidor, NodeJS
+                  es parte de uno de los stacks más usados en el back-end de
+                  aplicaciones.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Node JS es un entorno en tiempo de ejecución multiplataforma,
+                  de código abierto, para la capa del servidor (pero no
+                  limitándose a ello) basado en el lenguaje de programación
+                  ECMAScript, asíncrono, con I/O de datos en una arquitectura
+                  orientada a eventos y basado en el motor V8 de Google. Fue
+                  creado con el enfoque de ser útil en la creación de programas
+                  de red altamente escalables, como por ejemplo, servidores web.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Consideraciones<br />Qué es Node JS<br />Modelo
+                        Asíncrono y No Bloqueante<br />Características y
+                        Ventajas<br />io.js y el presente futuro de Node.js<br
+                        />Instalación<br />El API Docs de Node.js<br />Objetos:
+                        global, process y HTTP<br />Buffers y Streams<br
+                        />Emisores de Eventos, Timers y Herencia<br />Creación,
+                        Exportación y Requerimiento de Módulos<br
+                        />Características de EcmaScript 6 en Node.js<br />Tipos
+                        de servidores HTTP<br />Módulos: Path, Url y QueryString<br
+                        />Clientes HTTP y Sniffers<br />Formularios y envío de
+                        datos Get/Post en Node.js<br />Node Packaged Manager<br
+                        />Tipos de instalación de Paquetes<br />Módulos Globales<br
+                        />Dependencias de Proyecto<br />El archivo Package.json<br
+                        />Dependencias de Desarrollo<br />Callbacks vs Promesas<br
+                        />Promesas con ES6<br />Frameworks Web para Node.js<br
+                        />Express.js<br />Introducción y Conceptos Básicos<br
+                        />Rutas y Middlewares<br />Generador de Express<br
+                        />Templates Engines
+                     </p>
+                     <p>
+                        Configuración de Express<br />Templates Engines<br
+                        />Jade<br />EJS<br />Introducción a Ghost<br />REST vs
+                        CRUD<br />SQL vs NoSQL<br />API CRUD con MySQL<br />API
+                        REST con MySQL y el Patrón MVC<br />Introducción a
+                        MongoDB<br />Instalación y Configuración de MongoDB<br
+                        />Línea de Comandos de MongoDB<br />API REST con MongoDB
+                        y el Patrón MVC<br />Introducción a los WebSockets<br
+                        />Introducción a Socket.IO<br />Manejo y Emisión de
+                        Eventos en Socket.IO<br />Creación de Chat con Express y
+                        Socket.IO<br />Creación de Streaming de Video con
+                        Express, Socket.IO y API’s JS
+                     </p>
+            
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="nodejs" />
+
+   <!-- <ModalVideo videoID="" /> -->
+</Layout>

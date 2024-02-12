@@ -1,0 +1,165 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Android  :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-MySQL.pdf";
+const urlPic = "/img/pics/curso-android.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Android
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende desarrollo de aplicaciones Android, cuya programación
+                  se basa en Java, pudiendo crear con ellas multitud de
+                  aplicaciones que te abrirán las puertas a un nuevo mercado
+                  profesional.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Android es un sistema operativo móvil basado en Linux, que
+                  junto con aplicaciones middleware7 está enfocado para ser
+                  utilizado en dispositivos móviles como teléfonos inteligentes,
+                  tabletas, Google TV y otros dispositivos.8 Es desarrollado por
+                  la Open Handset Alliance, la cual es liderada por Google.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso de Android Nivel I
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>¿Qué es Android? &nbsp; &nbsp;Historia</p>
+                     <p>
+                        Tipo de Aplicaciones Móviles<br />Aplicaciones Nativas<br
+                        />Aplicación Web adaptada<br />Aplicaciones Web Nativas
+                        (aplicaciones hibridas)<br />Estudio comparativo entre
+                        los diferentes tipos de aplicaciones para móviles<br
+                        />Historial de actualizaciones Android
+                     </p>
+                     <p>Versiones</p>
+                     Arquitectura<br />Descarga y configuración del entorno de
+                     desarrollo<br />Requerimientos del Sistema<br />Instalar y
+                     Actualizar componentes del DSK de Android<br />Creación de
+                     un proyecto Android con Android Studio<br />Estructura de
+                     un proyecto en Android<br />Fichero ANDROIDMANIFEST.XML<br
+                     />Cómo crear y configurar un Android Virtual Device en
+                     Android Studio<br />Creación de nuestra primera APP Android<br
+                     />Capturando el click de un botón<br />Actividades
+                     (Activity)<br /><br />Comportamiento de una Activity cuando
+                     otra la sustituye<br />Ciclo de vida de una Activity<br
+                     />Creación de una Activity<p></p>
+                  </div>
+
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-Android-Nivel-I.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                  <hr />
+
+
+                  <h3 class="title is-4">
+                     Contenido del Curso de Android Nivel II
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>Conceptos Básicos</p>
+                     <p>
+                        Icono de la aplicación<br />Toast (notificaciones
+                        emergentes)<br />Controles
+                     </p>
+                     <p style="padding-left: 30px;">
+                        RadioGroup y RadioButton<br />Control CheckBox<br
+                        />Control ImageButton<br />Control Spinner<br />Control
+                        ListView (para una lista de String)
+                     </p>
+                     <p>Layouts</p>
+                     <p style="padding-left: 30px;">
+                        LinearLayout<br />TableLayout<br />FrameLayout<br
+                        />ScrollView en los LinearLayout
+                     </p>
+                     <p>Componente Action Bar</p>
+                     <p style="padding-left: 30px;">
+                        Action Bar (Básica)<br />Action Bar (Con botones de
+                        Acción)<br />Action Bar (Hide &amp; Show)
+                     </p>
+                  </div>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-Android-Nivel-II.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                  <hr />
+
+                  <!-- Nivel 3 -->
+                  <h3 class="title is-4">
+                     Contenido del Curso de Android Nivel III
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Menús<br />Menús y Submenús básicos<br />Menús
+                        Contextuales<br />Opciones avanzadas<br />Bases de
+                        datos:<br />Primeros pasos con SQLite<br />Inserción,
+                        actualización y eliminación de registros<br />Consulta y
+                        recuperación de registros.<br />Ficheros en Android:<br
+                        />Memoria Interna<br />Memoria Externa (Tarjeta SD)<br
+                        />Permisos en Android<br />Uso de Cámara, Video, Audio<br
+                        />Google Maps<br />GPS
+                     </p>
+                  </div>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-Android-Nivel-III.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                 
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+
+      <CursosRelated tag="programacion" except="android" />
+
+      <ModalVideo videoID="3E6zjF4-I4k" />
+   </section>
+</Layout>

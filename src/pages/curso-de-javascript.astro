@@ -1,0 +1,188 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Javascript :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-MySQL.pdf";
+const urlPic = "/img/pics/curso-js.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Javascript
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende el lenguaje de programación más usado en la web,
+                  desarrolla aplicaciones y mucho más.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  JavaScript, es un lenguaje de scripts desarrollado por
+                  Nestacape. Este tipo de lenguajes es muy útil para la
+                  elaboración de pequeños programas, muy utilizados para crear
+                  herramientas en una página Web.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso de JavaScript Nivel I
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        <strong
+                           >Programación de páginas web Presenta la necesidad de
+                           crear páginas web dinámicas</strong
+                        >, en las que el usuario acceda a información
+                        personalizada, y explica las diferencias entre la
+                        programación del lado cliente, que ejecuta el navegador;
+                        y la programación del lado servidor, ejecutada por el
+                        servidor web.
+                     </p>
+                     <p><strong>Introducción a JavaScript</strong></p><p></p><p>
+                        Variables en JavaScript<br />
+                        Tipos de datos en JavaScript<br />
+                        Operaciones aritméticas<br />
+                        Operadores de comparación y operadores lógicos<br />
+                        Cadenas de caracteres en JavaScript<br />
+                        Arreglos en JavaScript.
+                     </p>
+                     <p>
+                        <strong
+                           >Métodos de arreglos (.push() , .pop() , .shift() ,
+                           .unshift())</strong
+                        >
+                     </p>
+                     <p>
+                        Variables globales y locales<br />
+                        Funciones en JavaScript<br />
+                        Condicionales en JavaScript<br />
+                        Sentencias Switch en JavaScript<br />
+                        Objetos en JavaScript<br />
+                        Ciclos for y ciclos while en JavaScript<br />
+                     </p>
+                     <p>
+                        <strong
+                           >Números aleatorios en JavaScript var vs. let vs.
+                           const en JavaScript</strong
+                        ><br />
+                        Operador condicional (ternario) en JavaScript<br />
+                        Funciones flecha en JavaScript<br />
+                        Operadores rest y spread en JavaScript<br />
+                        Sintaxis de desestructuración para objetos y arreglos<br
+                        />
+                        Manipulación del DOM
+                     </p>
+                     <p>
+                        <strong>Los objetos location e history</strong
+                        >&nbsp;estudian los objetos location e history de
+                        JavaScript.
+                     </p>
+                     <p>
+                        <strong>El objeto document</strong>&nbsp;estudia el
+                        objeto document de Javascript, que representa el
+                        contenido de la página web.
+                     </p>
+                     <p>
+                        <strong>El objeto form</strong>. Estudia el objeto form
+                        de JavaScript que permite el acceso a la información
+                        manejada en los formulariosque aparecen en las páginas
+                        web. Explica cómo validar la información del formulario
+                        con JavaScriptantes de enviarla al servidor web.
+                     </p>
+                     <p>
+                        <strong>Otros objetos</strong>&nbsp;estudia los
+                        siguientes objetos JavaScript: el conjunto frames, el
+                        objeto navigator y el objeto screen.<br />
+                        <strong
+                           >Plantillas literales o plantillas de cadenas Clases
+                           y métodos en JavaScript</strong
+                        >
+                     </p>
+                  </div>
+
+                  <!-- <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PostgreSQL-I.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p> -->
+
+                  <br />
+
+                  <h3 class="title is-4">
+                     Contenido del Curso de JavaScript Nivel II
+                  </h3>
+
+                  <div class="two-cols">
+                     <ul class="item-list">
+                        <li>Compatibilidad del Navegador</li>
+                        <li>¿Qué son las hojas de estilo?</li>
+                        <li>Importación</li>
+                        <li>Estilos</li>
+                        <li>Propiedades</li>
+                        <li>Jerarquías</li>
+                        <li>Objetos literales y clases</li>
+                        <li>Métodos de arreglos y opciones para objetos</li>
+                        <li>Manejo de eventos</li>
+                        <li>Promesas</li>
+                        <li>Fetch API</li>
+                        <li>Async/Await</li>
+                        <li>Uso de módulos</li>
+                        <li>Desestructuración</li>
+                        <li>Control de propiedades de los elementos HTML</li>
+                        <li>Funciones anónimas</li>
+                        <li>Firebase (NoBackend)</li>
+                        <li>Dominando AJAX</li>
+                        <li>JSON - JSONP - CORS</li>
+                        <li>APIs Externas</li>
+                        <li>HTML5 API</li>
+                        <li>Local Storage</li>
+                        <li>Geolocalización</li>
+                        <li>WebSockets (Cliente)</li>
+                        <li>Web Workers</li>
+                        <li>Librerías</li>
+                        <li>Nuevos Métodos Integrados</li>
+                     </ul>
+                  </div>
+
+                  <!-- <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PostgreSQL-II.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p> -->
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="mysql" />
+
+   <ModalVideo videoID="BtDXBWQkR88" />
+</Layout>

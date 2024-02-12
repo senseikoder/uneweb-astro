@@ -1,0 +1,276 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de PHP :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-MySQL.pdf";
+const urlPic = "/img/pics/curso-php.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de PHP
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende el lenguaje de backend más usado en la web, desarrolla
+                  aplicaciones web basadas en PHP, tecnología de código abierto
+                  con bastante demanda en el mundo laboral.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El Curso de PHP es un lenguaje de scripting que permite la
+                  generación dinámica de contenidos en un servidor web. Con este
+                  lenguaje podemos crear muchas herramientas en nuestra página
+                  web que interactuan con una base de datos. Ejemplo: carro de
+                  compras, foros, cotizaciones en línea, registro de usuarios,
+                  buscador de datos, catálogo de productos, etc. Es fuente
+                  abierta y no necesita licencia de uso.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso de PHP Nivel I</h3>
+
+                  <ul class="item-list two-cols">
+                     <li>Proyecto Administrador básico de datos</li>
+                     <li>Definiciones de PHP</li>
+                     <li>
+                        Instalar fácilmente PHP y Mysql. Paquetes descargables
+                     </li>
+                     <li>Editores de Texto</li>
+                     <li>Definición de Variable en PHP</li>
+                     <li>Tipos de datos en PHP</li>
+                     <li>Operadores</li>
+                     <li>Estructuras de control</li>
+                     <li>Incluyendo Archivos</li>
+                     <li>Arreglos</li>
+                     <li>
+                        Procesamiento de formularios HTML, los datos son
+                        enviados al servidor Web.Consultas desde nuestra
+                        aplicación PHP utilizando los arrays superglobales,
+                        $_GET y $_POST de manera respectiva.
+                     </li>
+                     <li>Operaciones básicas en PHP con Base de Datos</li>
+                     <li>Operación de Insertar datos</li>
+                     <li>Operación de Buscar 1 campo</li>
+                     <li>Operación de Eliminar datos</li>
+                     <li>Operación de Modificar datos</li>
+                     <li>Operación de Consultar datos</li>
+                     <li>
+                        Página dinámica para enviar datos a un buzón de correo.
+                     </li>
+                  </ul>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PHP-I.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                  <br />
+
+                  <h3 class="title is-4">
+                     Contenido del Curso de PHP Nivel II
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        En este curso avanzaremos con ejercicios que incluyen la
+                        práctica de búsqueda de datos avanzada, encuestas y
+                        gráficas de resultados, cálculo de suma, resta,
+                        multiplicación.
+                     </p>
+                     <ul class="item-list">
+                        <li>Repaso del nivel 1.</li>
+                        <li>Operaciones básicas en PHP con Base de Datos</li>
+                        <li>Insertar – Consultar – Modificar – Eliminar</li>
+                        <li>
+                           Desarrollo de un Foro abierto para los usuarios.
+                        </li>
+                        <li>Buscador de varios campos</li>
+                        <li>Buscador de datos comunes</li>
+                        <li>
+                           Encuesta – Resultados almacenados en un archivo TXT
+                        </li>
+                        <li>Muestra de gráficos resultados de estadísticas</li>
+                        <li>
+                           Cookies en PHP son bloques de información almacenadas
+                           en el cliente
+                        </li>
+                        <li>Las funciones.</li>
+                        <li>Llamando a una función</li>
+                        <li>El valor de retorno</li>
+                        <li>Operadores de Aritmética</li>
+                        <li>
+                           Adición (+) – Devuelve la suma de los dos operandos
+                           que recibe el operador. Substracción (-) – Devuelve
+                           la diferencia entre el primer y el segundo operando.
+                        </li>
+                        <li>
+                           Multiplicación (*) – Devuelve el producto de los
+                           operandos.
+                        </li>
+                        <li>
+                           División (/) – Devuelve el cociente en valor flotante
+                           de los operandos.
+                        </li>
+                        <li>
+                           Módulo (%) – Devuelve el resto de dividir el primer
+                           operando entre el segundo. Este operador es muy útil
+                           para saber si un número es múltiple de otro
+                        </li>
+                        <li>
+                           El objetivo es que los estudiantes puedan aplicar
+                           estos ejercicios a su página web de una forma
+                           sencilla y ver el alcance de la programación web, php
+                           y mysql.
+                        </li>
+                     </ul>
+                  </div>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PHP-II.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                  <!-- Nivel 3 -->
+                  <h3 class="title is-4">
+                     Contenido del Curso de PHP Nivel III
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        En este nivel se creará como proyecto un carro de
+                        compras para páginas web que venden productos y/o
+                        servicios. Este proyecto es sencillo y modificable
+                        fácilmente.
+                     </p>
+                     <ul class="item-list">
+                        <li>Proyecto: carro de compras online, e – commerce</li>
+                        <li>Diagrama de fases de un carro de compras</li>
+                        <li>Módulo de Usuarios</li>
+                        <li>Módulo de productos</li>
+                        <li>Módulo de carro de compras</li>
+                        <li>Módulo de Búsqueda de productos</li>
+                        <li>Módulo de registro de la compra</li>
+                        <li>Módulo de Pedidos</li>
+                        <li>Administrador de datos</li>
+                        <li>
+                           Operaciones en PHP: Insertar, modificar, Consultar
+                           datos.
+                        </li>
+                        <li>Crear base de datos y campos requeridos</li>
+                        <li>Imagen GD, descripción, librerías</li>
+                        <li>Funciones</li>
+                        <li>Upload de archivos</li>
+                        <li>Sitio web público para el usuario</li>
+                        <li>Usuario y clave</li>
+                        <li>Seguridad en php</li>
+                        <li>Sesiones PHP</li>
+                        <li>Guardar variables</li>
+                        <li>Leer variables guardada</li>
+                        <li>Borrar variables</li>
+                        <li>Operadores de Aritmética</li>
+                     </ul>
+
+                  </div>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PHP-III.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+
+                  <!-- Nivel 4 -->
+                  <h3 class="title is-4">
+                     Contenido del Curso de PHP Nivel IV
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        La programación orientada a objetos es una forma de
+                        programación avanzada. La última versión de PHP
+                        incorpora una nueva forma de POO, la cuál contribuye a
+                        mejorar su rendimiento y aumentar sus posibilidades.
+                     </p>
+                     <p><strong>Programación orientada a objeto</strong></p>
+                     <ul class="item-list">
+                        <li>Objetos y clases. repaso</li>
+                        <li>
+                           Cómo crear clases, atributos y operaciones en PHP
+                        </li>
+                        <li>Qué es el constructor de una clase</li>
+                        <li>Cómo usar los métodos de una clase</li>
+                        <li>Qué es la Herencia en PHP y como implementarla</li>
+                        <li>
+                           Librerías gráficas y multimedia en PHP (GD, JpGraph,
+                           Flash, FDF).
+                        </li>
+                        <li>Ejercicios: Realizamos 11 ejercicios:</li>
+                        <li>Ej.1 Creacion de clases, atributos y métodos</li>
+                        <li>Ej.2 Creación de clases, uso del constructor</li>
+                        <li>
+                           Ej.3 Creación de clases, invocación o llamado a
+                           varios métodos
+                        </li>
+                        <li>Ej.4 Creación de clases, herencia</li>
+                        <li>
+                           Ej.5 Hacer conexiones con programación orientada a
+                           objeto
+                        </li>
+                        <li>Ej.6 Combos dinámicos desplegables enlazados</li>
+                        <li>Ej.7 Gráfico de línea</li>
+                        <li>Ej.8 Gráfico de torta</li>
+                        <li>Ej.9 Grafico de barra</li>
+                        <li>Ej.10 Imprimir en PDF</li>
+                        <li>Ej.11 Foro por temas</li>
+                     </ul>
+                  </div>
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PHP-IV.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+               </div>
+            </CursosContent>
+            
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+
+      <CursosRelated tag="programacion" except="mysql" />
+
+      <ModalVideo videoID="-nFWxdJ6YVY" />
+   </section>
+</Layout>

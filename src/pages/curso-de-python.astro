@@ -1,0 +1,212 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Python :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-MySQL.pdf";
+const urlPic = "/img/pics/curso-python.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Python
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Este lenguaje se usa en varias áreas de tecnología: Web,
+                  Diseño Gráfico, Animación 2D/3D, Redes, Seguridad Informática,
+                  Procesamiento de Datos, Inteligencia Artificial para crear
+                  aplicaciones y es igualmente conocido por su uso en grandes
+                  empresas y organizaciones.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El curso de Python introduce al participante en el
+                  funcionamiento y características del lenguaje de programación
+                  Python. Se consideran los temas relacionados con: Tipos de
+                  Datos, Estructuras de Control, Manejo de Archivos,
+                  Documentación, etc. Lenguaje de programación multiparadigma,
+                  ya que soporta orientación a objetos, programación imperativa
+                  y, en menor medida, programación funcional.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso de Python Nivel I
+                  </h3>
+
+                  <ul class="two-cols item-list">
+                     <li>
+                        Durante el desarrollo del curso, se estudiarán los
+                        siguientes temas:
+                     </li>
+                     <li>Introducción a Python.</li>
+                     <li>
+                        Estudio del intérprete de comandos y codificación
+                        interactiva.
+                     </li>
+                     <li>Herramientas para control de flujos.</li>
+                     <li>
+                        Estudio de la interfaz IDLE (Integrated Development
+                        and Learning Environment).
+                     </li>
+                     <li>Generación de Binarios ejecutables congelados.</li>
+                     <li>
+                        Estudio de tipos de objetos: Números, Cadenas, Listas,
+                        Diccionarios, Tuplas, Conjuntos y Archivos.
+                     </li>
+                     <li>Operadores.</li>
+                     <li>Estructuras de control condicionales.</li>
+                     <li>Estructuras de control iterativas.</li>
+                     <li>Definición y llamado a funciones.</li>
+                     <li>Definición de clases y creación de objetos.</li>
+                     <li>Importación y recarga de módulos.</li>
+                     <li>Ejemplos prácticos de los temas estudiados.</li>
+                  </ul>
+
+                  <hr />
+
+                  <!-- <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PHP-I.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p> -->
+
+                  <h3 class="title is-4">
+                     Contenido del Curso de Python Nivel II
+                  </h3>
+
+                  <ul class="two-cols item-list">
+                     <li>Se estudiarán los siguientes controles:</li>
+                     <li>Mensajes</li>
+                     <li>Botones</li>
+                     <li>Radiobuttons</li>
+                     <li>Checkboxes</li>
+                     <li>Entry Widgets</li>
+                     <li>Canvas Widgets</li>
+                     <li>Text Widgets</li>
+                     <li>Dialogs</li>
+                     <li>Layouts</li>
+                     <li>Menus</li>
+                     <li>Eventos</li>
+                     <li>
+                        Desarrollo de ejemplo aplicación CRUD
+                        (INSERT-SELECT-UPDATE-DELETE) para ambiente de
+                        escritorio o sistemas distribuidos, integrando Tkinter y
+                        MySQL.
+                     </li>
+                  </ul>
+
+                  <!-- <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PHP-II.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p> -->
+
+                  <hr>
+
+                  <!-- Nivel 3 -->
+                  <h3 class="title is-4">
+                     Contenido del Curso de Python Nivel III
+                  </h3>
+
+                  <ul class="two-cols item-list">
+                     <li>Se estudiarán los siguientes temas:</li>
+                     <li>Introducción.</li>
+                     <li>Templates.</li>
+                     <li>Formularios.</li>
+                     <li>Sesiones.</li>
+                     <li>Cookies.</li>
+                     <li>
+                        Integración de Bases de Datos a través de Flask.
+                        Estructura - SQLAlchemy - Alembics - Vistas- Sanic -
+                        GraphQL - Tests- Deploy
+                     </li>
+                     <li>Servicios Web REST con Flask.</li>
+                     <li>
+                        Crear y publicar tus propias librerías Creating your
+                        own libraries - Structure - Publish to Pypi
+                     </li>
+                     <li>Documentación, logs y pruebas</li>
+                  </ul>
+
+                  <!-- <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PHP-III.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p> -->
+
+                  <hr>
+
+                  <!-- Nivel 4 -->
+                  <h3 class="title is-4">
+                     Contenido del Curso de Python Nivel IV
+                  </h3>
+
+                  <ul class="two-cols item-list">
+                                <li>En este nivel, se efectuarán ejercicios para el desarrollo de Aplicaciones en entorno Web a través del framework Python Django, donde se cubrirán los siguientes aspectos:</li>
+                                <li>Introducción.</li>
+                                <li>Configurar ambiente de trabajo.</li>
+                                <li>Crear proyecto.</li>
+                                <li>Crear aplicaciones y estructura de proyecto.</li>
+                                <li>Modelos y Migraciones.</li>
+                                <li>Relaciones.</li>
+                                <li>Django Shell y Querysets.</li>
+                                <li>Configurar URLs&nbsp; (declaración de rutas).</li>
+                                <li>Vistas.</li>
+                                <li>Modelos.</li>
+                                <li>Sistema de Plantillas.</li>
+                                <li>Configurar archivos estáticos.</li>
+                                <li>Formularios.</li>
+                                <li>Integración de Bases de Datos a través de Django.</li>
+                                <li>ORM Django.</li>
+                                <li>Servicios Web REST con Django.</li>
+
+                              </ul>
+
+                  <!-- <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PHP-IV.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p> -->
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+
+      <CursosRelated tag="programacion" except="python" />
+
+      <ModalVideo videoID="np4iAKT4OUU" />
+   </section>
+</Layout>

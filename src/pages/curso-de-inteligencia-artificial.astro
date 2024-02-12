@@ -1,0 +1,141 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Inteligencia Artificial :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-Node-JS.pdf";
+const urlPic = "/img/pics/curso-ia.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Inteligencia Artificial
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Este plan de estudios ofrece una visión general de los
+                  conceptos básicos de la inteligencia artificial, así como de
+                  las técnicas y aplicaciones más importantes. El objetivo del
+                  curso es capacitar a personas de diferentes profesiones.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  La inteligencia artificial (IA) es un campo de la informática
+                  que se enfoca en crear sistemas que puedan realizar tareas que
+                  normalmente requieren inteligencia humana, como el
+                  aprendizaje, el razonamiento y la percepción.
+                  <br />
+                  La IA se basa en el uso de algoritmos y modelos matemáticos para
+                  procesar grandes cantidades de datos y tomar decisiones basadas
+                  en patrones y reglas establecidas.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso de Inteligencia Artificial para
+                     distintas profesiones, Nivel I
+                  </h3>
+
+                  <ul class="two-cols item-list">
+                     <li>
+                        Comprender los conceptos básicos de la IA y los
+                        chatbots.
+                     </li>
+                     <li>
+                        Seleccionar el chatbot adecuado para sus necesidades.
+                     </li>
+                     <li>Configurar y personalizar un chatbot.</li>
+                     <li>Crear contenido para el chatbot.</li>
+                     <li>Medir el rendimiento del chatbot.</li>
+                     <li>Introducción a la IA y los chatbots</li>
+                     <li>Historia de la IA</li>
+                     <li>Conceptos básicos de la IA</li>
+                     <li>Tipos de chatbots</li>
+                     <li>Aplicaciones de los chatbots</li>
+                     <li>Selección de un chatbot</li>
+                     <li>Propósito del chatbot</li>
+                     <li>Público objetivo</li>
+                     <li>Presupuesto</li>
+                     <li>Criterios de selección</li>
+                     <li>
+                        Módulo 3: Configuración y personalización de un chatbot
+                     </li>
+                     <li>Configuración básica</li>
+                     <li>Agregar contenido</li>
+                     <li>Definir reglas y respuestas</li>
+                     <li>Crear flujos de conversación</li>
+                     <li>Creación de contenido para un chatbot</li>
+                     <li>Escritura de diálogos</li>
+                     <li>Desarrollo de personajes</li>
+                     <li>Creación de contenido atractivo</li>
+                     <li>Medición del rendimiento de un chatbot</li>
+                     <li>Recopilación de datos</li>
+                     <li>Análisis de resultados</li>
+                     <li>Realización de mejoras</li>
+                  </ul>
+
+                  <hr />
+
+                  <h3 class="title is-4">
+                     Contenido del Curso de Inteligencia Artificial para
+                     programadores Nivel I
+                  </h3>
+
+                  <ul class="two-cols item-list">
+                     <li>Introducción a la inteligencia artificial</li>
+                     <li>¿Qué es la inteligencia artificial?</li>
+                     <li>Historia de la inteligencia artificial</li>
+                     <li>Tipos de inteligencia artificial</li>
+                     <li>Aplicaciones de la inteligencia artificial</li>
+                     <li>Aprendizaje automático</li>
+                     <li>Conceptos básicos de aprendizaje automático</li>
+                     <li>Algoritmos de aprendizaje automático</li>
+                     <li>
+                        Preprocesamiento de datos para aprendizaje automático
+                     </li>
+                     <li>Evaluación de modelos de aprendizaje automático</li>
+                     <li>Redes neuronales</li>
+                     <li>Conceptos básicos de redes neuronales</li>
+                     <li>Tipos de redes neuronales</li>
+                     <li>Entrenamiento de redes neuronales</li>
+                     <li>Aplicaciones de redes neuronales</li>
+                     <li>Visión artificial</li>
+                     <li>Conceptos básicos de visión artificial</li>
+                     <li>Algoritmos de visión artificial</li>
+                     <li>Aplicaciones de visión artificial</li>
+                     <li>Procesamiento del lenguaje natural</li>
+                     <li>
+                        Conceptos básicos del procesamiento del lenguaje natural
+                     </li>
+                     <li>Algoritmos de procesamiento del lenguaje natural</li>
+                     <li>Aplicaciones de procesamiento del lenguaje natural</li>
+                  </ul>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="nodejs" />
+
+   <!-- <ModalVideo videoID="" /> -->
+</Layout>

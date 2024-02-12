@@ -1,0 +1,117 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Laravel :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-Bootstrap.pdf";
+const urlPic = "/img/pics/curso-laravel.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Laravel
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Laravel framework PHP, Aprende las habilidades requeridas para
+                  el desarrollo de aplicaciones en Laravel.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Laravel es el framework PHP con mayor proyección en la
+                  actualidad, posiblemente el más avanzado y con mayor comunidad
+                  de desarrolladores. Un aliado indispensable si queremos hacer
+                  aplicaciones web con PHP altamente profesionales. El curso
+                  está basado en prácticas.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <ul class="item-list two-cols">
+                        <li>Estructura de carpetas del proyecto Laravel</li>
+                        <li>
+                           Rutas<br />
+                           Helpers<br />
+                           Vistas Laravel<br />
+                           Blade - Estructuras de control<br />
+                           Blade - Herencia de plantillas<br />
+                           Desarrollo de web multiidiomas<br />
+                           Integración con VueJS
+                        </li>
+                        <li>
+                           Remover bootstrap y Vuejs del Proyecto Laravel<br />
+                           Cargar imágenes en vista blade<br />
+                           Vista para errores<br />
+                           Conexión a base de datos<br />
+                           Conexión a base de datos<br />
+                           Migraciones<br />
+                           Modelos<br />
+                           Seeders y factories<br />
+                           ORM Eloquent - Generalidades<br />
+                        </li>
+                        <li>
+                           Relaciones entre modelos: Uno a uno, Uno a Muchos,
+                           Muchos a muchos<br />
+                           Query builder: Consultas<br />
+                           Query builder: Insert, update, delete<br />
+                           Controladores<br />
+                           Middlewares<br />
+                           Objetos request y response<br />
+                           Formularios<br />
+                           Validación de formularios utilizando Validator<br />
+                           Validación de formularios utilizando FormRequest<br
+                           />
+                           Autenticación de usuarios<br />
+                           Confirmación email, recuperar password
+                        </li>
+                        <li>
+                           Listado de registros<br />
+                           Búsqueda de registros<br />
+                           Paginación de registros<br />
+                           Agregar registros de ejemplo utilizando los seeders<br
+                           />
+                           Mostrar registro<br />
+                           Listar comentarios en las entradas<br />
+                           Agregar comentarios en las entradas<br />
+                           Agregar registros
+                        </li>
+                        <li>
+                           Editar registros<br />
+                           Eliminar registro<br />
+                           Listado de registros por usuario<br />
+                           Listado y búsqueda de registros sin autenticarse<br
+                           />
+                           Formato de fechas en las vistas blade<br />
+                           Modificando opciones de menú
+                        </li>
+                  </ul>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="laravel" />
+
+   <!-- <ModalVideo videoID="" /> -->
+</Layout>

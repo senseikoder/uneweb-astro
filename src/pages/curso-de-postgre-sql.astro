@@ -1,0 +1,176 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "PostgreSQL :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-MySQL.pdf";
+const urlPic = "/img/pics/curso-postgresql.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  PostgreSQL
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende un sistema de gestión de base de datos relacional
+                  orientada a objetos y libre. Es una de las bases de datos más
+                  avanzadas y con gran poder para el manejo de datos.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Como muchos otros proyectos de código abierto, el desarrollo
+                  de PostgreSQL no es manejado por una empresa y/o persona, sino
+                  que es dirigido por una comunidad de desarrolladores que
+                  trabajan de forma desinteresada, altruista, libre y/o apoyados
+                  por organizaciones comerciales. Dicha comunidad es denominada
+                  el PGDG (PostgreSQL Global Development Group).
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso de PostgreSQL Nivel I
+                  </h3>
+
+                  <ul class="item-list two-cols">
+                     <li>
+                        Conceptos básicos de bases de datos<ul>
+                           <li>Base de datos</li>
+                           <li>Tabla</li>
+                           <li>Diferencia entre registro y campo</li>
+                           <li>Modelo Entidad-Relación</li>
+                           <li>
+                              Representación gráfica del Modelo Entidad –
+                              Relación
+                           </li>
+                           <li>SQL Estándar</li>
+                        </ul>
+                     </li>
+                     <li>
+                        Introducción a postgresql<ul>
+                           <li>Características y Ventajas</li>
+                           <li>Otros Sistemas de Gestión de Bases de Datos</li>
+                        </ul>
+                     </li>
+                     <li>Instalación de PostgreSql en Linux y Windows</li>
+                     <li>Acceder a la consola de postgres (psql shell)</li>
+                     <li>
+                        Operaciones básicas en las Bases de datos y tablas<ul>
+                           <li>Crear una base de datos</li>
+                           <li>Eliminar bases de datos</li>
+                           <li>Renombrar una base de datos</li>
+                           <li>Conectar con Bases de Datos Creadas</li>
+                           <li>Tipos de datos soportados por postgresql</li>
+                           <li>Crear una Tabla</li>
+                           <li>Describir la estructura de una tabla</li>
+                           <li>Alteración básica de tablas.</li>
+                        </ul>
+                     </li>
+                     <li>
+                        Operaciones elementales en las bases de datos (CRUD)<ul>
+                           <li>CRUD-CREATE</li>
+                           <li>Insertar datos en una tabla</li>
+                           <li>CRUD-READ</li>
+                           <li>CRUD-UPDATE</li>
+                           <li>DELETE-CRUD</li>
+                           <li>TRUNCATE TABLE</li>
+                        </ul>
+                     </li>
+                     <li>
+                        Integridad referencial<ol>
+                           <li>Clave Primaria</li>
+                           <li>
+                              Clave Foránea o referenciada<ul>
+                                 <li>Uso de la Acción CASCADE</li>
+                                 <li>
+                                    ¿Cómo identificar las claves foráneas?¿En
+                                    qué tabla se define una clave foránea?
+                                 </li>
+                              </ul>
+                           </li>
+                        </ol>
+                     </li>
+                     <li>
+                        Funciones de agrupamiento<ul>
+                           <li>Operadores Relacionales</li>
+                           <li>Operadores lógicos</li>
+                        </ul>
+                     </li>
+                  </ul>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PostgreSQL-I.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                  <br />
+
+                  <h3 class="title is-4">
+                     Contenido del Curso de PostgreSQL Nivel II
+                  </h3>
+
+                  <ul class="item-list two-cols">
+                     <li>Disparadores</li>
+                     <li>Panorama del comportamiento de los disparadores</li>
+                     <li>Visibilidad de los cambios en los datos</li>
+                     <li>Escribiendo funciones disparadores en C</li>
+                     <li>El sistema de reglas</li>
+                     <li>El árbol de consultas</li>
+                     <li>Vistas y el sistema de reglas</li>
+                     <li>El lenguaje de procedimientos PL/pgSQL</li>
+                     <li>Panorama</li>
+                     <li>Ventajas de usar PL/pgSQL</li>
+                     <li>
+                        Tipos de datos soportados como argumentos y resultados
+                     </li>
+                     <li>Consejos para desarrollo con PL/pgSQL</li>
+                     <li>Manejando las comillas</li>
+                     <li>Estructura de PL/pgSQL</li>
+                     <li>Declaraciones</li>
+                     <li>Alias para parámetros de funciones</li>
+                     <li>Copiando tipos</li>
+                     <li>Tipos de registro de tabla</li>
+                     <li>Tipos de registro genéricos</li>
+                  </ul>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-PostgreSQL-II.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="mysql" />
+
+   <ModalVideo videoID="CP4r5J8ZHB0" />
+</Layout>

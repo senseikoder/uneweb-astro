@@ -1,0 +1,96 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Bootstrap :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-Bootstrap.pdf";
+const urlPic = "/img/pics/curso-bootstrap.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Bootstrap
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Bootstrap es un kit de herramientas de código abierto para
+                  desarrollos web responsive con HTML, CSS y JavaScript.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Bootstrap es un framework front end muy extendido y pensado
+                  sobre todo para crear proyectos web responsive. Descubre en
+                  este curso cómo Bootstrap puede mejorar el flujo de trabajo de
+                  tus proyectos web, desde el diseño a la maquetación, logrando
+                  crear sitios webs adaptados para dispositivos de forma fácil.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <ul class="item-list two-cols">
+                     <li>La primera plantilla Bootstrap</li>
+                     <li>La comunidad Bootstrap</li>
+                     <li>Desactivando el diseño responsive</li>
+                     <li>Compatibilidad con los navegadores</li>
+                     <li>Accesibilidad</li>
+                     <li>La licencia de Bootstrap</li>
+                     <li>Personalizando Bootstrap</li>
+                     <li>Diseñando con rejilla</li>
+                     <li>Tipos de rejillas</li>
+                     <li>Reseteando columnas</li>
+                     <li>Desplazando columnas</li>
+                     <li>Anidando columnas</li>
+                     <li>Reordenando las columnas</li>
+                     <li>Variables y mixins de LESS</li>
+                     <li>Tipografía</li>
+                     <li>Titulares</li>
+                     <li>Texto</li>
+                     <li>Énfasis</li>
+                     <li>Clases CSS</li>
+                     <li>Abreviaturas</li>
+                     <li>Direcciones</li>
+                     <li>Blockquotes</li>
+                     <li>Listas</li>
+                     <li>Código</li>
+                     <li>Elementos CSS</li>
+                     <li>Tablas</li>
+                     <li>Imágenes</li>
+                     <li>Utilidades</li>
+                     <li>Formularios</li>
+                     <li>Formulario básico</li>
+                     <li>Formulario en línea</li>
+                     <li>Formularios horizontales</li>
+                     <li>Campos de formulario</li>
+                     <li>Estados de formulario</li>
+                     <li>Redimensionando campos de formulario</li>
+                  </ul>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="bootstrap" />
+
+   <ModalVideo videoID="Gu_GGEtr1Nk" />
+</Layout>

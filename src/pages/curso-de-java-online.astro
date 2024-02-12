@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Java :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-jQuery.pdf";
+const urlPic = "/img/pics/curso-java.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Java
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a desarrollar sistemas en servidores locales y web con
+                  Java, 100% online o presencial
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El objetivo del curso de Java SE y Java EE es enseñar a
+                  programar a aquellas personas que tienen interés de
+                  incorporarse en el mercado de desarrollo de aplicaciones y
+                  sistemas con bases de datos. En este curso aprenderás desde
+                  cero a pensar, diseñar (utilizando diferentes algoritmos de
+                  pseudo-código), finalmente a codificar en la PC sistemas y en
+                  servidores web.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso de Java Standard Edition
+                  </h3>
+
+                  <div class="one-column contenido">
+                     <p>
+                        Nivel I – <a
+                           href="./docs/Contenido-de-Java-SE-Nivel-I.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Descarga el contenido Aquí</a>
+                     </p>
+                     <p>
+                        Nivel II – <a
+                           href="./docs/Contenido-de-Java-SE-Nivel-II.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Descarga el contenido Aquí</a>
+                     </p>
+                     <p>
+                        Nivel III – <a
+                           href="./docs/Contenido-de-Java-SE-Nivel-III.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Descarga el contenido Aquí</a>
+                     </p>
+                     <p>
+                        Nivel IV – <a
+                           href="./docs/Contenido-de-Java-SE-Nivel-IV.pdf"
+                           >Descarga el contenido Aquí</a>
+                     </p>
+                  </div>
+
+                  <hr />
+
+                  <h3 class="title is-4">
+                     Contenido del Curso de Java Standard Edition
+                  </h3>
+
+                  <div class="one-column contenido">
+                     <p>
+                        Nivel I – <a
+                           href="./docs/Contenido-de-Java-EE-Nivel-I.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Descarga el Contenido Aquí</a>
+                     </p>
+                     <p>
+                        Nivel II – <a
+                           href="./docs/Contenido-de-Java-EE-Nivel-II.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Descarga el Contenido Aquí</a>
+                     </p>
+                     <p>
+                        Nivel III – <a
+                           href="./docs/Contenido-de-Java-EE-Nivel-III.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Descarga el Contenido Aquí</a>
+                     </p>
+                     <p>
+                        Nivel IV – <a
+                           href="./docs/Contenido-de-Java-EE-Nivel-IV.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           >Descarga el Contenido Aquí</a>
+                     </p>
+                  
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="java" />
+
+   <ModalVideo videoID="o3XSRsMqzx8" />
+</Layout>

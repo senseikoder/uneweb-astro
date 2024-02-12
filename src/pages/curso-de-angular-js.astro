@@ -1,0 +1,97 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Angular :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-Bootstrap.pdf";
+const urlPic = "/img/pics/curso-angular.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Angular
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende el framework de Javascript de código abierto,
+                  mantenido por Google, para crear aplicaciones de todo tipo.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Angular es un framework del front-end, moderno y basado en
+                  Typescript. Su objetivo es aumentar las aplicaciones basadas
+                  en navegador con capacidad de Modelo Vista Controlador (MVC),
+                  en un esfuerzo para hacer que el desarrollo y las pruebas sean
+                  más fáciles.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        1.- Introducción<br />¿Qué es Angular?<br />
+                        Preparar entorno de trabajo para comenzar a crear nuestra
+                        aplicación.
+                        <br />
+                        2.- Componentes y Plantillas
+                        <br />
+                        3.- TypeScript dentro de Angular
+                        <br />
+                        4.- Directivas, binding y eventos
+                        <br />
+                        5.- Routing y Menú de navegación
+                        <br />
+                        6.- Servicios
+                        <br />
+                        7.- Pipes y filtros
+                        <br />
+                        8.- Formularios y validaciones
+                        <br />
+
+                        9.- Servicios, HTTP y AJAX
+                        <br />
+                        10.- NgTemplate (If, else y then)
+                        <br />
+                        11.- Creando un API REST Introducción al desarrollo del servicio
+                        REST
+                        <br />
+                        12. Introducción a la creación de la webapp con Angular <br
+                        />
+                        13. Configurar el router<br />
+                        14. Elementos del menú. Enlaces del menú de navegación<br
+                        />
+                        15. Librería de uploads<br />
+                        16. Comunicación entre componentes.<br />
+                     </p>
+                  
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="programacion" except="angular" />
+
+   <!-- <ModalVideo videoID="" /> -->
+</Layout>

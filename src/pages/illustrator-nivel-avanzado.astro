@@ -1,0 +1,101 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Illustrator Avanzado :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "https://uneweb.edu.ve/docs/Contenido-de-Illustrator-CC-II.pdf";
+const urlPic = "/img/pics/curso-ai2.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Illustrator Avanzado
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Crea hermosas ilustraciones vectoriales. La aplicación de
+                  gráficos vectoriales estándar del sector te permite crear
+                  logotipos, iconos, bocetos, tipografías y complejas
+                  ilustraciones para cualquier formato: impreso, web,
+                  interactivo, vídeo y móvil.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Dibuja y Diseña: logos, emblemas, íconos, dibujos animados,
+                  personajes en el Curso de Illustrator, es un programa para
+                  diseño gráfico, que ha definido en cierta manera el lenguaje
+                  gráfico contemporáneo mediante el dibujo vectorial.
+                  Illustrator contiene opciones creativas, un acceso más
+                  sencillo a las herramientas y una gran versatilidad para
+                  producir rápidamente gráficos flexibles para su impresión,
+                  vídeo, publicación en la Web y dispositivos móviles.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Crear y compartir Bibliotecas de colores<br />Funciones
+                        y opciones del Calco interactivo<br />Funciones y
+                        herramientas de Pintura interactiva<br />Pintar con la
+                        herramienta Malla
+                     </p>
+                     <p><strong>Funciones Tipográficas Avanzadas</strong></p>
+                     <p>
+                        Colocar textos y tablas<br />Estilos de carácter y de
+                        párrafo<br />Justificación de texto y separación de
+                        sílabas<br />Correcciones orto-tipográficas<br
+                        />Pictogramas y fuentes OpenType
+                     </p>
+                     <p><strong>Creación De Gráficos De Datos</strong></p>
+                     <p>
+                        Integración con MS Excel<br />Tipos y opciones de
+                        gráficos<br />Uso de Símbolos y Estilos gráficos
+                     </p>
+                     <p><strong>Optimizar La Productividad</strong></p>
+                     <p>
+                        Ajuste de las Preferencias<br />Personalizar los
+                        archivos de inicio<br />Crear y trabajar con plantillas.<br
+                        />Crear y personalizar Bibliotecas<br />Personalizar los
+                        Atajos de teclado<br />Trabajar con Acciones y Scripts
+                     </p>
+                     <p>
+                        <strong>Creación De Ilustraciones Para Internet</strong>
+                     </p>
+                     <p>
+                        Preparar documentos para Internet<br />Guardar y
+                        Exportar para Internet<br />Trabajar con la herramienta
+                        Sección (Slices)<br />Crear Banners interactivos y
+                        animados
+                     </p><p><strong>Proyecto: Ilustración</strong></p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="diseño" except="illustrator" />
+
+   <ModalVideo videoID="dBPdiOgucZ8" />
+</Layout>

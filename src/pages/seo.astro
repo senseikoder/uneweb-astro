@@ -1,0 +1,71 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de SEO :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-SEO.pdf";
+const urlPic = "/img/pics/curso-seo.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de SEO
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a posicionar páginas web con SEO en los buscadores
+                  100% online o presencial.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  SEO: Search Engine Optimization: optimización de buscadores.
+                  En términos generales, se trata de las prácticas orientadas a
+                  mejorar la posición de una página web en los resultados
+                  naturales de los buscadores para unos términos de búsqueda
+                  concretos.
+
+                  <br class="my-5" />
+
+                  En este sentido, es necesario precisar que estas actividades
+                  se integran dentro de lo que se denomina, de forma genérica,
+                  Marketing en buscadores, que incluiría tanto las prácticas SEO
+                  como el Search Engine Marketing (SEM), en el que los
+                  anunciantes pagan por posicionar sus enlaces patrocinados por
+                  palabras clave por delante de los de la competencia.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>¿Qué es el SEO?<br>¿Qué son los buscadores?<br>Diferencia entre SEO y SEM<br>Entender que es las SERP de Google<br>¿Qué son los keywords o palabras claves?<br>Planificación de las palabras claves<br>Herramientas de planificación de palabras claves<br>Claves básicas del SEO en la estructura de una web<br>¿Qué es un dominio y como elegir el mejor?<br>¿Qué es un hosting comparar los más útiles?<br>Análisis de la competencia<br>Pilares principales de las estrategias SEO<br>Estrategias de experiencias del usuario en la web<br>Estrategia de contenidos útiles<br>¿Qué son los backlink?<br>Estrategias de backlink<br>¿Qué son las arañas de google?<br>¿Qué son los sitemap?<br>¿Qué es el robot txt?<br>Análisis y métricas para el SEO<br>Auditoria SEO</p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="seo" />
+
+   <ModalVideo videoID="tp3dRjk-RVg" />
+</Layout>

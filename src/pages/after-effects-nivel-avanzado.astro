@@ -1,0 +1,98 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de After Effects Avanzado :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc =
+   "https://uneweb.edu.ve/docs/Contenido-de-After-Effects-CC-II.pdf";
+const urlPic = "/img/pics/curso-ae2.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de After Effects Avanzado
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a crear efectos y composiciones avanzadas en los
+                  vídeos con el Curso presencial de After Effects avanzado
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Aprende a crear efectos en los vídeos con el Curso de After
+                  Effects nivel II La aplicación de composición creativa y
+                  animación estándar del sector te permite diseñar y publicar
+                  gráficos animados y efectos visuales profesionales para el
+                  cine, la televisión, el vídeo y la Web. Da un paso adelante en
+                  la creación de animaciones y efectos visuales con esta
+                  poderosa herramienta. En este curso conocerás y manejarás
+                  técnicas avanzadas de animación y composición.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p><strong>UPDATING Y ANIMACIÓN</strong></p>
+                     <p>
+                        Updating<br />Keyframing avanzado<br />Graph Editor<br
+                        />Asistentes de animación<br />Parenting
+                     </p>
+                     <p><strong>MÁSCARAS Y ROTOSCOPÍA</strong></p>
+                     <p>
+                        Máscaras y rotoscopia con mascaras<br />Modos de fusión
+                        y compositing<br />Rotoscopia: Mattes<br />Rotoscopia:
+                        Color Keying y Linear keying
+                     </p>
+                     <p><strong>3D Y EXPRESIONES</strong></p>
+                     <p>
+                        3D avanzado<br />Integración con Illustrator<br
+                        />Expresiones
+                     </p>
+                     <p><strong>COMPOSITING</strong></p>
+                     <p>
+                        Tracking/stabilizer<br />Pre componer y anidar<br
+                        />Layers de ajuste<br />Pintura y clonación
+                     </p>
+                     <p>
+                        <strong>ANIMACIÓN DE TRAZOS, TEMPLATES Y TEXTO</strong>
+                     </p>
+                     <p>
+                        Animación de líneas y vector paint<br />Efectos
+                        Intermedios<br />Efectos y templates, backgrounds. Texto
+                     </p>
+                     <p><strong>MANEJO DE COLOR Y EXPORTACIÓN</strong></p>
+                     <p>
+                        Perfiles y profundidad de color<br />Corrección de color<br
+                        />Exportación
+                     </p>
+                  
+                  </div>
+               </div>
+            </CursosContent>
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+</Layout>
+
+<CursosRelated tag="diseño" except="aftereffects" />
+
+<ModalVideo videoID="Lg9QfrexsNk" />

@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Indesign :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "https://uneweb.edu.ve/docs/Contenido-de-InDesign-CC-I.pdf";
+const urlPic = "/img/pics/curso-id.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Indesign
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Diseña y desarrolla revistas, cuentos, folletos, catálogos en
+                  Indesign online o presencial.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Indesign es una aplicación de maquetación para diseñadores
+                  gráficos, periodistas, comunicadores sociales, publicistas,
+                  arquitectos y todas aquellas personas que necesitan crear
+                  folletos o revistas . Con este programa puede crear,
+                  diagramar: revistas, catálogos, dipticos, periódicos, cuentos
+                  y material impreso.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Introducción - Interfaz<br />
+                        Creación de páginas maestras.<br />Numeración de
+                        páginas.<br />Fuentes Tipográficas.<br />Cambio de
+                        sangrado.<br />Cambio Márgenes y Columnas.<br />Enlace
+                        de Texto Continúo.<br />Proporcionar conjuntamente el
+                        Marco y la Imagen.<br />Estilos de Carácter, Estilos de
+                        Párrafo.<br />Ceñir texto. Enlaces.<br />Unir texto a un
+                        trazado vectorial.<br />Insertar páginas des vinculadas
+                        del resto.<br />aplicar a páginas, páginas maestras
+                        diferentes<br />“Trazados de recorte” directas<br
+                        />“Marcos” desde “Trazados de recorte”<br />“Marcos” y
+                        Contenidos<br />Creación de índice una tabla de
+                        contenido<br />Libros. Editor de textos<br />Trazado de
+                        Textos<br />Comprobación separación de tintas, reventado<br
+                        />Interactividad.<br />Información del archivo<br
+                        />Comprobaciones finales<br />“Reunir para la Impresión”<br
+                        />Opciones de pago del programa<br /><strong
+                           >Proyecto creación de revista o calendario.</strong>
+                     </p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="diseño" except="indesign" />
+
+   <ModalVideo videoID="_F8f3b1WWfM" />
+</Layout>

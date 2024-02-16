@@ -1,0 +1,81 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Photoshop Avanzado :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "https://uneweb.edu.ve/docs/Contenido-de-Photoshop-CC-II.pdf";
+const urlPic = "/img/pics/curso-ps2.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Photoshop Avanzado
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Diseña y Crea en Photoshop imágenes, presentaciones,
+                  publicidad digital, edita fotos, etc.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El curso de Photoshop se especializa en la composición de
+                  fotografías e imágenes digitales. Ofrece cientos de
+                  herramientas de gran calidad, con funciones y capacidades para
+                  aplicar creatividad, se pueden crear material publicitario,
+                  logotipos, plantillas web entre otros proyectos.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>Introducción, repaso de contenido</p>
+                     <p>Pinceles y capas propiedades avanzadas</p>
+                     <p>Ajustes y filtros, efecto ilustración avanzado</p>
+                     <p>Crear, guardar y controlar pinceles</p>
+                     <p>Selección avanzada de elementos en una imagen</p>
+                     <p>Efecto aclarar y oscurecer avanzado</p>
+                     <p>Cambios de color avanzado</p>
+                     <p>
+                        Eliminación avanzada de objetos<br />Efecto Iluminación
+                        avanzado<br />Efectos de texto avanzado<br />Mockup -
+                        bosquejo
+                     </p>
+                     <p>Efecto desvanecimiento</p>
+                     <p>
+                        Video para post<br />Acciones en lote<br />Uso de 3D<br
+                        />Diseño de portada de revista<br />Diseño de post
+                        social media
+                        <br />
+                        Proyectos del Curso: Composición con Filtros avanzados
+                     </p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="diseño" except="photoshop" />
+
+   <ModalVideo videoID="G1qAjfjbu-8" />
+</Layout>

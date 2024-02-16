@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Indesign Avanzado :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "https://uneweb.edu.ve/docs/Contenido-de-InDesign-CC-II.pdf";
+const urlPic = "/img/pics/curso-id2.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Indesign Avanzado
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a Diseñar y diagramar Revistas, periódicos, catálogos, folletos, cuentos, libros y mucho más.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Los participantes aplicaran técnicas avanzadas en administración, tipografía avanzada, productividad editorial, adaptabilidad de los textos, cambios y flujos rápidos de impresión, todo en un sólo curso para Profesionales con experiencia previa en Adobe InDesign nivel 1.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>Estilos tipográficos avanzados<br>Buscar/Cambiar atributos tipográficos<br>Tabulaciones y Tablas<br>Opciones avanzadas de páginas maestras<br>Gestión de libros<br>Automatizar cambios de tamaño y márgenes<br>El Editor de texto y sus preferencias<br>Opciones tipográficas con fuentes “OpenType”<br>Gestión de las notas de pie de página<br>Creación de Tabla de contenidos. Creación de Índice<br>Opciones de Objeto anclado. Aplicación de “Scripts”<br>Gestión de las fuentes.<br>Gestión de los vínculos<br>Gestión de los colores<br>Acoplar transparencia<br>Función Comprobación preliminar (Preflight)<br>EXPORTAR E IMPRIMIR<br>Imprimir desde la aplicación<br>Función Empaquetar (Collect for output)<br>CREAR PDF INTERACTIVO CON INDESIGN<br>Acrobat Professional<br>Exportar a PDF<br>Marcadores<br>Hipervínculos<br>Agregar video y animaciones Flash<br>Botones<br><strong>Proyecto Diseño de revista avanzado</strong></p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="diseño" except="indesign" />
+
+   <ModalVideo videoID="Ep-L7es3I_A" />
+</Layout>

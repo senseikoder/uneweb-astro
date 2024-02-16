@@ -1,0 +1,207 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de 3D Blender :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-Blender-3D-I.pdf";
+const urlPic = "/img/pics/curso-blender.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de 3D Blender
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a diseñar y crear personajes en 3D, darle vida a
+                  través de la animación. Crea logos en 3D, animaciones motion
+                  graphics y mucho más...
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El Curso de 3D Blender es un programa multiplataforma,
+                  dedicado especialmente al modelado, render, animación y
+                  creación de gráficos tridimensionales. El programa fue
+                  inicialmente distribuido de forma gratuita pero sin el código
+                  fuente, con un manual disponible para la venta, aunque
+                  posteriormente pasó a ser software libre. Actualmente es
+                  compatible con todas las versiones de Windows, Mac OS X,
+                  Linux, Solaris, FreeBSD e IRIX.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso Blender 3D Nivel I
+                  </h3>
+
+                  <div class="two-cols">
+                     <p><strong>1. Conceptos Básicos de Blender.</strong></p>
+                     <p>
+                        Introducción a Blender.<br />El Software libre y la
+                        licencia GPL.
+                     </p>
+                     <p>
+                        <strong
+                           >2. Navegación dentro de la interfaz tridimensional.</strong
+                        >
+                     </p>
+                     <p>
+                        Atajos básicos de teclado<br />Vistas y Visualizaciones
+                        en la interface (manejo del espacio)<br />Descripción
+                        general Módulos blender.<br />Creación de primitivas.<br
+                        />Uso de luces y cámara básico
+                     </p>
+                     <p>
+                        <strong
+                           >Modos de representación y render básicon.</strong
+                        >
+                     </p>
+                     <p>
+                        Modelado Poligonal<br />ejercicio explicativo<br />Uso
+                        del edit mode (o edición poligonal).<br />controles y
+                        atajos de teclado modo Caras Aristas y Vértices
+                     </p>
+                     <p><strong>Uso de Extrude, Insert, Bevel, etc.</strong></p>
+                     <p>
+                        Trabajo con medidas.<br />Explicación de modificadores
+                        básicos.<br />Ejercicio Modular básico<br />Comienzo de
+                        Construcción del Proyecto con todo lo anteriormente
+                        aprendido<br />Explicación básica UV map<br />Asignación
+                        de materiales y multimateriales
+                     </p>
+                     <p><strong>Uso de iluminación HDRI.</strong></p>
+                     <p>
+                        Desarrollo de elementos varios del proyecto<br
+                        />Asignación de texturas externas.<br />Importación de
+                        archivos vectoriales de illustrator o cualquier software
+                        vectorial.<br />Creación y Asignación de Materiales
+                        Múltiples.<br />Básico animación.<br />Configuración de
+                        render y representación de imagen final.
+                     </p>
+                  </div>
+
+                  <hr />
+
+                  <!-- Nivel II -->
+
+                  <h3 class="title is-4">
+                     Contenido del Curso Blender 3D Nivel II
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        <strong
+                           >Configuración de Blender y tarjeta gráfica.</strong
+                        >
+                     </p>
+                     <p>Instalación de Addons o plugins internos o externos.</p>
+                     <p><strong>Modelado Poligonal avance 2</strong></p>
+                     <p>
+                        Modelado con Boleanos usando addons o sin Addons<br
+                        />Modelado con Metaballs.<br />Introducción al
+                        esculpido. Básico<br />Creación de Personajes tipo
+                        cartoons
+                     </p>
+                     <p>
+                        <strong
+                           >Creación de blocking base para el personaje</strong
+                        >
+                     </p>
+                     <p>
+                        Uso el modificador Mirror.<br />Deformación y
+                        modificación de elementos del Blocking.<br />Comienzo
+                        esculpido con Mirror<br />Uso del Modificador Remesh
+                     </p>
+                     <p><strong>Uso de Dynotopo.</strong></p>
+                     <p>
+                        Uso de Brochas de forma en esculpido.<br />Calco de
+                        Personaje Esculpido a Polígono<br />Configuración
+                        sistema de calco para malla Poligonal<br />Explicación
+                        de Retopología Poligonal<br />Retopología con Addons
+                        Bsurface.<br />armado total del calco
+                     </p>
+                     <p>
+                        <strong
+                           >Crear marcas de corte o Seam en el modelo Poliginal
+                           calcado</strong
+                        >
+                     </p>
+                     <p>
+                        Asignar Coordenadas UVS al modelo (UNWRAP.<br
+                        />Asignación de Material en canales<br />Uso de
+                        librerías externas de texturas<br />Configuración de
+                        Render<br />Configuración avanzada de Render en Cycles<br
+                        />
+                        Configuración avanzada de Render en Evee.
+                     </p>
+                  </div>
+
+                  <hr />
+
+                  <!-- Nivel III -->
+
+                  <h3 class="title is-4">
+                     Contenido del Curso Blender 3D Nivel III
+                  </h3>
+
+                  <div class="two-cols">
+                     <p><strong>Animación nivel 2.</strong></p>
+                     <p>Uso del Timelane</p>
+                     <p><strong>Uso del Dopesheet.</strong></p>
+                     <p>
+                        Uso de Graph Editor.<br />12 Principios de animación.<br
+                        />Físicas básicas<br />Uso Rigid Body básico
+                     </p>
+                     <p><strong>Uso de Cloth básico.</strong></p>
+                     <p>
+                        Jerarquías en Cinemática directa (FK) y Cinematica
+                        Inversa (IK)<br />Jerarquías y parentesco en un sistema
+                        complejo de animación<br />Uso de Constraint
+                        (Delimitadores)
+                     </p>
+                     Creación de Huesos.<p><strong></strong></p>
+                     <p>
+                        Creación de Huesos básicos<br />Explicacion cadena
+                        jerárquica
+                        <br />Áreas de influencias en los huesos<br />Pintando
+                        áreas de Influencia en los huesos<br />Emparejamiento de
+                        huesos a la geometría<br />Asignación de un sistema de
+                        huesos complejo a un personaje nivel 1
+                     </p>
+                     <p><strong>Creación del sistema de Huesos</strong></p>
+                     <p>
+                        Usos de IK FK y Constraint en el sistema complejo de
+                        personaje.<br />Emparejamiento de Personaje a los huesos<br
+                        />Pintado de pesos y áreas de influencia.<br />Animación
+                        y secuencia de caminata del personaje
+                     </p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="diseño" except="blender" />
+
+   <ModalVideo videoID="BFExHGA0eLs" />
+</Layout>

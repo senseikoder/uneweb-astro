@@ -1,0 +1,119 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Taller Crea tu Web :: Uneweb";
+// const urlDoc = "/docs/Contenido-de-SEO.pdf";
+const urlPic = "/img/pics/taller-web.webp";
+import "plyr/dist/plyr.css";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Taller Crea tu Web con Wix, revisa nuestras lecciones ↓
+               </h1>
+               <!-- <h2 class="subtitle is-5 light-text">
+                  texto
+               </h2> -->
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-8">
+               <div class="card">
+                  <div class="card-content">
+                     <div class="content">
+                        <h3
+                           class="title is-4 mb-10 is-title-reveal has-text-centered"
+                        >
+                           En este taller podrás crear tu página web en minutos
+                           con wix.com en 2 lecciones <br />
+                           Sigue los puntos para cursar el Taller:
+                        </h3>
+
+                        <ul class="icon-list">
+                           <li>
+                              <span class="icon">
+                                 <i class="iconify" data-icon="fa6-solid:check"></i>
+                              </span>
+                              <span>Cursa las 2 lecciones en video tutorial</span>
+                           </li>
+                           <li>
+                              <span class="icon">
+                                 <i class="iconify" data-icon="fa6-solid:check"></i>
+                              </span>
+                              <span>
+                                 Diseña tu portafolio, currículum, proyecto o
+                                 negocio en una página web con Wix.com
+                              </span>
+                           </li>
+                           <li>
+                              <span class="icon">
+                                 <i class="iconify" data-icon="fa6-solid:check"></i>
+                              </span>
+                              <span>
+                                 Envía el link de tu proyecto desarrollado en el
+                                 taller al correo cursos@uneweb.com con tus
+                                 datos personales y obtienes el Certificado
+                                 Registrado en el Ministerio de Educación.
+                              </span>
+                           </li>
+                        </ul>
+
+                        <h3 class="title is-4">Contenido del Curso</h3>
+
+                        <h4 class="title is-5 has-text-centered">Lección número 1</h4>
+
+                        <div
+                           id="player"
+                           data-plyr-provider="youtube"
+                           data-plyr-embed-id="BA-8KTFHuoQ"
+                        >
+                        </div>
+
+                        <hr />
+                        
+                        <h4 class="title is-5 has-text-centered">Lección número 2</h4>
+
+
+                        <div
+                           id="player2"
+                           data-plyr-provider="youtube"
+                           data-plyr-embed-id="uQs32gfR_hQ"
+                        >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="taller" />
+
+   <!-- <ModalVideo videoID="tp3dRjk-RVg" /> -->
+</Layout>
+
+<script>
+   import Plyr from "plyr";
+
+   document.addEventListener("astro:page-load", () => {
+      const player = new Plyr("#player");
+      const player2 = new Plyr("#player2");
+   });
+</script>

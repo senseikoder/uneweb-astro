@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de After Effects  :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "https://uneweb.edu.ve/docs/Contenido-de-After-Effects-CC-I.pdf";
+const urlPic = "/img/pics/curso-ae.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de After Effects
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a editar y aplicar efectos en los videos con After
+                  Effects. Clases presenciales y online en vivo con el profesor.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  La aplicación de composición creativa y animación estándar del sector te permite diseñar y publicar gráficos animados y efectos visuales profesionales para el cine, la televisión, el vídeo y la Web. Cree gráficos animados y efectos visuales con el estándar del sector. Tanto si trabaja en el sector de la televisión o el cine, como si entrega su trabajo en línea y a dispositivos móviles, el software Adobe® After Effects le permite crear gráficos animados innovadores y efectos visuales de gran calidad.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Conceptos generales<br />El entorno de Trabajo<br
+                        />Planificación y administración de proyectos<br
+                        />Técnicas básicas de composición<br />Capas y
+                        propiedades<br />Técnicas básicas de animación y
+                        visualización<br />Vistas y previsualizaciones<br
+                        />Administración de color<br />Uso de las herramientas
+                        de pintura<br />Aplicación de efectos<br />Visión
+                        general de los efectos y los ajustes preestablecidos de
+                        animación<br />Máscaras, transparencia e incrustación<br
+                        />Creación y edición de capas de texto<br />Trabajo en
+                        3D<br />Render de animaciones<br />Uso de expresiones<br
+                        />Preparación de un proyecto<br />Principios básicos del
+                        procesamiento y la exportación<br />Conversión de
+                        películas<br />
+                        Proyecto final
+                     </p>
+                  </div>
+               </div>
+            </CursosContent>
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+</Layout>
+
+<CursosRelated tag="diseño" except="aftereffects" />
+
+<ModalVideo videoID="5aV7932v5yg" />

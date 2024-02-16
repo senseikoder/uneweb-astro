@@ -1,0 +1,87 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Premiere Pro :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-Premiere-Pro-CC.pdf";
+const urlPic = "/img/pics/curso-premiere.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Premiere Pro
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a editar profesionalmente videos con Premiere online o
+                  presencial.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Aprende a editar vídeos muy fácilmente con... Adobe Premiere
+                  es la herramienta de edición de vídeo digital no lineal más
+                  utilizada por profesionales y no profesionales, debido a que
+                  es un software muy extendido en el sector de la edición de
+                  vídeo. El objetivo es desarrollar contenido multimedia para el
+                  Marketing viral.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Interfaz de usuario<br />Flujo de trabajo básico<br
+                        />Flujo de trabajo 24p<br />Flujos de trabajo de SWF<br
+                        />Flujo de trabajo de una película de<br />imágenes en
+                        movimiento<br />Adobe Dynamic Link<br />Configuración
+                        del sistema<br />Creación y modificación de proyectos<br
+                        />Proporciones de aspecto<br />Captura y digitalización<br
+                        />Captura de vídeo HD<br />Acerca de la edición en línea
+                        y sin conexión<br />Digitalización del vídeo analógico<br
+                        />Código de tiempo<br />Transferencia e importación de
+                        archivos<br />Importación de imágenes fijas<br
+                        />Importación de audio digital<br />Uso del audio<br
+                        />Uso de clips, canales y pistas<br />Edición de audio
+                        en un panel Línea de tiempo<br />Grabación de audio<br
+                        />Ajuste de niveles de volumen<br />La panorámica y el
+                        equilibrio<br />Efectos de animación] Agregar, navegar y
+                        configurar fotogramas clave<br />Mover y copiar
+                        fotogramas clave<br />Controlar los cambios de efectos
+                        mediante la interpolación de fotogramas clave<br
+                        />Creación de animaciones comunes<br />Exportación a
+                        cinta de vídeo o película<br />Exportación para el Web<br
+                        />Exportación a teléfonos móviles, PSP y otros
+                        dispositivos móviles<br />Proyecto: Edición y
+                        composición de Video
+                     </p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="diseño" except="animate" />
+
+   <ModalVideo videoID="yZqwOmppzWE" />
+</Layout>

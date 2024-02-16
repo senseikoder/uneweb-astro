@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Photoshop :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "https://uneweb.edu.ve/docs/Contenido-de-Photoshop-CC-I.pdf";
+const urlPic = "/img/pics/curso-ps.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Photoshop 
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Diseña y Crea en Photoshop imágenes, presentaciones, publicidad digital, edita fotos, etc.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  El curso de Photoshop se especializa en la composición de fotografías e imágenes digitales. Ofrece cientos de herramientas de gran calidad, con funciones y capacidades para aplicar creatividad, se pueden crear material publicitario, logotipos, plantillas web entre otros proyectos.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                    <p>Introducción.<br>Vectores.<br>Pixeles.<br>Formatos.<br>La interfaz.<br>Ubicación de los elementos.<br>Personalización de la interface.<br>Modos de trabajo.<br>Ajustes de imagen.<br>Dimensiones.<br>Todos los filtros de ajuste.<br>La barra de herramientas básicas.<br>Uso de las herramientas.<br>Trabajo con selecciones.<br>Trabajo con píxeles.<br>Trabajo con vectores.<br>Capas de ajuste y máscaras.<br>Modos de composición.<br>Opciones de fusión.<br>Transformaciones.<br>Los filtros.<br>Descripción y uso de los filtros (básicos).<br>Los filtros en la creación de interfaces.<br>Los filtros para efectos fotográficos.<br>Los filtros para efectos de texto.<br>Uso de los modos de composición en la plantilla.<br>Uso de filtros en la creación de la plantilla.<br>Creación de montajes. <br>Creación de montajes utilizando las herramientas: Lazos, plumilla y mezcla de las capas del fotomontaje.<br>Exportación y Formatos.<br><strong>Proyectos del Curso: Composición de imágenes con filtros y máscaras</strong></p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="diseño" except="photoshop" />
+
+   <ModalVideo videoID="F6KlzHiR8eE" />
+</Layout>

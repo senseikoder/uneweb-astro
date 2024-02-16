@@ -1,0 +1,69 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Animate  :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "https://uneweb.edu.ve/docs/Contenido-de-Animate-CC.pdf";
+const urlPic = "/img/pics/curso-animate.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Animate
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a crear Animaciones multimedia para Web y Vídeo,
+                  exportando en HTML5.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                 Con Adobe Animate CC aprenderás a crear animaciones HTML5 y CSS3, a crear contenidos interactivos para la web, crear y emplear símbolos reutilizables con soporte nativo para HTML, a utilizar correctamente las herramientas de dibujo y texto, crearas diseños de tamaño variable, a usar fuentes web y múltiples opciones de publicación
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                                <p><strong>Introducción a Adobe Animate CC</strong></p>
+                                <p>Qué es Adobe Animate<br>Descarga e instalación<br>Interfaz de usuario<br>Preparación del escenario<br>Medidas relativas vs. medidas absolutas<br>Propiedades del escenario</p>
+                                <p><strong>Animaciones sencillas</strong></p>
+                                <p>Importación de gráficos<br>Propiedades de aspecto CSS<br>Organización de elementos<br>Animaciones con fotogramas clave manuales<br>Animaciones con fotogramas clave automáticos<br>Animación con la herramienta Pin<br>Efectos de aceleración</p>
+                                <p><strong>Textos animados</strong></p>
+                                <p>Creación de cajas de texto<br>Texto y figuras agrupadas<br>Uso de fuentes web</p>
+                                <p><strong>Animaciones Avanzadas</strong></p>
+                                <p>Creación de símbolos<br>Animación de símbolos<br>Activadores y Loops</p>
+                                <p><strong>Interactividad</strong></p>
+                                <p>Botones de control de la animación<br>Control de la animación de símbolos<br>Hipervínculos<br>Redefinir textos<br>Ejercicio: repaso de una animación interactiva</p>
+                                <p><strong>Formatos de exportación</strong></p>
+                                <p>Integración en páginas web con HTML</p>
+                              </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="diseño" except="animate" />
+
+   <ModalVideo videoID="rClQYcbUM6k" />
+</Layout>

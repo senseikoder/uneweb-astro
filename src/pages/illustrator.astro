@@ -1,0 +1,89 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Illustrator  :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "https://uneweb.edu.ve/docs/Contenido-de-Illustrator -CC-I.pdf";
+const urlPic = "/img/pics/curso-ai.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Illustrator
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a dibujar personajes en Illustrator. Es la aplicación
+                  de gráficos vectoriales permite crear logotipos, iconos,
+                  bocetos, tipografías y complejas ilustraciones para cualquier
+                  formato: impreso, web, interactivo, vídeo y móvil.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Dibuja y Diseña: logos, emblemas, íconos, dibujos animados,
+                  personajes en el Curso de Illustrator, es un programa para
+                  diseño gráfico, que ha definido en cierta manera el lenguaje
+                  gráfico contemporáneo mediante el dibujo vectorial.
+                  Illustrator contiene opciones creativas, un acceso más
+                  sencillo a las herramientas y una gran versatilidad para
+                  producir rápidamente gráficos flexibles para su impresión,
+                  vídeo, publicación en la Web y dispositivos móviles.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Interface<br />Paletas y barras de herramientas<br
+                        />Espacios de trabajo<br />Propiedades de documento<br
+                        />Opciones de visualización de documento<br />Dibujo y
+                        pintura<br />Live Trace<br />Live Paint<br />Objetos
+                        (rectángulos, círculos, estrellas, etc.)<br
+                        />Herramientas Bézier<br />Selección y manipulación de
+                        objetos<br />Propiedades de trazo<br />Propiedades de
+                        relleno<br />Creación y modificación de colores<br
+                        />Malla de degradado<br />Creación de bloques de texto<br
+                        />Propiedades de texto y párrafo<br />Propiedades de
+                        OpenType<br />Texto en un trazado<br />Flujo de texto<br
+                        />Vectorización de texto<br />Integración de elementos
+                        externos<br />Importación de imágenes e integración con
+                        Photoshop<br />Fuentes externas de datos<br />Filtros<br
+                        />Efectos<br />Diferencias y ámbitos de aplicación<br
+                        />Rotación<br />Escala<br />Réplicas<br />Reflexión<br
+                        />Transformaciones 3D<br />Capas<br />Símbolos y
+                        herramientas de símbolos<br />Uso de estilos<br
+                        />Acciones<br />Exportación y salida Formatos de
+                        exportación y sus propiedades.
+                     </p>
+                     <p><strong>Proyecto: Ilustración</strong></p>
+                  </div>
+               </div>
+            </CursosContent>
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+
+      </div>
+   </section>
+</Layout>
+
+<CursosRelated tag="diseño" except="illustrator" />
+
+<ModalVideo videoID="jjp8JtJ7nHY" />

@@ -1,0 +1,207 @@
+---
+import Layout from "../layouts/Diplomados.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Wordpress :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-MySQL.pdf";
+const urlPic = "/img/pics/curso-wordpress.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Wordpress
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Crea tu página web inteligente con esta promoción:
+                  Dominio(.com)+ Hosting web gratis por 1 año
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  WordPress es un gestor de contenidos (CMS) son las
+                  aplicaciones que permiten crear nuevos sitios web de un modo
+                  semiautomatizado, especialmente aquellos cuyos contenidos
+                  están bastante estructurados, como es el caso de las
+                  bitácoras. De entre los CMS de estas características uno de
+                  los más populares es WordPress©, debido fundamentalmente a la
+                  combinación de su potencia y sencillez de gestión, lo que lo
+                  hace ideal para la creación de bitácoras o sitios webs.
+
+                  <br /><br />
+
+                  Luego que desarrolles la página web puedes publicarla en el
+                  Hosting con una dirección de dominio .com (también tienes
+                  otras extensiones .net .org .info .biz) por 1 año gratis,
+                  puedes renovarlo el siguiente año al mismo costo. Inscríbete,
+                  solicita información.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso de WordPress Nivel I
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Creación y configuración completa de un sitio WordPress<br
+                        />Descarga e instalación<br />Configuración Creación de
+                        la estructura de contenidos<br />Asignación de plantilla
+                        y personalización<br />Difusión<br />WordPress y SEO
+                        Módulos<br />SEO para WordPress<br />Control de la
+                        presentación en WordPress<br />Creación y edición de
+                        menús<br />Las plantillas de WordPress<br />Estructura
+                        de plantillas (XHTML/PHP)<br />Presentación de
+                        plantillas <br />Obtención de plantillas Instalación y
+                        activación de plantillas<br />Personalización de
+                        plantillas<br />Consideraciones de derechos y licencias<br
+                        />Configuración y uso de módulos en WordPress<br
+                        />Arquitectura de módulos (plug-ins)<br />Modulos
+                        preinstalados<br />Activación y configuración de módulos<br
+                        />Módulos notables: Galerías<br />WordPress en la
+                        comunidad Blogs y comunidad<br />Enlaces a sitios
+                        externos
+                     </p>
+                  </div>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-Wordpress-Nivel-I.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                  <hr />
+
+                  <!-- Nivel 2 -->
+                  <h3 class="title is-4">
+                     Contenido del Curso de WordPress Nivel II
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        <p>
+                           Introducción, repaso de contenido
+                           <br />Instalación de wordpress local y remota<br
+                           />Vender sitios web con wordpress<br />La estructura
+                           básica de un theme (tema)<br />Edición de tema pago
+                           (ejemplo)<br />Edición de tema gratuito<br />Plugins
+                           recomendados<br />Plugins constructores – builders<br
+                           />Plugin galería y slider (ejemplos)<br />Plugins
+                           redes sociales<br />Plugins seguridad y rendimiento<br
+                           />Plugins comentarios con Facebook<br />Plugin para
+                           backup o respaldo<br />Plugin Pop – up suscribirse<br
+                           />Migración con plugin<br />SEO Consideraciones
+                        </p>
+                     </p>
+                  </div>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-Wordpress-Nivel-II.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                  <hr />
+
+                  <!-- Nivel 3 -->
+                  <h3 class="title is-4">
+                     Contenido del Curso de WordPress Nivel III
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Temas básicos para mejorar la seguridad en WordPress.
+
+                        <br />Medidas de seguridad que deberían tener integradas
+                        el servicio de hosting donde alojar nuestra web.<br
+                        />Proteger el acceso a la administración de WordPress.<br
+                        />Explicación de lo que son las listas negras de
+                        malware.<br />Cabeceras que se pueden agregar para
+                        evitar diversos tipos de ataques a la web. <br />Uso de
+                        un certificado SSL.<br />Cómo determinar la velocidad de
+                        carga de un WordPress. <br />Características a tener en
+                        cuenta a la hora de elegir un hosting para alojar
+                        nuestra web. <br />Localizar los plugins que consumen
+                        más recursos.<br />Agregar un sistema de caché para
+                        WordPress. <br />Consejos para optimizar las imágenes
+                        que usemos en la web.<br />Mejorar la velocidad de
+                        carga.<br />Uso de plugin Yoast para mejorar el SEO
+                     </p>
+                  </div>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-Wordpress-Nivel-III.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+
+                  <hr />
+
+                  <!-- Nivel 4 -->
+                  <h3 class="title is-4">
+                     Contenido del Curso de WordPress Nivel IV
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        El ecommerce de Wordpress
+                        <br />Configuración WooCommerce<br />Instalando
+                        WooCommerce<br />Configuración básica<br />Impuesto
+                        configuraciones <br />Envíos configuraciones<br
+                        />Métodos de pago<br />Uso Plantillas en e-commerce<br
+                        />Extensiones<br />Caso práctico crear una tienda online<br
+                        />Creando Productos<br />Productos agrupados<br
+                        />Productos afiliados<br />Productos variables<br
+                        />Categorías y etiquetas<br />Atributos de productos<br
+                        />Aspecto y organización<br />Menús y Widgets<br
+                        />Atributos<br />Categorías y etiquetas<br />Cupones,
+                        informes y pedidos<br />Configurar Impuestos y
+                        Personalizar Emails<br />Proyecto: Tienda online
+                     </p>
+                  </div>
+
+                  <p class="has-text-centered my-5">
+                     <a
+                        href="/docs/Contenido-de-Wordpress-Nivel-IV.pdf"
+                        class="button accent-btn btn-outlined raised is-large"
+                     >
+                        Contenido del curso
+                     </a>
+                  </p>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+
+      <CursosRelated tag="programacion" except="wordpress" />
+
+      <ModalVideo videoID="lvoZB1IfgmU" />
+   </section>
+</Layout>

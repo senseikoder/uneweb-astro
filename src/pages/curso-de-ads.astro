@@ -1,0 +1,76 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Camapañas Ads Facebook - Instagram - Google :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-Comunicaci%C3%B3n-Masiva.pdf";
+const urlPic = "/img/pics/curso-comunicacion.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Camapañas Ads Facebook - Instagram - Google
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a crear campañas Ads, anuncios para vender productos y
+                  servicios en Facebook, Instagram y Google.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Aprende a crear campañas en Google y Facebook para potenciar
+                  tu marca o negocio, inclusive si trabajas freelance, puedes
+                  vender tus servicios o productos en estas plataformas a muy
+                  bajo costo.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Canales y principales plataformas <br />Identifica tu
+                        cliente y mercado potencial <br />Entorno de la
+                        competencia<br />Palabras claves del servivio o producto<br
+                        />Diseño del anuncio, textos e imágenes<br />Plataforma
+                        de Facebook Ad business manager.<br />Herramientas y
+                        recursos en Facebook Ads<br />Targeting y Audiencias<br
+                        />Estructura y Objetivos de las Campañas en Facebook y
+                        Instagram<br />Primeros pasos para crear anuncios<br />
+                        Plataforma Google Ads
+                        <br />Estructura y Objetivos de las Campañas en Google<br
+                        />Campañas de búsqueda<br />Otros productos de Google
+                        Ads<br />Campañas de vídeo<br />Google Display Network <br
+                        />
+                        Objetivos, métricas y medición
+                     </p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="ads" />
+
+   <ModalVideo videoID="MzDu0B9Ann4" />
+</Layout>

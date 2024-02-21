@@ -1,0 +1,152 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+import ModalVideo from "../components/ModalVideo.astro";
+const title = "Especialización de Javascript :: Uneweb";
+---
+
+<Layout title={title}>
+   <!-- Banner Home -->
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-especializaciones.webp"
+      data-position="center 30%"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-6 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Especialización de Javascript
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  <br>
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-8">
+               <div class="card">
+                  <div class="card-content">
+                     <h3 class="title is-4 mb-10 has-text-centered">
+                        ¡Invierte en tu futuro, especialízate en Javascript!
+                     </h3>
+
+                     <div class="content">
+                        <p>
+                           Frameworks MVC de JavaScript están asumiendo más peso en los desarrollos, para aplicaciones robustas en la web y móviles.
+
+
+                        </p>
+                        <p>
+                           La Especialización Js, contiene 4 programas de los framework más populares
+                        </p>
+
+                        <p class="has-text-weight-semibold">
+                           Certificado por el Ministerio de Educación. Código Nº
+                           PR -07-017-11AC. Legaliza y apostilla tu certificado.
+                        </p>
+                     </div>
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Duración:</h4>
+
+                           <ul class="item-list">
+                              <li>Lunes a viernes presencial 1 mes.</li>
+                              <li>Sábados 2 meses.</li>
+                              <li>Online 4 meses</li>
+                           </ul>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Laboratorios</h4>
+
+                           <ul class="item-list">
+                              <li>Incluye 1 computador por persona.</li>
+                              <li>De 4 a 8 alumnos por salón.</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <hr />
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Certificación:</h4>
+
+                           <p>Registrado en el Ministerio de Educación</p>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Requisitos:</h4>
+
+                           <p>Manejo básico de office e internet.</p>
+                        </div>
+                     </div>
+
+                     <h3 class="title is-4">
+                        Especialización de JavaScript - 4 Cursos:
+                     </h3>
+
+                     <ul class="link-list">
+                        <li>
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 JavaScript
+                              </span>
+                        </li>
+
+                        <li>
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 jQuery
+                              </span>
+                        </li>
+
+                        <li>
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 Angular
+                              </span>
+                        </li>
+
+                        <li>
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 NodeJS
+                              </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <AsideInterno urlPic="/img/pics/especializacion-javascript.webp" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="especializacion" except="javascript" />
+
+   <ModalVideo videoID="EJWsFWrvJ6M" />
+</Layout>

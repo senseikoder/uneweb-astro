@@ -1,0 +1,172 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+import ModalVideo from "../components/ModalVideo.astro";
+const title = "Especialización de Diseño :: Uneweb";
+---
+
+<Layout title={title}>
+   <!-- Banner Home -->
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-especializaciones.webp"
+      data-position="center 30%"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-6 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Especialización de Diseño
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende a diseñar para impresos y para web, aumenta tu
+                  creatividad. Consigue empleo o clientes fácilmente
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-8">
+               <div class="card">
+                  <div class="card-content">
+                     <h3 class="title is-4 mb-10 has-text-centered">
+                        Clases online clases por zoom, videos tutoriales y
+                        prácticas Clases presenciales de lunes a viernes y
+                        Sabatino
+                     </h3>
+
+                     <div class="content">
+                        <p>
+                           En la Especialización de Diseño Digital puedes
+                           desarrollar todo tipo de material gráfico
+                           publicitario desde afiches, volantes, revistas,
+                           papelería y diseño multimedia.
+                        </p>
+                        <p>
+                           La Especialización de Diseño Digital provee los
+                           programas principales para el Diseño Gráfico Digital.
+                           Desarrollando proyectos gráficos.
+                        </p>
+                        <p>
+                           Cursos 100% prácticos orientados a proyectos
+                           profesionales.
+                        </p>
+                        <p class="has-text-weight-semibold">
+                           Certificado por el Ministerio de Educación. Código Nº
+                           PR -07-017-11AC. Legaliza y apostilla tu certificado.
+                        </p>
+                     </div>
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Duración:</h4>
+
+                           <ul class="item-list">
+                              <li>Lunes a viernes presencial 1 mes.</li>
+                              <li>Sábados 2 meses.</li>
+                              <li>Online 4 meses</li>
+                           </ul>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Laboratorios</h4>
+
+                           <ul class="item-list">
+                              <li>Incluye 1 computador por persona.</li>
+                              <li>De 4 a 8 alumnos por salón.</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <hr />
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Certificación:</h4>
+
+                           <p>Registrado en el Ministerio de Educación</p>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Requisitos:</h4>
+
+                           <p>Manejo básico de office e internet.</p>
+                        </div>
+                     </div>
+
+                     <h3 class="title is-4">Especialización de Diseño Digital - 4 Cursos:</h3>
+
+                     <ul class="link-list">
+                        <li>
+                           <a href="/photoshop" class="icon-text">
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 Photoshop Nivel I
+                              </span>
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="/illustrator" class="icon-text">
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 Illustrator Nivel I
+                              </span>
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="/curso-de-indesign" class="icon-text">
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 Indesign Nivel I
+                              </span>
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="/curso-de-animate-cc" class="icon-text">
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 Animate
+                              </span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <AsideInterno
+               urlDoc="/docs/Contenido-de-la-Especializaci%C3%B3n-de-Dise%C3%B1o-Digital.pdf"
+               urlPic="/img/pics/especializacion-diseño.webp"
+               articulo="true"
+               btnDoc="Especialización"
+            />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="especializacion" except="diseño"/>
+
+   <ModalVideo videoID="SpHoIzGCLFM" />
+</Layout>

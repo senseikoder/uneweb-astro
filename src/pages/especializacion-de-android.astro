@@ -1,0 +1,154 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+import ModalVideo from "../components/ModalVideo.astro";
+const title = "Especialización de Android :: Uneweb";
+---
+
+<Layout title={title}>
+   <!-- Banner Home -->
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-especializaciones.webp"
+      data-position="center 30%"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-6 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Especialización de Android
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Desarrolla app para móviles 
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-8">
+               <div class="card">
+                  <div class="card-content">
+                     <h3 class="title is-4 mb-10 has-text-centered">
+                        100% online o presencial: especialízate en Android app móviles
+                     </h3>
+
+                     <div class="content">
+                        <p>
+                           En la Especialización de Android aprenderás lo básico de Java y a programar en Android para aplicaciones móviles, es un curso intensivo de 5 cursos.
+                        </p>
+                        <p>
+                           El desarrollo de aplicaciones Android, cuya programación se basa en Java, lenguaje utilizado en proyectos Open Source. Además aprenderás a crear widgets, aplicaciones RSS o cualquier elemento multimedia que seguro que habitualmente utilizabas. A partir de ahora las APIs de Google se te grabarán a fuego pudiendo crear con ellas multitud de aplicaciones que te abrirán las puertas a un nuevo mercado profesional.
+                        </p>
+
+                        <p class="has-text-weight-semibold">
+                           Certificado por el Ministerio de Educación. Código Nº
+                           PR -07-017-11AC. Legaliza y apostilla tu certificado.
+                        </p>
+                     </div>
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Duración:</h4>
+
+                           <ul class="item-list">
+                              <li>Lunes a viernes presencial 1 mes.</li>
+                              <li>Sábados 2 meses.</li>
+                              <li>Online 4 meses</li>
+                           </ul>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Laboratorios</h4>
+
+                           <ul class="item-list">
+                              <li>Incluye 1 computador por persona.</li>
+                              <li>De 4 a 8 alumnos por salón.</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <hr />
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Certificación:</h4>
+
+                           <p>Registrado en el Ministerio de Educación</p>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Requisitos:</h4>
+
+                           <p>Manejo básico de office e internet.</p>
+                        </div>
+                     </div>
+
+                     <h3 class="title is-4">
+                        Especialización de Android - 4 Cursos:
+                     </h3>
+
+                     <ul class="link-list">
+                        <li>
+                           <div class="icon">
+                              <i
+                                 class="iconify"
+                                 data-icon="fa6-solid:circle-check"></i>
+                           </div>
+                           <span class="has-text-weight-medium is-size-5">
+                              Java Nivel I
+                           </span>
+                        </li>
+
+                        <li>
+                           <div class="icon">
+                              <i
+                                 class="iconify"
+                                 data-icon="fa6-solid:circle-check"></i>
+                           </div>
+                           <span class="has-text-weight-medium is-size-5">
+                              Java Nivel II
+                           </span>
+                        </li>
+
+                        <li>
+                           <div class="icon">
+                              <i
+                                 class="iconify"
+                                 data-icon="fa6-solid:circle-check"></i>
+                           </div>
+                           <span class="has-text-weight-medium is-size-5">
+                              Android Nivel I
+                           </span>
+                        </li>
+
+                        <li>
+                           <div class="icon">
+                              <i
+                                 class="iconify"
+                                 data-icon="fa6-solid:circle-check"></i>
+                           </div>
+                           <span class="has-text-weight-medium is-size-5">
+                              Android Nivel II
+                           </span>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <AsideInterno 
+            urlDoc="/docs/Contenido-de-la-Especializaci%C3%B3n-Android.pdf"
+            urlPic="/img/pics/especializacion-android.webp" 
+            articulo="true"
+            btnDoc="Especialización"/>
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="especializacion" except="javascript" />
+
+   <ModalVideo videoID="EJWsFWrvJ6M" />
+</Layout>

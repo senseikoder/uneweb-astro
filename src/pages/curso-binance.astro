@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso Gestión de Binance :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-Comunicaci%C3%B3n-Masiva.pdf";
+const urlPic = "/img/pics/curso-binance.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso Gestión de Binance
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Crear una cuenta en Binance nos ofrece la posibilidad de comprar criptomonedas, trading, invertir, cambiar divisas y muchas otras posibilidades. Es muy útil ya que podremos recibir y pagar con binance, además de poder retirarlo siempre que queramos.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  La plataforma no solo nos ofrece la posibilidad de comprar criptomonedas y hacer trading, ofrece muchas otras posibilidades. Vamos a ver los elementos adicionales que nos ofrece esta exchange. Puedes comprar o vender criptomonedas usando tu moneda local y pagar o recibir dinero a través de bancos nacionales. También admitimos Apple Pay, Paypal, WeChat, Venmo y mucho más. En el mercado P2P de Binance, solo encontrarás usuarios verificados y comerciantes que ofrecen opciones para comprar o vender criptomonedas de persona a persona. 
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>Cómo abrir una cuenta de Binance.<br>Pasos para verificar la cuenta Binance.
+                                <br>Sistema de seguridad.
+                                <br>Práctica 1: alumno abre su cuenta 
+                                <br>Añadir y retirar fondos.
+                                <br>Diferencias de las billeteras virtuales.
+                                <br>Crea una billetera virtual en Metamask.
+                                <br>Práctica 2: alumno crea su billetera
+                                <br>Como funcionan los contratos inteligente
+                                <br>Cómo depositar y retirar CriptoMonedas en Binances.
+                                <br>Como INTERCAMBIAR CRIPTOMONEDAS en Binance
+                                <br>P2P Binance. Compra y venta usando moneda local
+                                <br>Práctica 3: alumno compra desde P2P Binance 
+                                <br>Cómo invertir en Criptomonedas.
+                                <br>Criptomonedas estables y variables
+                                <br>Cómo usar Binance pay.
+                                <br>Minería de criptoactivo
+                              </p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="binance" />
+
+   <ModalVideo videoID="cXEab0m9pjw" />
+</Layout>

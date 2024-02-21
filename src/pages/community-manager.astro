@@ -1,0 +1,158 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Community Manager :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-MySQL.pdf";
+const urlPic = "/img/pics/curso-cm.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Community Manager
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Hazte experto en redes sociales con los cursos de Community
+                  Manager online o presencial. Consigue empleo o clientes
+                  fácilmente como community manager gestionando redes sociales
+                  para empresas.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Desarrolla el perfil profesional para gestionar las redes
+                  sociales y contenido promocional de una empresa, servicios y/o
+                  productos. <br />
+
+                  La complejidad de la gestión de comunidades en internet ha
+                  dado lugar al desarrollo de una disciplina con peso propio: el
+                  Community Manager. Incluso las mismas van cambiando con el
+                  paso del tiempo. Podríamos definir al Community Manager como
+                  la ejecución planificada del conjunto de tareas que hacen a la
+                  presencia de una empresa o institución en el ámbito de las
+                  redes sociales a través de promociones, concursos, fotos,
+                  videos entre otros.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">
+                     Contenido del Curso de Community Manager Nivel I
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Características de los Social Media.<br />Evolución de
+                        los Social Media.<br />Nuevos conceptos de Social Media.<br
+                        />Segmentación, datos y estadísticas actuales.<br
+                        />Estudio del perfil de usuario y consumidor actual.<br
+                        />Nuevas actitudes del usuario y la marca.<br
+                        />Tendencias de consumo social.<br />La figura del
+                        Community Manager.<br />Tareas y responsabilidades de un
+                        Community Manager.
+                     </p>
+                     <p style="padding-left: 30px;">
+                        El Community Manager frente a la compañía/marca.<br
+                        />Las responsabilidades del Community Manager.<br
+                        />Aptitudes y actitudes del Community Manager.
+                     </p>
+                     <p>Productividad personal del Community Manager.</p>
+                     <p style="padding-left: 30px;">
+                        Herramientas de gestión personal.<br />Buen manejo en la
+                        profesión.
+                     </p>
+                     <p>Redes Sociales en detalle.</p>
+                     <p style="padding-left: 30px;">
+                        Twitter.<br />Facebook.<br />LinkedIn.<br />Google+.<br
+                        />Instagram.<br />Youtube<br />Threads
+                     </p>
+                     <p>
+                        Creación y manejo de perfiles.<br />Creación y
+                        administración de blog.<br />El Blog como parte de
+                        nuestra estrategia de Social Media.
+                     </p>
+                     <p>
+                        Herramientas de monitorización.<br />Formas de usar
+                        nuestro blog como herramienta de Social Media.<br
+                        />Manejo de herramientas de apoyo al Community Manager.<br
+                        />El Social Media Estrategias.<br />Investigación,
+                        definición, ejecución y medición.<br />Puesta en marcha
+                        del Social Media Plan.<br />Introducción a la analítica
+                        Web.<br />Medición de resultados.<br />Google Analytics.<br
+                        />Herramientas de análisis.<a
+                           href="../wp-content/uploads/2018/03/Contenido-de-Community-Manager.pdf"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           ><span style="color: #0000ff;"
+                              ><strong>&nbsp;</strong></span
+                           ></a>
+                     </p>
+                  </div>
+
+                  <hr />
+
+                  <h3 class="title is-4">
+                     Contenido del Curso de Community Manager Nivel II
+                  </h3>
+
+                  <div class="two-cols">
+                     <p>
+                        <strong>¿Qué es Storytelling?</strong> La narrativa es el
+                        arte de saber contar historias. Pero también el arte de crear
+                        expectativas, resultar entretenido y, sobre todo, captar
+                        y mantener la atención del oyente. Todas ellas son herramientas
+                        útiles en el mundo de los negocios: sea para presentar casos
+                        o propuestas, promocionar productos y hasta para exponer
+                        conclusiones o análisis ante terceros.
+                     </p>
+                     <ol class="item-list">
+                        <li>Qué es Storytelling</li>
+                        <li>Detectar Audiencias</li>
+                        <li>Desarrolla tu Briefing</li>
+                        <li>Tipos de Medio</li>
+                        <li>Diseño y estructura de la historia</li>
+                        <li>Video (aplicaciones útiles)</li>
+                        <li>Gif (aplicaciones útiles)</li>
+                        <li>Cuadros de imágenes (aplicaciones útiles)</li>
+                        <li>Animación</li>
+                        <li>Estadísticas</li>
+                        <li>Publicar en distintos medios</li>
+                        <li>Interacción</li>
+                        <li>
+                           Técnicas venta, negociación, presentación y
+                           storytelling
+                        </li>
+                        <li>Ensayos</li>
+                     </ol>
+    
+                  </div>
+
+
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="community" />
+
+   <ModalVideo videoID="OoKmy5Kcxt4" />
+</Layout>

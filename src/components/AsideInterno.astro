@@ -1,5 +1,5 @@
 ---
-const { urlPic, urlDoc, btnDoc } = Astro.props;
+const { urlPic, urlDoc, btnDoc, articulo } = Astro.props;
 ---
 
 <div class="column is-4 aside-interno">
@@ -22,7 +22,9 @@ const { urlPic, urlDoc, btnDoc } = Astro.props;
                      href={urlDoc}
                      class="button accent-btn is-fullwidth raised is-large"
                   >
-                     Contenido del {btnDoc}
+                     {articulo
+                        ? "Contenido de la " + btnDoc
+                        : "Contenido del " + btnDoc}
                   </a>
                )
             }

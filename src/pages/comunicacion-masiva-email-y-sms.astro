@@ -1,0 +1,83 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Curso de Comunicación Masiva Email y WhatsApp :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+const urlDoc = "/docs/Contenido-de-Comunicaci%C3%B3n-Masiva.pdf";
+const urlPic = "/img/pics/curso-marketing.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Curso de Comunicación Masiva Email y WhatsApp
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Gestione campañas a través de Email y WhatsApp Marketing de
+                  manera directa y efectiva.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <CursosContent>
+               <p slot="descripcion">
+                  Gestione campañas a través de Email y SMS Marketing de manera
+                  directa y efectiva.
+                  <br />
+                  El Objetivo del Curso Comunicación masiva email y SMS es desarrollar
+                  mercadeo directo por e-mail y SMS de forma masiva para lanzamientos
+                  de productos, campañas de refrescamiento, preventas, fiestas, aniversarios,
+                  bodas, eventos especiales, actividades extraordinarias, foros,
+                  cursos, diplomados, conferencias, congresos y reuniones sociales
+                  laborales y corporativas.
+               </p>
+
+               <div slot="contenido">
+                  <h3 class="title is-4">Contenido del Curso</h3>
+
+                  <div class="two-cols">
+                     <p>
+                        Concepto comunicación masiva, características,Redes
+                        Sociales, Ventajas y Desventajas,Tipos de Redes
+                        Sociales.<br />Evolución Web 3.0<br /> Crear Blog y Web,
+                        abriendo Redes sociales<br />Conocer y entender las
+                        características y beneficios de las aplicaciones
+                        WhatsApp, SMS Masivo y Email Masivo.<br />Cómo obtener
+                        las bases de datos de e-mails y Móviles<br />Como crear
+                        plantillas para email marketing, WhatsApp Telegram .<br
+                        />Crear una campaña para cada una de las aplicaciones.<br
+                        />Usar programas adecuados para enviar las campañas
+                        masivas de e-mails,SMS, WhatsApp<br />Conocer los
+                        errores más comunes que se presentan, cuando se
+                        desarrollan correos y mensajes para enviar masivamente.<br
+                        />Aprender a manejar los indicadores e historial de cada
+                        una de las aplicaciones.<br />Crear listas de
+                        distribución tanto para Email Masivo, SMS Masivo.
+                     </p>
+                  </div>
+               </div>
+            </CursosContent>
+
+            <AsideInterno urlDoc={urlDoc} urlPic={urlPic} btnDoc="Curso" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="comunicacion" />
+
+   <ModalVideo videoID="7fWcUyEQ548" />
+</Layout>

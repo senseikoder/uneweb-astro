@@ -1,0 +1,153 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+const title = "Taller de Canva :: Uneweb";
+// const urlDoc = "/docs/Contenido-de-SEO.pdf";
+const urlPic = "/img/pics/taller-canva.webp";
+import "plyr/dist/plyr.css";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-cursos.webp"
+      data-position="center top"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Taller de Canva Diseña tus posts para las redes sociales,
+                  revisa nuestras lecciones
+               </h1>
+               <!-- <h2 class="subtitle is-5 light-text">
+                  texto
+               </h2> -->
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-8">
+               <div class="card">
+                  <div class="card-content">
+                     <div class="content">
+                        <h3
+                           class="title is-4 mb-10 is-title-reveal has-text-centered"
+                        >
+                           En este taller podrás diseñar tu post en minutos
+                           Sigue los puntos para cursar el Taller:
+                        </h3>
+
+                        <ul class="icon-list">
+                           <li>
+                              <span class="icon">
+                                 <i class="iconify" data-icon="fa6-solid:check"
+                                 ></i>
+                              </span>
+                              <span
+                                 >Regístrate en https://www.canva.com</span
+                              >
+                           </li>
+                           <li>
+                              <span class="icon">
+                                 <i class="iconify" data-icon="fa6-solid:check"
+                                 ></i>
+                              </span>
+                              <span>
+                                 Cursa las 4 lecciones para diseñar tu post y publicar en tus redes sociales.
+                              </span>
+                           </li>
+                           <li>
+                              <span class="icon">
+                                 <i class="iconify" data-icon="fa6-solid:check"
+                                 ></i>
+                              </span>
+                              <span>
+                                 Envía el link de tu proyecto desarrollado en el taller al correo cursos@uneweb.com con tus datos personales y solicita el Certificado por el Ministerio de Educación.
+                              </span>
+                           </li>
+                        </ul>
+
+                        <h3 class="title is-4">Contenido del Taller</h3>
+
+                        <h4 class="title is-5 has-text-centered">
+                           Lección número 1
+                        </h4>
+
+                        <div
+                           id="player"
+                           data-plyr-provider="youtube"
+                           data-plyr-embed-id="l4xe2mXNTnE"
+                        >
+                        </div>
+
+                        <hr />
+
+                        <h4 class="title is-5 has-text-centered">
+                           Lección número 2
+                        </h4>
+
+                        <div
+                           id="player2"
+                           data-plyr-provider="youtube"
+                           data-plyr-embed-id="-dvhWiTlTW8"
+                        >
+                        </div>
+
+                        <hr>
+
+
+                        <h4 class="title is-5 has-text-centered">
+                           Lección número 3
+                        </h4>
+
+                        <div
+                           id="player3"
+                           data-plyr-provider="youtube"
+                           data-plyr-embed-id="FeT8e0mku2A"
+                        >
+                        </div>
+
+                        <hr>
+
+
+                        <h4 class="title is-5 has-text-centered">
+                           Lección número 4
+                        </h4>
+
+                        <div
+                           id="player4"
+                           data-plyr-provider="youtube"
+                           data-plyr-embed-id="FixNrfMM57o"
+                        >
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <AsideInterno urlPic={urlPic} />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="taller" />
+
+   <!-- <ModalVideo videoID="tp3dRjk-RVg" /> -->
+</Layout>
+
+<script>
+   import Plyr from "plyr";
+
+   document.addEventListener("astro:page-load", () => {
+      const player = new Plyr("#player");
+      const player2 = new Plyr("#player2");
+      const player3 = new Plyr("#player3");
+      const player4 = new Plyr("#player4");
+   });
+</script>

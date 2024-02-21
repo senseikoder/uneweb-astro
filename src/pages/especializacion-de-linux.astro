@@ -1,0 +1,161 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsideInterno from "../components/AsideInterno.astro";
+import ModalVideo from "../components/ModalVideo.astro";
+const title = "Especialización de Linux :: Uneweb";
+---
+
+<Layout title={title}>
+   <!-- Banner Home -->
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-especializaciones.webp"
+      data-position="center 30%"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-6 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Especialización de Linux
+               </h1>
+               <h2 class="subtitle is-5 light-text">
+                  Aprende al sistema operativo más usado para servidores y
+                  programadores.
+               </h2>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-8">
+               <div class="card">
+                  <div class="card-content">
+                     <h3 class="title is-4 mb-10 has-text-centered">
+                        ¡Invierte en tu futuro, especialízate en Linux!
+                     </h3>
+
+                     <div class="content">
+                        <p>
+                           GNU/Linux es un poderoso y sumamente versátil sistema
+                           operativo con licencia libre, que implementa el
+                           estándar POSIX (acrónimo de: Portable Operating
+                           System Interface, que se traduce como Interfaz de
+                           Sistema Operativo Portátil).
+                        </p>
+                        <p>
+                           Fue inicialmente creado en 1991 por Linus Torvalds, siendo entonces un estudiante de la Universidad de Helsinski, Finlandia. En 1992, el núcleo (kernel)Linux (de la autoría original de Torvalds, ahora extendido por una multitud de desarrolladores a nivel (mundial) fue combinado con el sistema GNU. El Sistema Operativo formado por esta combinación se conoce como GNU/Linux.
+                        </p>
+
+                        <p class="has-text-weight-semibold">
+                           Certificado por el Ministerio de Educación. Código Nº
+                           PR -07-017-11AC. Legaliza y apostilla tu certificado.
+                        </p>
+                     </div>
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Duración:</h4>
+
+                           <ul class="item-list">
+                              <li>Lunes a viernes presencial 1 mes.</li>
+                              <li>Sábados 2 meses.</li>
+                              <li>Online 4 meses</li>
+                           </ul>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Laboratorios</h4>
+
+                           <ul class="item-list">
+                              <li>Incluye 1 computador por persona.</li>
+                              <li>De 4 a 8 alumnos por salón.</li>
+                           </ul>
+                        </div>
+                     </div>
+
+                     <hr />
+
+                     <div class="columns">
+                        <div class="column">
+                           <h4 class="subtitle">Certificación:</h4>
+
+                           <p>Registrado en el Ministerio de Educación</p>
+                        </div>
+                        <div class="column">
+                           <h4 class="subtitle">Requisitos:</h4>
+
+                           <p>Manejo básico de office e internet.</p>
+                        </div>
+                     </div>
+
+                     <h3 class="title is-4">
+                        Especialización de Linux - 4 Cursos:
+                     </h3>
+
+                     <ul class="link-list">
+                        <li>
+                           <a href="/docs/CONTENIDO-PROGRAM%C3%81TICO_Guia_Soporte_tecnico_Linux.pdf" target="_blank">
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 Soporte en Linux Nivel I
+                              </span>
+                           </a>
+                        </li>
+
+                        <li>
+                           <div class="icon">
+                              <i
+                                 class="iconify"
+                                 data-icon="fa6-solid:circle-check"></i>
+                           </div>
+                           <span class="has-text-weight-medium is-size-5">
+                              Soporte en Linux Nivel II
+                           </span>
+                        </li>
+
+                        <li>
+                           <a href="/docs/CONTENIDO-PROGRAM%C3%81TICO_Guia_Administrador_Linux1.pdf">
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 Administrador de Linux Nivel I
+                              </span>
+                           </a>
+                        </li>
+
+                        <li>
+                           <a href="/docs/CONTENIDO-PROGRAM%C3%81TICO_Guia_Administrador_Linux_II1.pdf">
+                              <div class="icon">
+                                 <i
+                                    class="iconify"
+                                    data-icon="fa6-solid:circle-check"></i>
+                              </div>
+                              <span class="has-text-weight-medium is-size-5">
+                                 Administrador de Linux Nivel II
+                              </span>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+
+            <AsideInterno urlPic="/img/pics/especializacion-linux.webp" />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="especializacion" except="linux" />
+
+   <!-- <ModalVideo videoID="EJWsFWrvJ6M" /> -->
+</Layout>

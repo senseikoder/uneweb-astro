@@ -1,0 +1,159 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsidePages from "../components/AsidePages.astro";
+const title = "Cómo Inscribirse - Instagram - Google :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-Comunicaci%C3%B3n-Masiva.pdf";
+const urlPic = "/img/pics/curso-comunicacion.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section has-background-image banner"
+      data-background="/img/banners/bg-pages.webp"
+      data-position="center"
+   >
+      <div class="container py-6">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced">Formas de pago</h1>
+               <!-- <h2 class="subtitle is-5 light-text">
+                  Aprende 
+               </h2> -->
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-6">
+               <div class="card">
+                  <div class="card-content">
+                     <div class="content">
+                        <h3 class="title is-4">Solicitud de asesoría</h3>
+
+                        <p>
+                           <iframe
+                              width="540"
+                              height="810"
+                              src="https://my.sendinblue.com/users/subscribe/js_id/2uqa0/id/3"
+                              frameborder="0"
+                              scrolling="auto"
+                              allowfullscreen=""
+                              style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"
+                           ></iframe>
+                        </p>
+
+                        <p>
+                           Tenemos punto de venta, aceptamos tarjetas de crédito
+                           o débito en nuestra sede: El Rosal, avenida Francisco
+                           Miranda con Avenida San Marti, Torre EASO piso 10,
+                           oficina 10D Telf. 04143205366 - 04142489270 -
+                           04120922157 locales: 0212-9538412 / 9533294
+                        </p>
+
+                        <p class="has-text-centered my-5">
+                           <a
+                              href="https://wa.me/584125750324"
+                              class="button accent-btn btn-outlined raised"
+                           >
+                              Whatsapp
+                           </a>
+                        </p>
+                     </div>
+
+                     <hr />
+                  </div>
+               </div>
+            </div>
+
+            <div class="column is-6">
+               <div class="card">
+                  <div class="card-content">
+                     <div class="content">
+                        <p>
+                           Cursos y Diplomados online o presenciales en nuestra
+                           sede en Caracas. Certificados por el Ministerio de
+                           Educación Código Número PR -07-017-11AC
+                        </p>
+
+                        <p>Comienza ya el curso online pagando por paypal:</p>
+
+                        <figure class="image">
+                           <img
+                              src="/img/pics/cursoonline.webp"
+                              alt="Uneweb Cursos Online"
+                              width="512"
+                              height="125"
+                              style="max-width:512px"
+                           />
+                        </figure>
+
+                        <div class="block has-text-centered">
+                           <h3 class="title is-4">Transferencias bancarias:</h3>
+
+                           <p>
+                              Uneweb Instituto de Comunicación Web C.A.<br />
+                              J-29431337-0<br />
+                              Banesco: Cuenta Corriente<br />
+                              Nº 0134 0710 00 7101034059<br />
+                              Mercantil: Cuenta Corriente<br />
+                              Nº 0105 0169 57 1169087884<br />
+                              Banco Provincial: Cuenta Corriente<br />
+                              Nº 0108 0935 58 0100091511
+                           </p>
+
+                           <p>
+                              <strong>
+                                 Bank of America: rafaelmorales@uneweb.com
+                                 Zelle®
+                              </strong>
+                           </p>
+
+                           <p>
+                              <strong>
+                                 Banesco Panamá cuenta ahorro: 201800982627<br
+                                 />
+                              </strong>
+                              Código SWIFT - BANSPAPA<br />
+                              ALVARO RAFAEL MORALES
+                           </p>
+
+                           <p>
+                              <strong>
+                                 Paypal empresas@tecnologiaenvivo.com
+                              </strong>
+                           </p>
+
+                           <p>
+                              <strong>BINANCE cripto USDT:</strong>
+                               <br />
+                              gabrielmoralesb@hotmail.com ID:75426539
+                           </p>
+
+                           <p>
+                              <strong>
+
+                                 WISE Europa UNEWEB GLOBAL BE03967240600984
+                              </strong>
+                              Bélgica, Brussels Avenue Louise 54, Room S52
+                           </p>
+
+                           <p><strong>UNEWEB GLOBAL ES6401822282760201596199 BBVA</strong></p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="ads" />
+
+   <ModalVideo videoID="MzDu0B9Ann4" />
+</Layout>

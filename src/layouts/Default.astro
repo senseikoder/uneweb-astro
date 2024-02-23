@@ -4,6 +4,7 @@ import { ViewTransitions } from 'astro:transitions';
 import Sidebar from "../components/Sidebar.astro";
 import Footer from "../components/Footer.astro";
 import BackToTop from "../components/BackToTop.astro";
+import BottomFooter from "../components/BottomFooter.astro";
 
 import '@fontsource-variable/nunito/index.css';
 // import '@fontsource-variable/roboto-flex/index.css';
@@ -33,6 +34,8 @@ const { title } = Astro.props;
     <slot />
 
     <Footer />
+
+    <BottomFooter />
 
     <!--Back to top-->
     <BackToTop />

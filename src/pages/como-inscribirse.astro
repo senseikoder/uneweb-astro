@@ -1,0 +1,178 @@
+---
+import Layout from "../layouts/Internas.astro";
+import CursosRelated from "../components/CursosRelated.astro";
+import AsidePages from "../components/AsidePages.astro";
+const title = "Cómo Inscribirse - Instagram - Google :: Uneweb";
+import ModalVideo from "../components/ModalVideo.astro";
+import CursosContent from "../components/CursosContent.astro";
+// const urlDoc = "/docs/Contenido-de-Comunicaci%C3%B3n-Masiva.pdf";
+const urlPic = "/img/pics/curso-comunicacion.webp";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image banner"
+      data-background="/img/banners/bg-pages.webp"
+      data-position="center"
+   >
+      <div class="container">
+         <div class="columns is-vcentered">
+            <div class="column is-7 landing-caption">
+               <h1 class="title is-1 is-bold is-spaced">Cómo Inscribirse</h1>
+               <!-- <h2 class="subtitle is-5 light-text">
+                  Aprende 
+               </h2> -->
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <section class="section main">
+      <div class="container">
+         <div class="columns">
+            <div class="column is-8">
+               <div class="card">
+                  <div class="card-content">
+                     <div class="content">
+                        <h3 class="title is-4">
+                           Condiciones para Inscribirse en cursos o Diplomados
+                           100% en línea
+                        </h3>
+
+                        <p>
+                           La Inscripción es por cada programa. El programa
+                           constan de 12 lecciones video tutoriales, guía
+                           práctica y ejercicios. Cada lección es evaluada por
+                           un instructor especializado que ofrecerá asesorías
+                           semanales a través de e-mail .
+                        </p>
+
+                        <p>
+                           Al finalizar se le envía el Certificado registrado en
+                           el Ministerio de Educación en PDF contiene un código
+                           serial de seguridad. O lo puede buscar el Certificado
+                           impreso en nuestra SEDE El Rosal, avenida Francisco
+                           Miranda con Avenida San Marti, Torre EASO piso 10,
+                           oficina 10D, con un costo adicional.
+                        </p>
+
+                        <p>
+                           Le enviaremos las claves para acceder al curso:
+                           http://www.uneweb.com/cursos (favor revise todas sus
+                           bandejas de entrada del correo).
+                        </p>
+
+                        <p>
+                           <strong
+                              >UNEWEB Instituto de Comunicación web C.A
+                              J-29431337-0, registrado en el Ministerio de
+                              Educación Código Número PR -07-017-11AC</strong
+                           >
+                        </p>
+
+                        <figure class="image">
+                           <img
+                              src="/img/pics/cursoonline.webp"
+                              alt="Uneweb Cursos Online"
+                              width="512"
+                              height="125"
+                              style="max-width:512px"
+                           />
+                        </figure>
+                     </div>
+
+                     <hr />
+
+                     <div class="content">
+                        <h3 class="title is-4">
+                           Condiciones para Inscribirse en cursos, Diplomados o
+                           Maestría presencial
+                        </h3>
+
+                        <p>
+                           Debe realizar la confirmación de su cupo 5 días
+                           antes, llamando al Telf. <strong
+                              >0212- 9538412 y 9533294</strong
+                           >, realizando el pago para la reserva de su
+                           participación en la materia que se apertura la semana
+                           siguiente.
+                        </p>
+                        <p>
+                           Puede pagar en línea en este enlace <a
+                              href="/formas-de-pago">Formas de Pago</a
+                           >
+                        </p>
+
+                        <br />
+
+                        <h4 class="subtitle is-5 has-text-centered">
+                           Términos, Condiciones de los Cursos, Diplomados y
+                           Maestría
+                        </h4>
+                        <p>
+                           La falta de asistencia en los Cursos en cada
+                           programa, no recupera las clases a menos que vuelva a
+                           cancelar el pago para repetir el mismo. Si la falta
+                           tiene justificativo con récipe médico debe
+                           presentarlo y el mismo será comprobado.
+                        </p>
+                        <p>
+                           Los Diplomados tienen una duración de Lunes a Viernes
+                           3 meses o 6 meses. El caso de los Diplomados online a
+                           distancia y horarios sabatinos dura 12 meses, si el
+                           alumno no termina en la duración seleccionada al
+                           momento de la inscripción debe cancelar los cursos en
+                           el costo actual.
+                        </p>
+                        <p>
+                           Los cursos, Diplomados y Maestría son intransferible,
+                           no pueden pasar a otra persona y tampoco cambiar el
+                           programa inscrito por la Coordinadora.
+                        </p>
+                        <p>
+                           El pago realizado por persona natural presenta una
+                           Beca del 50% se debe emitir una factura a nombre del
+                           participante. Si el pago lo realiza una Empresa o
+                           Institución debe cancelar el precio general emitiendo
+                           una factura a nombre fiscal de la misma.
+                        </p>
+                        <p>
+                           Se presentará aumentos durante el año, comunicado por
+                           las Coordinadoras previo aviso. Según la inflación.
+                        </p>
+                        <p>
+                           Los inscrito a la Maestría PDW deben ajustarse a los
+                           programas que se abren cada semana, para culminar la
+                           misma.
+                        </p>
+                        <p>
+                           <strong
+                              >Seleccione un horario: lunes a viernes o sabatino</strong
+                           >
+                        </p>
+                        <p>
+                           <strong
+                              >No se devuelve el dinero después de 5 días el
+                              curso activo online en la plataforma</strong
+                           >
+                        </p>
+                        <p>
+                           <strong
+                              >No se devuelve el dinero después de 3 días
+                              realizado el curso presencial</strong
+                           >
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+
+            <AsidePages />
+         </div>
+      </div>
+   </section>
+
+   <CursosRelated tag="mercadeo" except="ads" />
+
+   <ModalVideo videoID="MzDu0B9Ann4" />
+</Layout>

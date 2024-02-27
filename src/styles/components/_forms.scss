@@ -4,8 +4,9 @@ Inputs styles
 
 .input,
 .textarea {
-  color: $basaltic-grey;
+  color: $dark-grey;
   box-shadow: none !important;
+  background-color: #f5f5f5e9;
   transition: all 0.3s;
 
   &:focus {

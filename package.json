@@ -25,7 +25,7 @@
     "@alpinejs/persist": "3.13.0",
     "@iconify/iconify": "3.1.1",
     "alpinejs": "3.13.0",
-    "astro": "3.1.0",
+    "astro": "^4.4.5",
     "bulma": "0.9.4",
     "bulma-css-vars": "0.8.0",
     "flickity": "^2.3.0",

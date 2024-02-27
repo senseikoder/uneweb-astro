@@ -1,47 +1,7 @@
 ---
-const cursos = [
-   {
-      nombre: 'Lógica de Programación',
-      tag: 'Programación',
-      img: '/img/cursos/1.webp'
-   },
-   {
-      nombre: 'PHP desde Cero',
-      tag: 'Programación',
-      img: '/img/cursos/2.webp'
-   },
-   {
-      nombre: 'PHotoshop',
-      tag: 'Diseño',
-      img: '/img/cursos/3.webp'
-   },
-   {
-      nombre: 'HTML + CSS',
-      tag: 'Webmaster',
-      img: '/img/cursos/4.webp'
-   },
-   
-   {
-      nombre: 'PHotoshop',
-      tag: 'Diseño',
-      img: '/img/cursos/3.webp'
-   },
-   {
-      nombre: 'Lógica de Programación',
-      tag: 'Programación',
-      img: '/img/cursos/1.webp'
-   },
-   {
-      nombre: 'HTML + CSS',
-      tag: 'Webmaster',
-      img: '/img/cursos/4.webp'
-   },
-   {
-      nombre: 'PHP desde Cero',
-      tag: 'Programación',
-      img: '/img/cursos/2.webp'
-   },
-]
+import cursos from "../../public/api/cursos.json";
+
+const cursosFiltrados = cursos.filter((curso) => curso.tag !== 'diplomado' && curso.tag !== 'especializacion');
 ---
 
 <section class="section px-0 mb-60">
@@ -54,12 +14,12 @@ const cursos = [
       <div class="content-wrapper">
          <div class="cursos-carousel">
             {
-               cursos.map((item) => (
+               cursosFiltrados.map((item) => (
                   <div class="item-carousel">
                      <div class="card">
                         <div class="card-image">
                            <figure class="image is-5by3">
-                              <img src={item.img} alt="" />
+                              <img src={'/img/portadas/'+item.slug+'.webp'} alt="" />
                            </figure>
                         </div>
                         <div class="card-content">
@@ -67,7 +27,7 @@ const cursos = [
                               <h3 class="title is-5">{item.nombre}</h3>
 
                               <p>
-                                 <span class="tag is-primary is-light">{item.tag}</span>
+                                 <span class="tag is-primary is-light is-uppercase">{item.tag}</span>
                               </p>
 
                               <p class="is-size-7 has-text-grey">
@@ -84,7 +44,7 @@ const cursos = [
                            </div>
                         </div>
                         <div class="card-footer has-background-light">
-                           <a href="#" class="card-footer-item">Ver más</a>
+                           <a href={item.url} class="card-footer-item"><strong>Ver más</strong></a>
                         </div>
                      </div>
                   </div>

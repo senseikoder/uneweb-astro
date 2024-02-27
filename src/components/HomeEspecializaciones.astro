@@ -1,5 +1,9 @@
 ---
-const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
+import cursos from "../../public/api/cursos.json";
+
+const cursosFiltrados = cursos.filter(
+   (curso) => curso.tag === "especializacion",
+);
 ---
 
 <section class="section">
@@ -11,18 +15,20 @@ const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
       <div class="content-wrapper">
          <!-- Start Carousel -->
          <div class="especial-carousel">
-
-               {
-                  items.map((item) => (
-                     <div class="item-carousel">
-                        <figure class="image">
-                           <img src={`/img/especializaciones/${item}.webp`} alt="/" />
-                        </figure>
-                     </div>
-                  ))
-               }
-   
-
+            {
+               cursosFiltrados.map((item) => (
+                  <div class="item-carousel">
+                     <figure class="image">
+                        <a href={item.url}>
+                           <img
+                              src={`/img/portadas/${item.slug}.webp`}
+                              alt="/"
+                           />
+                        </a>
+                     </figure>
+                  </div>
+               ))
+            }
          </div>
          <!-- End Carousel Services -->
       </div>
@@ -38,7 +44,7 @@ const items = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
          contain: true,
          freeScroll: true,
          wrapAround: true,
-         pageDots: false
+         pageDots: false,
       });
    });
 </script>

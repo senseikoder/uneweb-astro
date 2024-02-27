@@ -1,0 +1,66 @@
+---
+import Layout from "../layouts/Internas.astro";
+const title = "Diplomado de Programación :: Uneweb";
+import "plyr/dist/plyr.css";
+---
+
+<Layout title={title}>
+
+   <section class="section has-background-grey-lighter">
+      <div class="container">
+         <h2 class="title is-2">Buscar</h2>
+      </div>
+
+   </section>
+   <section class="section">
+      <div class="container">
+         <div class="columns is-centered">
+            <div class="column is-8">
+               <div class="content">
+
+                  <h2 class="title is-4">Resultados de busqueda: <span class="result"></span></h2>
+
+                  <div class="block">
+                     <ul class="results">
+
+                     </ul>
+                  </div>
+                  <br>
+
+                  <a href="/" class="button primary-btn btn-outlined is-medium"
+                     >Volver al sitio</a
+                  >
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</Layout>
+
+<script>
+   import cursos from "../../public/api/cursos.json";
+
+   document.addEventListener("astro:page-load", () => {
+      
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const searchValue = urlParams.get("s");
+      
+      document.querySelector(".result").textContent = searchValue
+      console.log(searchValue);
+      
+      const cursosFiltrados = cursos.filter((curso) => curso.nombre.includes(searchValue));
+      
+      const blockResults = document.querySelector(".results") 
+      let listado = ''
+      
+         cursosFiltrados.forEach(curso => {
+            const html = ` <li>
+                              <a href="${curso.url}">${curso.nombre}</a>
+                           </li>`
+            listado += html
+         })
+         blockResults.innerHTML = listado
+      // }
+   });
+</script>

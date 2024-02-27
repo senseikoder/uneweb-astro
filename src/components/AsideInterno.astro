@@ -114,15 +114,17 @@ const { urlPic, urlDoc, btnDoc, articulo } = Astro.props;
 </style>
 
 <script>
-   window.addEventListener("scroll", function () {
-      let stickyCard = document.querySelector(".aside-interno .card");
-      let banner = document.querySelector(".banner");
-      let offsetTop = window.innerHeight - banner.clientHeight;
+   document.addEventListener("astro:page-load", () => {
+      window.addEventListener("scroll", function () {
+         let stickyCard = document.querySelector(".aside-interno .card");
+         let banner = document.querySelector(".banner");
+         let offsetTop = window.innerHeight - banner.clientHeight;
 
-      if (window.scrollY < offsetTop / 2) {
-         stickyCard.classList.remove("is-sticky");
-      } else {
-         stickyCard.classList.add("is-sticky");
-      }
+         if (window.scrollY < offsetTop / 2) {
+            stickyCard.classList.remove("is-sticky");
+         } else {
+            stickyCard.classList.add("is-sticky");
+         }
+      });
    });
 </script>

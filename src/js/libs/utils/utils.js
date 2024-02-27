@@ -36,6 +36,14 @@ export function initModals() {
         body.style.top = `-${scrollY}`;
       });
     }
+
+    // poner foco en input search
+    const iconSearch = document.querySelector('#icon-search')
+    const inputSearch = document.querySelector('#input-search')
+
+    iconSearch.addEventListener('click', () => {
+      inputSearch.focus()
+    })
   }
 
   targets = document.querySelectorAll(".modal-dismiss");

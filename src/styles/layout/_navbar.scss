@@ -111,11 +111,15 @@ Navbar
 			}
 		}
 
-		// .signup {
-		//   display: block;
-		//   line-height: 0;
-		//   font-size: 0.9rem !important;
-		// }
+		&.search {
+			cursor: pointer;
+		}
+
+		&.search:hover svg {
+			color: $secondary;
+			font-size: 1.2rem;
+			transition: all .3s;
+		}
 	}
 
 	//Fixed navbar modifier

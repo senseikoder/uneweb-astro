@@ -1,0 +1,24 @@
+<div id="modal-search" class="modal">
+   <div class="modal-background modal-dismiss"></div>
+
+   <div class="modal-content">
+      <div class="field">
+         <div class="control">
+            <form action="/buscar" method="get">
+
+               <input class="input is-large" name="s" id="input-search" type="text" placeholder="Buscar..." required/>
+            </form>
+         </div>
+      </div>
+   </div>
+
+   <button class="modal-close modal-dismiss is-large" aria-label="close"
+   ></button>
+</div>
+
+<style>
+   .modal {
+      justify-content: flex-start;
+      padding-top: 10%;
+   }
+</style>

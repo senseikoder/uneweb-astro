@@ -2,289 +2,301 @@
 	{
 		"nombre": "After Effects Nivel 2",
 		"url": "/after-effects-nivel-avanzado",
-		"cat": "diseño",
-		"slug": "after-effects"
+		"tag": "diseño",
+		"slug": "after-effects-avanzado"
 	},
 	{
 		"nombre": "After Effects Nivel 1",
 		"url": "/after-effects-nivel-1",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "after-effects"
 	},
 	{
 		"nombre": "Android",
 		"url": "/android-aplicaciones-moviles",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "android"
 	},
 	{
 		"nombre": "Angular",
 		"url": "/curso-de-angular-js",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "angular"
 	},
 	{
 		"nombre": "Animate",
 		"url": "/curso-de-animate-cc",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "animate"
 	},
 	{
 		"nombre": "Community Manager",
 		"url": "/community-manager",
-		"cat": "mercadeo",
+		"tag": "mercadeo",
 		"slug": "community"
 	},
 	{
 		"nombre": "Comunicación Masiva",
 		"url": "/comunicacion-masiva-email-y-sms",
-		"cat": "mercadeo",
+		"tag": "mercadeo",
 		"slug": "comunicacion"
 	},
 	{
 		"nombre": "Blender 3D",
 		"url": "/curso-de-3d-en-caracas",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "blender"
 	},
 	{
 		"nombre": "Bootstrap",
 		"url": "/curso-de-bootstrap",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "bootstrap"
 	},
 	{
 		"nombre": "CSS3",
 		"url": "/curso-de-css3",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "css3"
 	},
 	{
 		"nombre": "Indesign Nivel 1",
 		"url": "/curso-de-indesign",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "indesign"
 	},
 	{
 		"nombre": "Indesign Nivel 2",
 		"url": "/curso-de-indesign-avanzado",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "indesign"
 	},
 	{
 		"nombre": "Java",
 		"url": "/curso-de-java-online",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "java"
 	},
 	{
 		"nombre": "Javascript",
 		"url": "/curso-de-javascript",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "javascript"
 	},
 	{
 		"nombre": "Jquery",
 		"url": "/curso-de-jquery",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "jquery"
 	},
 	{
 		"nombre": "Marketing Digital",
 		"url": "/curso-de-marketing-digital",
-		"cat": "mercadeo",
+		"tag": "mercadeo",
 		"slug": "marketing"
 	},
 	{
 		"nombre": "Node JS",
 		"url": "/curso-de-node-js",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "nodejs"
 	},
 	{
 		"nombre": "PHP",
 		"url": "/curso-de-php",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "php"
 	},
 	{
 		"nombre": "PostgreSQL",
 		"url": "/curso-de-postgre-sql",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "postgresql"
 	},
 	{
 		"nombre": "Python",
 		"url": "/curso-de-python",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "python"
 	},
 	{
 		"nombre": "Wordpress",
 		"url": "/curso-de-wordpress",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "wordpress"
 	},
 	{
 		"nombre": "Lógica de programación",
 		"url": "/curso-logica-de-programacion",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "logica"
 	},
 	{
 		"nombre": "HTML 1",
 		"url": "/html",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "html"
 	},
 	{
 		"nombre": "HTML 2",
 		"url": "/html-5",
-		"cat": "programacion",
-		"slug": "html"
+		"tag": "programacion",
+		"slug": "html2"
 	},
 	{
 		"nombre": "Illustrator Nivel 1",
 		"url": "/illustrator",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "illustrator"
 	},
 	{
 		"nombre": "Illustrator Nivel 2",
 		"url": "/illustrator-nivel-avanzado",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "illustrator"
 	},
 	{
 		"nombre": "MySQL",
 		"url": "/mysql",
-		"cat": "programacion",
+		"tag": "programacion",
 		"slug": "mysql"
 	},
 	{
 		"nombre": "Photoshop Nivel 1",
 		"url": "/photoshop",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "photoshop"
 	},
 	{
 		"nombre": "Photoshop Nivel 2",
 		"url": "/photoshop-avanzado",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "photoshop"
 	},
 	{
 		"nombre": "Premiere Pro",
 		"url": "/premiere",
-		"cat": "diseño",
+		"tag": "diseño",
 		"slug": "premiere"
 	},
 	{
 		"nombre": "SEO",
 		"url": "/seo",
-		"cat": "mercadeo",
+		"tag": "mercadeo",
 		"slug": "seo"
 	},
 	{
 		"nombre": "Diplomado de Programación",
 		"url": "/diplomado-de-programacion",
-		"cat": "diplomado",
-		"slug": "programacion"
+		"tag": "diplomado",
+		"slug": "diplomado-programacion"
 	},
 	{
 		"nombre": "Diplomado Diseño Digital",
 		"url": "/diplomado-diseno-digital",
-		"cat": "diplomado",
-		"slug": "diseño"
+		"tag": "diplomado",
+		"slug": "diplomado-diseno"
 	},
 	{
 		"nombre": "Diplomado Webmaster",
 		"url": "/diplomado-integracion-web",
-		"cat": "diplomado",
-		"slug": "webmaster"
+		"tag": "diplomado",
+		"slug": "diplomado-webmaster"
 	},
 	{
 		"nombre": "Diplomado Java",
 		"url": "/diplomado-java",
-		"cat": "diplomado",
-		"slug": "java"
+		"tag": "diplomado",
+		"slug": "diplomado-java"
 	},
 	{
 		"nombre": "Diplomado Mercadeo",
 		"url": "/diplomado-mercadeo",
-		"cat": "diplomado",
-		"slug": "mercadeo"
+		"tag": "diplomado",
+		"slug": "diplomado-mercadeo"
+	},
+	{
+		"nombre": "Diplomado Python",
+		"url": "/diplomado-de-python",
+		"tag": "diplomado",
+		"slug": "diplomado-python"
+	},
+	{
+		"nombre": "Diplomado Excel",
+		"url": "/excel",
+		"tag": "diplomado",
+		"slug": "diplomado-excel"
 	},
 	{
 		"nombre": "Especialización 3D Blender",
 		"url": "/especializacion-3d",
-		"cat": "especializacion",
-		"slug": "blender"
+		"tag": "especializacion",
+		"slug": "especializacion-blender"
 	},
 	{
 		"nombre": "Especialización Bases de Datos",
 		"url": "/especializacion-bases-de-datos",
-		"cat": "especializacion",
-		"slug": "bd"
+		"tag": "especializacion",
+		"slug": "especializacion-bd"
 	},
 	{
 		"nombre": "Especialización de Android",
 		"url": "/especializacion-de-android",
-		"cat": "especializacion",
-		"slug": "android"
+		"tag": "especializacion",
+		"slug": "especializacion-android"
 	},
 	{
 		"nombre": "Especialización de Diseño Digital",
 		"url": "/especializacion-de-diseno",
-		"cat": "especializacion",
-		"slug": "diseño"
+		"tag": "especializacion",
+		"slug": "especializacion-diseno"
 	},
 	{
 		"nombre": "Especialización de Linux",
 		"url": "/especializacion-de-linux",
-		"cat": "especializacion",
-		"slug": "linux"
+		"tag": "especializacion",
+		"slug": "especializacion-linux"
 	},
 	{
 		"nombre": "Especialización de Mercadeo",
 		"url": "/especializacion-de-mercadeo",
-		"cat": "especializacion",
-		"slug": "mercadeo"
+		"tag": "especializacion",
+		"slug": "especializacion-mercadeo"
 	},
 	{
 		"nombre": "Especialización de Programación",
 		"url": "/especializacion-de-programacion",
-		"cat": "especializacion",
-		"slug": "programacion"
+		"tag": "especializacion",
+		"slug": "especializacion-programacion"
 	},
 	{
 		"nombre": "Especialización Java SE",
 		"url": "/especializacion-java-standard-edition-java-se",
-		"cat": "especializacion",
-		"slug": "java"
+		"tag": "especializacion",
+		"slug": "especializacion-java-se"
 	},
 	{
 		"nombre": "Especialización Jave EE",
 		"url": "/especializacion-java-enterprise-edition-java-ee",
-		"cat": "especializacion",
-		"slug": "java"
+		"tag": "especializacion",
+		"slug": "especializacion-java-ee"
 	},
 	{
 		"nombre": "Especialización de Javascript",
 		"url": "/especiaizacion-js",
-		"cat": "especializacion",
-		"slug": "javascript"
+		"tag": "especializacion",
+		"slug": "especializacion-js"
 	},
 	{
 		"nombre": "Especialización Webmaster",
 		"url": "/especializacion-webmaster",
-		"cat": "especializacion",
-		"slug": "webmaster"
+		"tag": "especializacion",
+		"slug": "especializacion-webmaster"
 	},
 	{
 		"nombre": "Especialización Wordpress",
 		"url": "/especializacion-wordpress",
-		"cat": "especializacion",
-		"slug": "wordpress"
+		"tag": "especializacion",
+		"slug": "especializacion-wordpress"
 	}
 ]

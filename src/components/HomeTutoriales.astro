@@ -1,5 +1,5 @@
 ---
-const cursos = [
+const tutos = [
    {
       nombre: "Tutorial Programación",
       img: "/img/tutoriales/1.jpg",
@@ -33,7 +33,7 @@ const cursos = [
       <div class="content-wrapper">
          <div class="tutos-carousel">
             {
-               cursos.map((item) => (
+               tutos.map((item) => (
                   <div class="item-carousel">
                      <div class="card">
                         <div class="card-image">
@@ -60,7 +60,7 @@ const cursos = [
                         </div>
                         <div class="card-footer has-background-light">
                            <a href="#" class="card-footer-item">
-                              Ver más
+                              <strong>Ver más</strong>
                            </a>
                         </div>
                      </div>
